@@ -1,6 +1,8 @@
 extends layout
 
 block content
+  a(href="/")
+    img(src="/icons/logo.png", width="100")
   nav
     ul
       li
@@ -31,3 +33,18 @@ block content
       li
         p
           img(src="/icons/magnifying-glass.png")
+  section(class="slideshow")
+    ul
+      li
+        img(src="http://lorempixel.com/g/600/250/sports")
+      li
+        img(src="http://lorempixel.com/g/600/250/sports")
+      li
+        img(src="http://lorempixel.com/g/600/250/sports")
+      li
+        img(src="http://lorempixel.com/g/600/250/sports")
+
+//- Scripts
+block last_scripts
+  script(src="/vendor/unslider/dist/js/unslider-min.js")
+  script(src="/scripts/index.js")
