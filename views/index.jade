@@ -1,9 +1,12 @@
 extends layout
 
+block extra_styles
+  link(rel="stylesheet", href="/stylesheets/index.css")
+
 block content
-  a(href="/")
-    img(src="/icons/logo.png", width="100")
   nav
+    a(href="/")
+      img(src="/icons/logo.png", width="100")
     ul
       li
         p Home
@@ -110,6 +113,7 @@ block content
         input(type="text", name="email")
         input(type="text", name="subject")
         textarea(name="message")
+        input(type="submit", value="Submit")
       div
         h1 About Us
           ul
@@ -133,7 +137,8 @@ block content
             li Donate
             li Ways to Give
             li Become a Partner
-
+  p &copy 2016 Prep Stars of America | All Rights Reserved | Privacy Policy | Terms of Use
+  
 //- Scripts
 block last_scripts
   script(src="/vendor/unslider/dist/js/unslider-min.js")
