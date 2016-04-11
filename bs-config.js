@@ -20,7 +20,6 @@ module.exports = {
         }
     },
     "files": [
-      "public/sass/***",
       "public/stylesheets/*",
       "views/***"
     ],
@@ -46,7 +45,7 @@ module.exports = {
     "logSnippet": true,
     "rewriteRules": false,
     "open": "local",
-    "browser": "default",
+    "browser": false,
     "xip": false,
     "hostnameSuffix": false,
     "reloadOnRestart": false,

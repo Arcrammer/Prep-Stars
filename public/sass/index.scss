@@ -5,7 +5,103 @@
  * Sunday, 10 April, 2016
  */
 
+// Variables
+$nav-link-color: #E65100;
+
 // Top Bar
-nav {
+nav.site-nav {
   background-color: #f67c01;
+  height: 100px;
+  overflow: auto;
+
+  // Escape Hatch
+  .escape-hatch {
+    display: block;
+    float: left;
+    padding: 12.5px;
+    text-align: center;
+    width: 75px / 1024px * 100%;
+
+    img {
+      max-width: 75px;
+      max-height: 75px;
+    }
+  }
+
+  .dropdown {
+    display: none;
+  }
+
+  // Links
+  a {
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 225ms;
+
+    &:link,
+    &:visited {
+      color: $nav-link-color;
+    }
+
+    &:hover {
+      color: lighten($nav-link-color, 32.5%);
+    }
+
+    &:active {
+      color: darken($nav-link-color, 25%);
+    }
+  }
+
+  > ul {
+    float: right;
+    height: 100px;
+    text-align: right;
+    width: 924px / 1024px * 100%;
+
+    > li {
+      display: inline;
+      line-height: 100px;
+
+      &:last-of-type {
+        margin-right: 5%;
+      }
+
+      a {
+        padding: 0 1.25%;
+
+        img {
+          width: 25px;
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+}
+
+// CTA Slider
+.slideshow {
+  background-color: #333;
+}
+
+// Tiny CTAs
+.tiny-ctas {
+  background-color: #873780;
+
+  div {
+    background-color: #5D2556 ;
+  }
+}
+
+// Our Programs
+.programs {
+  background-color: #5BCCE6;
+}
+
+// Footer
+footer .contact {
+  background-color: #E53A35;
+}
+
+footer .end {
+  background-color: #43A047;
 }
