@@ -4,7 +4,7 @@ block extra_styles
   link(rel="stylesheet", href="/stylesheets/index.css")
 
 block content
-  nav
+  nav(class="site-nav")
     a(href="/")
       img(src="/icons/logo.png", width="100")
     ul
@@ -35,7 +35,7 @@ block content
         p Events
       li
         p
-          img(src="/icons/magnifying-glass.png")
+          img(src="/icons/magnifying-glass.png", width="100")
   section(class="slideshow")
     ul
       li
@@ -46,7 +46,7 @@ block content
         img(src="http://lorempixel.com/g/600/250/sports")
       li
         img(src="http://lorempixel.com/g/600/250/sports")
-  section
+  section(class="tiny-ctas")
     div
       h1 Testimonials
       p What are people saying about us?
@@ -73,7 +73,7 @@ block content
     h1 Welcome to Prep Stars of America
     p We’re not just changing the game; we’re changing the culture of sports in America!
     p At Prep Stars of America, we offer direct services for elite athletes through our camps, combines, and in school physical education programs. We have developed a unique brand of anti-bullying, behavior modification, and anger managment, through sports for pre-k (age 5) - college age youth. From our culturally rich “Get Fit” recess programs, kinder cross fit challenge, PSA sports leagues (lacrosse, basketball, soccer, golf, tennis, flag football) to our big picture personalized physical education program for private, charter and alternative schools. These programs serve over 2,500 Bay Area cities!
-  section
+  section(class="programs")
     h1 Our Programs
     p Our programs have documented success at teaching manageable behavior modification and anger management techniques, which reduce the stress associated with poor self esteem related to fitness and health. All our youth; big, tall, small, overweight, underweight, slow, fast, black, white, yellow, brown and red, participate, trainand have fun togther! These factors relate to; a better child, better classroom behavior and, ultimately, fosters a more awesome school environment.
     div
@@ -109,7 +109,7 @@ block content
     div
     div
   footer
-    section
+    section(class="contact")
       img(src="/icons/mail.png", width="100")
       input(type="text")
       img(src="/icons/twitter.png", width="100")
@@ -117,7 +117,7 @@ block content
       img(src="/icons/instagram.png", width="100")
     section
       h1 Latest Photos
-    section
+    section(class="end")
       form(id="contact-form")
         input(type="text", name="email")
         input(type="text", name="subject")
@@ -151,7 +151,7 @@ block content
         address Street Address
           br
           | Oakland, California 94601
-  p &copy 2016 Prep Stars of America | All Rights Reserved | Privacy Policy | Terms of Use
+      p &copy 2016 Prep Stars of America | All Rights Reserved | Privacy Policy | Terms of Use
   
 //- Scripts
 block last_scripts

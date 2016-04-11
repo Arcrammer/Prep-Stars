@@ -5,7 +5,40 @@
  * Sunday, 10 April, 2016
  */
 
+// Structure
+body {
+  background-color: #F3F3ED;
+}
+
 // Top Bar
-nav {
+nav.site-nav {
   background-color: #f67c01;
+}
+
+// CTA Slider
+.slideshow {
+  background-color: #333;
+}
+
+// Tiny CTAs
+.tiny-ctas {
+  background-color: #873780;
+
+  div {
+    background-color: #5D2556 ;
+  }
+}
+
+// Our Programs
+.programs {
+  background-color: #5BCCE6;
+}
+
+// Footer
+footer .contact {
+  background-color: #E53A35;
+}
+
+footer .end {
+  background-color: #43A047;
 }

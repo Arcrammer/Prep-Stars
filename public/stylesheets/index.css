@@ -5,6 +5,40 @@
  * Sunday, 10 April, 2016
  */
 /* line 9, ../sass/index.scss */
-nav {
+body {
+  background-color: #F3F3ED;
+}
+
+/* line 14, ../sass/index.scss */
+nav.site-nav {
   background-color: #f67c01;
+}
+
+/* line 19, ../sass/index.scss */
+.slideshow {
+  background-color: #333;
+}
+
+/* line 24, ../sass/index.scss */
+.tiny-ctas {
+  background-color: #873780;
+}
+/* line 27, ../sass/index.scss */
+.tiny-ctas div {
+  background-color: #5D2556;
+}
+
+/* line 33, ../sass/index.scss */
+.programs {
+  background-color: #5BCCE6;
+}
+
+/* line 38, ../sass/index.scss */
+footer .contact {
+  background-color: #E53A35;
+}
+
+/* line 42, ../sass/index.scss */
+footer .end {
+  background-color: #43A047;
 }
