@@ -5,14 +5,14 @@ block extra_styles
 
 block content
   nav(class="site-nav")
-    a(href="/")
-      img(src="/icons/logo.png", width="100")
+    a(class="escape-hatch", href="/")
+      img(src="/icons/logo.png")
     ul
       li
-        p Home
+        a(href="#") Home
       li
-        p About
-        ul
+        a(href="#") About
+        ul(class="dropdown")
           li
             h1 Testimonials
             p What are people saying about us?
@@ -26,15 +26,15 @@ block content
             h1 Volunteer
             p Lend them your time.
       li
-        p Programs
+        a(href="#") Programs
       li
-        p Health & Wellness
+        a(href="#") Health & Wellness
       li
-        p Donations
+        a(href="#") Donations
       li
-        p Events
+        a(href="#") Events
       li
-        p
+        a
           img(src="/icons/magnifying-glass.png", width="100")
   section(class="slideshow")
     ul

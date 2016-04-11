@@ -20,7 +20,6 @@ module.exports = {
         }
     },
     "files": [
-      "public/sass/***",
       "public/stylesheets/*",
       "views/***"
     ],
