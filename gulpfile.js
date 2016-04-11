@@ -3,11 +3,11 @@ var exec = require('child_process').exec;
 
 gulp.task('default', function () {
   // Serve it
-  exec('nodemon');
+  exec('sudo nodemon');
 
   // Watch those assets
-  exec('compass watch public');
+  exec('sudo compass watch public');
 
   // Run Browser-Sync
-  exec('browser-sync start --config="bs-config.js"')
+  exec('sudo browser-sync start --config="bs-config.js"')
 });
