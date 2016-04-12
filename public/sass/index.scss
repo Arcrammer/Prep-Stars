@@ -69,7 +69,7 @@ nav.site-nav {
     text-decoration: none;
     display: block;
 }
-
+  
 
   ul.dropdown-content a:hover {background-color: #f1f1f1}
 
@@ -81,6 +81,7 @@ nav.site-nav {
   ul.dropdown:hover .dropbtn {
     background-color: #3e8e41;
 }
+  
 
   // Links
   a {
@@ -219,6 +220,14 @@ nav.site-nav {
   background-color: #873780;
   padding: 1.4705882353%  6.862745098%;
   overflow: auto;
+  
+  ul.events {
+    position: relative; 
+    margin-top: 25px;
+    display: inline-block;
+
+  }
+
 
   div {
     background-color: $tiny-cta-tint;
@@ -229,6 +238,7 @@ nav.site-nav {
     padding: 1rem;
     text-align: center;
     width: 198px / 1020px * 100%;
+    height: 210px; 
 
     h1 {
       font-size: 1.35rem;

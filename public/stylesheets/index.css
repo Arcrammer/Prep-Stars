@@ -141,6 +141,10 @@ nav.site-nav {
   background-color: #873780;
   padding: 1.4705882353%  6.862745098%;
   overflow: auto; }
+  .tiny-ctas ul.events {
+    position: relative;
+    margin-top: 25px;
+    display: inline-block; }
   .tiny-ctas div {
     background-color: #722E6B;
     border-radius: 5px;
@@ -149,7 +153,8 @@ nav.site-nav {
     margin: 0.98039%;
     padding: 1rem;
     text-align: center;
-    width: 19.41176%; }
+    width: 19.41176%;
+    height: 210px; }
     .tiny-ctas div h1 {
       font-size: 1.35rem;
       letter-spacing: 0.035rem;
