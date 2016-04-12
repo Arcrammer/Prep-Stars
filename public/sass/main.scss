@@ -12,6 +12,12 @@ body {
   font-weight: 700;
 }
 
+// Buttons
+button, input[type="submit"] {
+  cursor: pointer;
+  transition: all 225ms;
+}
+
 // Fonts
 @font-face {
   font-family: "Roboto";

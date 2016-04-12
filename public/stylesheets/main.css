@@ -9,6 +9,10 @@ body {
   font-family: "Roboto";
   font-weight: 700; }
 
+button, input[type="submit"] {
+  cursor: pointer;
+  transition: all 225ms; }
+
 @font-face {
   font-family: "Roboto";
   src: url("/fonts/roboto-regular.eot");
