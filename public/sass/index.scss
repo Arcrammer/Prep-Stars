@@ -78,9 +78,26 @@ nav.site-nav {
   }
 }
 
-// CTA Slider
+// Slick Slider
 .slideshow {
   background-color: #333;
+}
+
+.slick-prev,
+.slick-next {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.slick-prev {
+  left: 0;
+}
+
+.slick-slide img {
+  width: 100%;
 }
 
 // Tiny CTAs

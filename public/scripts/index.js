@@ -1,3 +1,5 @@
 $(document).ready(function () {
-  $('.slideshow').slick();
+  $('.slideshow').slick({
+    autoplay: true
+  });
 });

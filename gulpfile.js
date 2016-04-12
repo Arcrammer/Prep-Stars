@@ -6,10 +6,15 @@ var shell = require('gulp-shell')
 var sass = require('gulp-sass');
 
 var paths = {
-	'src':['./models/**/*.js','./routes/**/*.js', 'keystone.js', 'package.json'],
+	'src':[
+    './models/**/*.js',
+    './routes/**/*.js',
+    'keystone.js',
+    'package.json'
+  ],
 	'style': {
-		all: './public/sass/*.scss',
-		output: './public/styles/'
+		all: './public/sass/***',
+		output: './public/stylesheets/'
 	}
 };
 
@@ -43,8 +48,11 @@ gulp.task('watch', [
 
 gulp.task('runMongo', shell.task('mongod'));
 
+gulp.task('runBrowserSync', shell.task('browser-sync start --config=bs-config.js'));
+
 gulp.task('default', [
   'watch',
+  'runMongo',
   'runKeystone',
-  'runMongo'
+  'runBrowserSync'
 ]);

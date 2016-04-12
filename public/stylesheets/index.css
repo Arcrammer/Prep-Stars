@@ -4,98 +4,74 @@
  * Alexander Rhett Crammer
  * Sunday, 10 April, 2016
  */
-/* line 12, ../sass/index.scss */
 nav.site-nav {
   background-color: #f67c01;
   height: 100px;
-  overflow: auto;
-}
-/* line 18, ../sass/index.scss */
-nav.site-nav .escape-hatch {
-  display: block;
-  float: left;
-  padding: 12.5px;
-  text-align: center;
-  width: 7.32422%;
-}
-/* line 25, ../sass/index.scss */
-nav.site-nav .escape-hatch img {
-  max-width: 75px;
-  max-height: 75px;
-}
-/* line 31, ../sass/index.scss */
-nav.site-nav .dropdown {
-  display: none;
-}
-/* line 36, ../sass/index.scss */
-nav.site-nav a {
-  text-decoration: none;
-  text-transform: uppercase;
-  transition: all 225ms;
-}
-/* line 41, ../sass/index.scss */
-nav.site-nav a:link, nav.site-nav a:visited {
-  color: #E65100;
-}
-/* line 46, ../sass/index.scss */
-nav.site-nav a:hover {
-  color: #ffb58d;
-}
-/* line 50, ../sass/index.scss */
-nav.site-nav a:active {
-  color: #672400;
-}
-/* line 55, ../sass/index.scss */
-nav.site-nav > ul {
-  float: right;
-  height: 100px;
-  text-align: right;
-  width: 90.23438%;
-}
-/* line 61, ../sass/index.scss */
-nav.site-nav > ul > li {
-  display: inline;
-  line-height: 100px;
-}
-/* line 65, ../sass/index.scss */
-nav.site-nav > ul > li:last-of-type {
-  margin-right: 5%;
-}
-/* line 69, ../sass/index.scss */
-nav.site-nav > ul > li a {
-  padding: 0 1.25%;
-}
-/* line 72, ../sass/index.scss */
-nav.site-nav > ul > li a img {
-  width: 25px;
-  vertical-align: middle;
-}
+  overflow: auto; }
+  nav.site-nav .escape-hatch {
+    display: block;
+    float: left;
+    padding: 12.5px;
+    text-align: center;
+    width: 7.32422%; }
+    nav.site-nav .escape-hatch img {
+      max-width: 75px;
+      max-height: 75px; }
+  nav.site-nav .dropdown {
+    display: none; }
+  nav.site-nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 225ms; }
+    nav.site-nav a:link, nav.site-nav a:visited {
+      color: #E65100; }
+    nav.site-nav a:hover {
+      color: #ffb58d; }
+    nav.site-nav a:active {
+      color: #672400; }
+  nav.site-nav > ul {
+    float: right;
+    height: 100px;
+    text-align: right;
+    width: 90.23438%; }
+    nav.site-nav > ul > li {
+      display: inline;
+      line-height: 100px; }
+      nav.site-nav > ul > li:last-of-type {
+        margin-right: 5%; }
+      nav.site-nav > ul > li a {
+        padding: 0 1.25%; }
+        nav.site-nav > ul > li a img {
+          width: 25px;
+          vertical-align: middle; }
 
-/* line 82, ../sass/index.scss */
 .slideshow {
-  background-color: #333;
-}
+  background-color: #333; }
 
-/* line 87, ../sass/index.scss */
+.slick-prev,
+.slick-next {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  bottom: 0;
+  z-index: 1; }
+
+.slick-prev {
+  left: 0; }
+
+.slick-slide img {
+  width: 100%; }
+
 .tiny-ctas {
-  background-color: #873780;
-}
-/* line 90, ../sass/index.scss */
-.tiny-ctas div {
-  background-color: #5D2556;
-}
+  background-color: #873780; }
+  .tiny-ctas div {
+    background-color: #5D2556; }
 
-/* line 96, ../sass/index.scss */
 .programs {
-  background-color: #5BCCE6;
-}
+  background-color: #5BCCE6; }
 
-/* line 101, ../sass/index.scss */
 footer .contact {
-  background-color: #E53A35;
-}
+  background-color: #E53A35; }
 
-/* line 105, ../sass/index.scss */
 footer .end {
-  background-color: #43A047;
-}
+  background-color: #43A047; }

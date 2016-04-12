@@ -13,15 +13,16 @@ keystone.init({
 
 	'name': 'Prep Stars',
 	'brand': 'Prep Stars',
-	
+
 	'sass': 'public',
 	'static': 'public',
 	'favicon': 'public/favicon.ico',
 	'views': 'templates/views',
 	'view engine': 'jade',
-	
+  'port': 9000,
+
 	'emails': 'templates/emails',
-	
+
 	'auto update': true,
 	'session': true,
 	'auth': true,
