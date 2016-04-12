@@ -41,4 +41,10 @@ gulp.task('watch', [
   'watch:lint'
 ]);
 
-gulp.task('default', ['watch', 'runKeystone']);
+gulp.task('runMongo', shell.task('mongod'));
+
+gulp.task('default', [
+  'watch',
+  'runKeystone',
+  'runMongo'
+]);
