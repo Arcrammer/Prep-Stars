@@ -7,6 +7,7 @@
 
 // Variables
 $nav-link-color: #E65100;
+$slider-tint: #FFCD2D;
 
 // Top Bar
 nav.site-nav {
@@ -90,14 +91,42 @@ nav.site-nav {
   right: 0;
   bottom: 0;
   z-index: 1;
+
+  &::before {
+    background-color: $slider-tint;
+    padding: 15px;
+  }
 }
 
 .slick-prev {
   left: 0;
 }
 
+.slick-next {
+  width: inherit;
+}
+
 .slick-slide img {
   width: 100%;
+}
+
+.slick-dots {
+  bottom: 0;
+
+  li {
+    margin: 0 2.5px;
+
+    button::before {
+      color: $slider-tint;
+      font-size: 1rem;
+      opacity: 0.75;
+    }
+
+    &.slick-active button::before {
+      color: darken($slider-tint, 25%);
+      opacity: 1;
+    }
+  }
 }
 
 // Tiny CTAs

@@ -20,7 +20,9 @@ module.exports = {
         }
     },
     "files": [
-      "public/stylesheets/*"
+      "public/stylesheets/*",
+      "public/scripts/*",
+      "templates/***"
     ],
     "watchOptions": {},
     "server": false,
