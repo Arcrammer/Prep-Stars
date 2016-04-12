@@ -45,6 +45,32 @@ nav.site-nav {
           width: 25px;
           vertical-align: middle; }
 
+.announcement {
+  background-color: #FFB74D;
+  color: #E65100;
+  font-weight: 500;
+  overflow: auto;
+  position: relative; }
+  .announcement h1 {
+    float: left;
+    font-size: 1.55rem;
+    padding: 2.5rem;
+    padding-right: 0;
+    text-transform: uppercase;
+    width: 50%; }
+  .announcement button {
+    background-color: #E65100;
+    color: #FFB74D;
+    border: 0;
+    float: right;
+    font-size: 1rem;
+    padding: 0 3%;
+    position: absolute;
+    top: 25%;
+    right: 5%;
+    bottom: 25%;
+    text-transform: uppercase; }
+
 .slideshow {
   background-color: #333; }
 
@@ -118,7 +144,7 @@ nav.site-nav {
       margin-top: 7.5%;
       text-indent: 0.75rem;
       width: 100%; }
-      .tiny-ctas div input[type="text"]::-webkit-input-placeholder {
+      .tiny-ctas div input[type="text"]::-webkit-input-placeholder, .tiny-ctas div input[type="text"]:-moz-placeholder, .tiny-ctas div input[type="text"]::-moz-placeholder, .tiny-ctas div input[type="text"]::-ms-input-placeholder {
         color: #763083; }
     .tiny-ctas div button, .tiny-ctas div input[type="submit"] {
       background-color: #E1BEE7;
