@@ -69,8 +69,11 @@ nav.site-nav {
 .slick-slide img {
   width: 100%; }
 
+.slick-slider {
+  margin-bottom: 0; }
+
 .slick-dots {
-  bottom: 0; }
+  bottom: 2.5%; }
   .slick-dots li {
     margin: 0 2.5px; }
     .slick-dots li button::before {
@@ -82,9 +85,16 @@ nav.site-nav {
       opacity: 1; }
 
 .tiny-ctas {
-  background-color: #873780; }
+  background-color: #873780;
+  padding: 1.4705882353%  6.862745098%;
+  overflow: auto; }
   .tiny-ctas div {
-    background-color: #5D2556; }
+    background-color: #722E6B;
+    float: left;
+    margin: 0.98039%;
+    width: 23.03922%; }
+    .tiny-ctas div h1 {
+      color: #E1BEE7; }
 
 .programs {
   background-color: #5BCCE6; }

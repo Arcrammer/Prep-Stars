@@ -110,8 +110,12 @@ nav.site-nav {
   width: 100%;
 }
 
+.slick-slider {
+  margin-bottom: 0; // Default was 30px for the dots
+}
+
 .slick-dots {
-  bottom: 0;
+  bottom: 2.5%;
 
   li {
     margin: 0 2.5px;
@@ -132,9 +136,18 @@ nav.site-nav {
 // Tiny CTAs
 .tiny-ctas {
   background-color: #873780;
+  padding: 1.4705882353%  6.862745098%;
+  overflow: auto;
 
   div {
-    background-color: #5D2556 ;
+    background-color: #722E6B;
+    float: left;
+    margin: 10px / 1020px * 100%;
+    width: 235px / 1020px * 100%;
+
+    h1 {
+      color: #E1BEE7;
+    }
   }
 }
 
