@@ -154,7 +154,8 @@ nav.site-nav {
     padding: 1rem;
     text-align: center;
     width: 19.41176%;
-    height: 210px; }
+    min-height: 210px;
+    max-height: 100%; }
     .tiny-ctas div h1 {
       font-size: 1.35rem;
       letter-spacing: 0.035rem;
@@ -202,8 +203,18 @@ nav.site-nav {
 .programs {
   background-color: #5BCCE6; }
 
+footer .announcement {
+  background-color: #5BCCE6;
+  min-height: 50px;
+  max-height: 100%;
+  color: #246D90; }
+
+.wrapper {
+  width: 80%;
+  margin: 0 auto; }
+
 footer .contact {
-  background-color: #E53A35; }
+  background-color: #873780; }
 
 footer .end {
   background-color: #43A047; }
