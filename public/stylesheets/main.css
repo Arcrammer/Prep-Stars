@@ -136,6 +136,13 @@ nav.site-nav {
     bottom: 25%;
     text-transform: uppercase; }
 
+.announcement-blue {
+  background-color: #5BCCE6;
+  color: #13687c; }
+  .announcement-blue button {
+    background-color: #13687c;
+    color: #5BCCE6; }
+
 button, input[type="submit"] {
   cursor: pointer;
   transition: all 225ms; }

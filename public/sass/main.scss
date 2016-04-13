@@ -163,7 +163,7 @@ nav.site-nav {
 
 // Announcements
 .announcement {
-  background-color: #FFB74D;
+  background-color: $yellow;
   color: $orange;
   font-weight: 500;
   overflow: auto;
@@ -190,6 +190,16 @@ nav.site-nav {
     right: 5%;
     bottom: 25%;
     text-transform: uppercase;
+  }
+}
+
+.announcement-blue {
+  background-color: $light-blue;
+  color: darken($light-blue, 35%);
+
+  button {
+    background-color: darken($light-blue, 35%);
+    color: $light-blue;
   }
 }
 
