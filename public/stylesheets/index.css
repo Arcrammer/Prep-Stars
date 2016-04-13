@@ -233,13 +233,31 @@ nav.site-nav {
     border-radius: 0.25rem;
     float: left;
     margin: 0.75rem;
+    text-align: center;
     width: 30.98958%; }
+    .programs div:nth-of-type(4) {
+      clear: both; }
     .programs div h1 {
       border-top-left-radius: 0.25rem;
       border-top-right-radius: 0.25rem;
       padding-bottom: 5%; }
-    .programs div:nth-of-type(4) {
-      clear: both; }
+    .programs div p {
+      text-align: left; }
+    .programs div img {
+      margin-top: 2.5%;
+      margin-bottom: 5%; }
+    .programs div:nth-of-type(1) img {
+      width: 20%; }
+    .programs div:nth-of-type(2) img {
+      width: 40%; }
+    .programs div:nth-of-type(3) img {
+      width: 25%; }
+    .programs div:nth-of-type(4) img {
+      width: 45%; }
+    .programs div:nth-of-type(5) img {
+      width: 40%; }
+    .programs div:nth-of-type(6) img {
+      width: 30%; }
     .programs div:nth-of-type(1) {
       background-color: #5BCCE6; }
       .programs div:nth-of-type(1) h1 {

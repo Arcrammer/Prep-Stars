@@ -386,7 +386,12 @@ nav.site-nav {
     border-radius: 0.25rem;
     float: left;
     margin: 0.75rem; // 12px
+    text-align: center;
     width: 317.33333333px / 1024px * 100%;
+
+    &:nth-of-type(4) {
+      clear: both
+    }
 
     h1 {
       border-top: {
@@ -396,8 +401,35 @@ nav.site-nav {
       padding-bottom: 5%;
     }
 
-    &:nth-of-type(4) {
-      clear: both
+    p {
+      text-align: left;
+    }
+
+    img {
+      margin: {
+        top: 2.5%;
+        bottom: 5%;
+      }
+    }
+
+    // Image sizes
+    &:nth-of-type(1) img {
+      width: 20%;
+    }
+    &:nth-of-type(2) img {
+      width: 40%;
+    }
+    &:nth-of-type(3) img {
+      width: 25%;
+    }
+    &:nth-of-type(4) img {
+      width: 45%;
+    }
+    &:nth-of-type(5) img {
+      width: 40%;
+    }
+    &:nth-of-type(6) img {
+      width: 30%;
     }
 
     // Colors
@@ -412,6 +444,7 @@ nav.site-nav {
         color: $blue-text-color;
       }
     }
+
     // Red
     &:nth-of-type(2) {
       background-color: $our-programs-red;
@@ -423,6 +456,7 @@ nav.site-nav {
         color: $red-text-color;
       }
     }
+
     // Green
     &:nth-of-type(3) {
       background-color: $our-programs-green;
@@ -434,6 +468,7 @@ nav.site-nav {
         color: $green-text-color;
       }
     }
+
     // Purple
     &:nth-of-type(4) {
       background-color: $our-programs-purple;
@@ -445,6 +480,7 @@ nav.site-nav {
         color: $purple-text-color;
       }
     }
+
     // Orange
     &:nth-of-type(5) {
       background-color: $our-programs-orange;
@@ -456,6 +492,7 @@ nav.site-nav {
         color: $orange-text-color;
       }
     }
+
     // Grey
     &:nth-of-type(6) {
       background-color: $our-programs-grey;
