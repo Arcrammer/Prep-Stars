@@ -9,16 +9,21 @@
 $orange: #E65100;
 $white: #f4f4f4;
 $yellow: #FFB74D;
+
+$light-blue: #5BCCE6;
 $nav-link-color: #246D90;
+
 $slider-tint: #FFCD2D;
+
 $tiny-cta-tint: #722E6B;
 $dark-tiny-cta-tint: #5D2556;
 $light-tiny-cta-tint: #E1BEE7;
+$dark-tiny-cta-placeholder-tint: darken($light-tiny-cta-tint, 25%) * 0.75;
 $powdery-tiny-cta-tint: #9F719E;
 
 // Top Bar
 nav.site-nav {
-  background-color: #5BCCE6;
+  background-color: $light-blue;
   height: 100px;
   overflow: auto;
 
@@ -193,6 +198,8 @@ nav.site-nav {
 }
 
 .slick-slider {
+  border-top: 0.25rem solid darken($light-blue, 15%);
+  border-bottom: 0.25rem solid darken($dark-tiny-cta-tint, 2.5%);
   margin-bottom: 0; // Default was 30px for the dots
 }
 
@@ -269,11 +276,22 @@ nav.site-nav {
       text-indent: 0.75rem;
       width: 100%;
 
-      &::-webkit-input-placeholder,
-      &:-moz-placeholder, // Firefox 18-
-      &::-moz-placeholder, // Firefox 19+
+      &::-webkit-input-placeholder {
+        color: $dark-tiny-cta-placeholder-tint;
+      }
+
+      &:-moz-placeholder {
+        // Firefox 18-
+        color: $dark-tiny-cta-placeholder-tint;
+      }
+
+      &::-moz-placeholder {
+        // Firefox 19+
+        color: $dark-tiny-cta-placeholder-tint;
+      }
+
       &::-ms-input-placeholder {
-        color: darken($light-tiny-cta-tint, 47.5%);
+        color: $dark-tiny-cta-placeholder-tint;
       }
     }
 
@@ -317,7 +335,7 @@ nav.site-nav {
 
 // Our Programs
 .programs {
-  background-color: #5BCCE6;
+  background-color: $light-blue;
 }
 
 // Footer

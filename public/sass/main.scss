@@ -15,6 +15,7 @@ body {
 
 .text-section {
   font-weight: 500;
+  margin: 3.5rem auto;
 
   h1 {
     font-size: 2rem;
@@ -25,8 +26,9 @@ body {
   }
 
   p {
-    line-height: 150%;
-    margin: auto;
+    line-height: 175%;
+    margin: 1rem auto;
+    max-width: 700px;
     width: 80%;
   }
 }
