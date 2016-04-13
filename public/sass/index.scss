@@ -355,3 +355,15 @@ $grey-text-color: darken($our-programs-grey, 32.5%);
     }
   }
 }
+
+// Success Stories
+.success-stories {
+  margin: auto 35px / 1024px * 100%;
+  margin-bottom: 2.5%;
+
+  img {
+    border-radius: 0.25rem;
+    margin: 20px / 1024px * 100%;
+    width: 216px / 1024px * 100%;
+  }
+}

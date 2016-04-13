@@ -175,7 +175,7 @@ nav.site-nav {
     padding: 2.5rem;
     padding-right: 0;
     text-transform: uppercase;
-    width: 50%;
+    width: 75%;
   }
 
   button {
@@ -190,6 +190,15 @@ nav.site-nav {
     right: 5%;
     bottom: 25%;
     text-transform: uppercase;
+
+    &:hover {
+      background-color: lighten($orange, 10%);
+    }
+
+    &:active {
+      background-color: darken($orange, 25%);
+      color: darken($yellow, 25%);
+    }
   }
 }
 
@@ -200,6 +209,15 @@ nav.site-nav {
   button {
     background-color: darken($light-blue, 35%);
     color: $light-blue;
+
+    &:hover {
+      background-color: lighten($light-blue, 27.5%);
+    }
+
+    &:active {
+      background-color: darken($light-blue, 50%);
+      color: darken($light-blue, 27.5%);
+    }
   }
 }
 

@@ -122,7 +122,7 @@ nav.site-nav {
     padding: 2.5rem;
     padding-right: 0;
     text-transform: uppercase;
-    width: 50%; }
+    width: 75%; }
   .announcement button {
     background-color: #E65100;
     color: #FFB74D;
@@ -135,6 +135,11 @@ nav.site-nav {
     right: 5%;
     bottom: 25%;
     text-transform: uppercase; }
+    .announcement button:hover {
+      background-color: #ff6b1a; }
+    .announcement button:active {
+      background-color: #672400;
+      color: #cd7a00; }
 
 .announcement-blue {
   background-color: #5BCCE6;
@@ -142,6 +147,11 @@ nav.site-nav {
   .announcement-blue button {
     background-color: #13687c;
     color: #5BCCE6; }
+    .announcement-blue button:hover {
+      background-color: #d5f2f9; }
+    .announcement-blue button:active {
+      background-color: #093039;
+      color: #18849d; }
 
 button, input[type="submit"] {
   border-radius: 0.25rem;

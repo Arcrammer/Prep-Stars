@@ -212,3 +212,11 @@
         color: white; }
       .programs div:nth-of-type(6) p {
         color: #8d8d8d; }
+
+.success-stories {
+  margin: auto 3.41797%;
+  margin-bottom: 2.5%; }
+  .success-stories img {
+    border-radius: 0.25rem;
+    margin: 1.95312%;
+    width: 21.09375%; }
