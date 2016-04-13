@@ -9,102 +9,118 @@ block extra_scripts
   script(src="/vendor/slick-carousel/slick/slick.min.js")
 
 block content
-    nav(class="site-nav")
-      a(class="escape-hatch", href="/")
-        img(src="/icons/logo.png")
-      ul
-        li
-          a(href="#") Home
-        li(class="dropbtn")
-          a(href="#",class="drop") About
-          ul(class="dropdown-content")
-            li
-              h1 Testimonials
-              p What are people saying about us?
-            li
-              h1 Donate to Change
-              p Help fund programs that help youth build a future.
-            li
-              h1 Become a Partner
-              p Help us make a difference in the lives of todays' youth
-            li
-              h1 Volunteer
-              p Lend them your time.
-        li
-          a(href="#") Programs
-        li
-          a(href="#") Health & Wellness
-        li
-          a(href="#") Donations
-        li
-          a(href="#") Events
-        li
-          a
-            img(src="/icons/magnifying-glass.png", width="100")
-    section(class="slideshow")
-      div
-        img(src="http://lorempixel.com/g/1200/600/sports")
-      div
-        img(src="http://lorempixel.com/g/1200/600/sports")
-      div
-        img(src="http://lorempixel.com/g/1200/600/sports")
-      div
-        img(src="http://lorempixel.com/g/1200/600/sports")
-    section(class="tiny-ctas")
-      div
-        h1 Testimonials
-        p What are people saying about us?
-        button Learn More
-      div
-        h1 Our Programs
-        p We offer a variety of activities and programs
-        button Read More
-      div
-        h1 Events
-        ul(class="events")
-          li Event Name | Event Date
-          li Event Name | Event Date
-          li Event Name | Event Date
-      div
-        h1 Get Updates
-        p Recieve PSA Updates via Email
-        input(type="text", name="email_address", placeholder="Email Address")
-        input(type="submit", value="Submit")
-    section(class="welcome-message text-section")
-      h1 Welcome to Prep Stars of America
-      p We’re not just changing the game; we’re changing the culture of sports in America!
-      p At Prep Stars of America, we offer direct services for elite athletes through our camps, combines, and in school physical education programs. We have developed a unique brand of anti-bullying, behavior modification, and anger managment, through sports for pre-k (age 5) - college age youth. From our culturally rich “Get Fit” recess programs, kinder cross fit challenge, PSA sports leagues (lacrosse, basketball, soccer, golf, tennis, flag football) to our big picture personalized physical education program for private, charter and alternative schools. These programs serve over 2,500 Bay Area cities!
-    section(class="announcement")
-      h1 Event Announcement Here
-      button Register
-    section(class="programs text-section")
+  nav(class="site-nav")
+    a(class="escape-hatch", href="/")
+      img(src="/icons/logo.png")
+    ul
+      li
+        a(href="#") Home
+      li(class="dropbtn")
+        a(href="#",class="drop") About
+        ul(class="dropdown-content")
+          li
+            h1 Testimonials
+            p What are people saying about us?
+          li
+            h1 Donate to Change
+            p Help fund programs that help youth build a future.
+          li
+            h1 Become a Partner
+            p Help us make a difference in the lives of todays' youth
+          li
+            h1 Volunteer
+            p Lend them your time.
+      li
+        a(href="#") Programs
+      li
+        a(href="#") Health & Wellness
+      li
+        a(href="#") Donations
+      li
+        a(href="#") Events
+      li
+        a
+          img(src="/icons/magnifying-glass.png", width="100")
+  section(class="slideshow")
+    div
+      img(src="http://lorempixel.com/g/1200/600/sports")
+    div
+      img(src="http://lorempixel.com/g/1200/600/sports")
+    div
+      img(src="http://lorempixel.com/g/1200/600/sports")
+    div
+      img(src="http://lorempixel.com/g/1200/600/sports")
+  section(class="tiny-ctas")
+    div
+      h1 Testimonials
+      p What are people saying about us?
+      button Learn More
+    div
       h1 Our Programs
-      p Our programs have documented success at teaching manageable behavior modification and anger management techniques, which reduce the stress associated with poor self esteem related to fitness and health. All our youth; big, tall, small, overweight, underweight, slow, fast, black, white, yellow, brown and red, participate, trainand have fun togther! These factors relate to; a better child, better classroom behavior and, ultimately, fosters a more awesome school environment.
-      div
-        h1 Basketball
-        p In aliquam leo in erat venenatis ornare. In vulputate eu leo sed mattis. Cras elit odio, porttitor euismod faucibus vitae, ultrices vitae ante. Vivamus ac diam tristique dui facilisis volutpat et at lacus. Morbi sodales erat ut quamhendrerit eleifend. In vestibulum ac odio at euismod. Mauris quis mi ut tellus vehicula vestibulum maximus vehicula odio. Integer non scelerisque elit. Nulla semper lorem sit amet augue pharetra facilisis. Donec vel vehicula dolor, non semper nunc.
-        img(src="/images/blue-player-basketball.png", width="200")
-      div
-        h1 Lacrosse
-        p In aliquam leo in erat venenatis ornare. In vulputate eu leo sed mattis. Cras elit odio, porttitor euismod faucibus vitae, ultrices vitae ante. Vivamus ac diam tristique dui facilisis volutpat et at lacus. Morbi sodales erat ut quamhendrerit eleifend. In vestibulum ac odio at euismod. Mauris quis mi ut tellus vehicula vestibulum maximus vehicula odio. Integer non scelerisque elit. Nulla semper lorem sit amet augue pharetra facilisis. Donec vel vehicula dolor, non semper nunc.
-        img(src="/images/blue-player-lacrosse.png", width="200")
-      div
-        h1 Football
-        p In aliquam leo in erat venenatis ornare. In vulputate eu leo sed mattis. Cras elit odio, porttitor euismod faucibus vitae, ultrices vitae ante. Vivamus ac diam tristique dui facilisis volutpat et at lacus. Morbi sodales erat ut quamhendrerit eleifend. In vestibulum ac odio at euismod. Mauris quis mi ut tellus vehicula vestibulum maximus vehicula odio. Integer non scelerisque elit. Nulla semper lorem sit amet augue pharetra facilisis. Donec vel vehicula dolor, non semper nunc.
-        img(src="/images/blue-player-football.png", width="200")
-      div
-        h1 Tennis
-        p In aliquam leo in erat venenatis ornare. In vulputate eu leo sed mattis. Cras elit odio, porttitor euismod faucibus vitae, ultrices vitae ante. Vivamus ac diam tristique dui facilisis volutpat et at lacus. Morbi sodales erat ut quamhendrerit eleifend. In vestibulum ac odio at euismod. Mauris quis mi ut tellus vehicula vestibulum maximus vehicula odio. Integer non scelerisque elit. Nulla semper lorem sit amet augue pharetra facilisis. Donec vel vehicula dolor, non semper nunc.
-        img(src="/images/blue-player-tennis.png", width="200")
-      div
-        h1 Soccer
-        p In aliquam leo in erat venenatis ornare. In vulputate eu leo sed mattis. Cras elit odio, porttitor euismod faucibus vitae, ultrices vitae ante. Vivamus ac diam tristique dui facilisis volutpat et at lacus. Morbi sodales erat ut quamhendrerit eleifend. In vestibulum ac odio at euismod. Mauris quis mi ut tellus vehicula vestibulum maximus vehicula odio. Integer non scelerisque elit. Nulla semper lorem sit amet augue pharetra facilisis. Donec vel vehicula dolor, non semper nunc.
-        img(src="/images/blue-player-soccer.png", width="200")
-      div
-        h1 Golf
-        p In aliquam leo in erat venenatis ornare. In vulputate eu leo sed mattis. Cras elit odio, porttitor euismod faucibus vitae, ultrices vitae ante. Vivamus ac diam tristique dui facilisis volutpat et at lacus. Morbi sodales erat ut quamhendrerit eleifend. In vestibulum ac odio at euismod. Mauris quis mi ut tellus vehicula vestibulum maximus vehicula odio. Integer non scelerisque elit. Nulla semper lorem sit amet augue pharetra facilisis. Donec vel vehicula dolor, non semper nunc.
-        img(src="/images/blue-player-golf.png", width="200")
-    section(class="text-section")
+      p We offer a variety of activities and programs
+      button Read More
+    div
+      h1 Events
+      ul(class="events")
+        li Event Name | Event Date
+        li Event Name | Event Date
+        li Event Name | Event Date
+    div
+      h1 Get Updates
+      p Recieve PSA Updates via Email
+      input(type="text", name="email_address", placeholder="Email Address")
+      input(type="submit", value="Submit")
+  section(class="welcome-message text-section")
+    img(class="video", src="http://lorempixel.com/g/1200/450/sports")
+    h1 Welcome to Prep Stars of America
+    p We’re not just changing the game; we’re changing the culture of sports in America!
+    p At Prep Stars of America, we offer direct services for elite athletes through our camps, combines, and in school physical education programs. We have developed a unique brand of anti-bullying, behavior modification, and anger managment, through sports for pre-k (age 5) - college age youth. From our culturally rich “Get Fit” recess programs, kinder cross fit challenge, PSA sports leagues (lacrosse, basketball, soccer, golf, tennis, flag football) to our big picture personalized physical education program for private, charter and alternative schools. These programs serve over 2,500 Bay Area cities!
+  section(class="announcement")
+    h1 Event Announcement Here
+    button Register
+  section(class="programs text-section")
+    h1 Our Programs
+    p Our programs have documented success at teaching manageable behavior modification and anger management techniques, which reduce the stress associated with poor self esteem related to fitness and health. All our youth; big, tall, small, overweight, underweight, slow, fast, black, white, yellow, brown and red, participate, trainand have fun togther! These factors relate to; a better child, better classroom behavior and, ultimately, fosters a more awesome school environment.
+    div
+      h1 Basketball
+      p In aliquam leo in erat venenatis ornare. In vulputate eu leo sed mattis. Cras elit odio, porttitor euismod faucibus vitae, ultrices vitae ante. Vivamus ac diam tristique dui facilisis volutpat et at lacus. Morbi sodales erat ut quamhendrerit eleifend. In vestibulum ac odio at euismod. Mauris quis mi ut tellus vehicula vestibulum maximus vehicula odio. Integer non scelerisque elit. Nulla semper lorem sit amet augue pharetra facilisis. Donec vel vehicula dolor, non semper nunc.
+      img(src="/images/blue-player-basketball.png", width="200")
+    div
+      h1 Lacrosse
+      p In aliquam leo in erat venenatis ornare. In vulputate eu leo sed mattis. Cras elit odio, porttitor euismod faucibus vitae, ultrices vitae ante. Vivamus ac diam tristique dui facilisis volutpat et at lacus. Morbi sodales erat ut quamhendrerit eleifend. In vestibulum ac odio at euismod. Mauris quis mi ut tellus vehicula vestibulum maximus vehicula odio. Integer non scelerisque elit. Nulla semper lorem sit amet augue pharetra facilisis. Donec vel vehicula dolor, non semper nunc.
+      img(src="/images/blue-player-lacrosse.png", width="200")
+    div
+      h1 Football
+      p In aliquam leo in erat venenatis ornare. In vulputate eu leo sed mattis. Cras elit odio, porttitor euismod faucibus vitae, ultrices vitae ante. Vivamus ac diam tristique dui facilisis volutpat et at lacus. Morbi sodales erat ut quamhendrerit eleifend. In vestibulum ac odio at euismod. Mauris quis mi ut tellus vehicula vestibulum maximus vehicula odio. Integer non scelerisque elit. Nulla semper lorem sit amet augue pharetra facilisis. Donec vel vehicula dolor, non semper nunc.
+      img(src="/images/blue-player-football.png", width="200")
+    div
+      h1 Tennis
+      p In aliquam leo in erat venenatis ornare. In vulputate eu leo sed mattis. Cras elit odio, porttitor euismod faucibus vitae, ultrices vitae ante. Vivamus ac diam tristique dui facilisis volutpat et at lacus. Morbi sodales erat ut quamhendrerit eleifend. In vestibulum ac odio at euismod. Mauris quis mi ut tellus vehicula vestibulum maximus vehicula odio. Integer non scelerisque elit. Nulla semper lorem sit amet augue pharetra facilisis. Donec vel vehicula dolor, non semper nunc.
+      img(src="/images/blue-player-tennis.png", width="200")
+    div
+      h1 Soccer
+      p In aliquam leo in erat venenatis ornare. In vulputate eu leo sed mattis. Cras elit odio, porttitor euismod faucibus vitae, ultrices vitae ante. Vivamus ac diam tristique dui facilisis volutpat et at lacus. Morbi sodales erat ut quamhendrerit eleifend. In vestibulum ac odio at euismod. Mauris quis mi ut tellus vehicula vestibulum maximus vehicula odio. Integer non scelerisque elit. Nulla semper lorem sit amet augue pharetra facilisis. Donec vel vehicula dolor, non semper nunc.
+      img(src="/images/blue-player-soccer.png", width="200")
+    div
+      h1 Golf
+      p In aliquam leo in erat venenatis ornare. In vulputate eu leo sed mattis. Cras elit odio, porttitor euismod faucibus vitae, ultrices vitae ante. Vivamus ac diam tristique dui facilisis volutpat et at lacus. Morbi sodales erat ut quamhendrerit eleifend. In vestibulum ac odio at euismod. Mauris quis mi ut tellus vehicula vestibulum maximus vehicula odio. Integer non scelerisque elit. Nulla semper lorem sit amet augue pharetra facilisis. Donec vel vehicula dolor, non semper nunc.
+      img(src="/images/blue-player-golf.png", width="200")
+  section(class="text-section")
+    h1 Our Success Stories
+    q This exciting new project will provide invaluable recreational and educational opportunities for California youth. By offering young people the change to enjoy non-traditional sports, build confidence, sportsmanship, and meet higher academic challenges, it will enhance many lives.
+    p Former Gov. Gray Davis
+    div
+    div
+    div
+    div
+  footer
+    section(class="contact")
+      img(src="/icons/mail.png", width="100")
+      input(type="text")
+      img(src="/icons/twitter.png", width="100")
+      img(src="/icons/facebook.png", width="100")
+      img(src="/icons/instagram.png", width="100")
+    section
       h1 Our Success Stories
       q This exciting new project will provide invaluable recreational and educational opportunities for California youth. By offering young people the change to enjoy non-traditional sports, build confidence, sportsmanship, and meet higher academic challenges, it will enhance many lives.
       p Former Gov. Gray Davis
@@ -119,59 +135,43 @@ block content
         img(src="/icons/twitter.png", width="100")
         img(src="/icons/facebook.png", width="100")
         img(src="/icons/instagram.png", width="100")
-
       section
-        h1 Our Success Stories
-        q This exciting new project will provide invaluable recreational and educational opportunities for California youth. By offering young people the change to enjoy non-traditional sports, build confidence, sportsmanship, and meet higher academic challenges, it will enhance many lives.
-        p Former Gov. Gray Davis
+        h1 Latest Photos
+      section(class="end")
+        form(id="contact-form")
+          input(type="text", name="email")
+          input(type="text", name="subject")
+          textarea(name="message")
+          input(type="submit", value="Submit")
         div
+          h1 About Us
+            ul
+              li Mission & Vision
+              li Partners
+              li Team
+              li History
+              li Impact
+              li FAQs
         div
+          h1 Our Work
+            ul
+              li Where we Work
+              li Advocates for Change
+              li Programs
+              li Health & Wellness
         div
+          h1 How You Can Help
+            ul
+              li Volunteer
+              li Donate
+              li Ways to Give
+              li Become a Partner
         div
-      footer
-        section(class="contact")
-          img(src="/icons/mail.png", width="100")
-          input(type="text")
-          img(src="/icons/twitter.png", width="100")
-          img(src="/icons/facebook.png", width="100")
-          img(src="/icons/instagram.png", width="100")
-        section
-          h1 Latest Photos
-        section(class="end")
-          form(id="contact-form")
-            input(type="text", name="email")
-            input(type="text", name="subject")
-            textarea(name="message")
-            input(type="submit", value="Submit")
-          div
-            h1 About Us
-              ul
-                li Mission & Vision
-                li Partners
-                li Team
-                li History
-                li Impact
-                li FAQs
-          div
-            h1 Our Work
-              ul
-                li Where we Work
-                li Advocates for Change
-                li Programs
-                li Health & Wellness
-          div
-            h1 How You Can Help
-              ul
-                li Volunteer
-                li Donate
-                li Ways to Give
-                li Become a Partner
-          div
-            h1 Contact Us
-            address Street Address
-              br
-              | Oakland, California 94601
-          p &copy 2016 Prep Stars of America | All Rights Reserved | Privacy Policy | Terms of Use
+          h1 Contact Us
+          address Street Address
+            br
+            | Oakland, California 94601
+        p &copy 2016 Prep Stars of America | All Rights Reserved | Privacy Policy | Terms of Use
   
 //- Scripts
 block last_scripts

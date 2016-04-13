@@ -333,9 +333,44 @@ nav.site-nav {
   }
 }
 
+// Welcome Message
+.welcome-message {
+  margin-top: 2.5rem;
+  text-align: center;
+
+  p {
+    text-align: left;
+  }
+
+  .video {
+    border-radius: 0.25rem;
+    margin: auto;
+    width: 80%;
+  }
+}
+
 // Our Programs
 .programs {
   background-color: $light-blue;
+  margin-top: 0;
+  overflow: auto;
+
+  h1 {
+    padding-top: 5%;
+    margin-top: 0;
+  }
+
+  div {
+    background-color: lighten(mediumvioletred, 27.5%);
+    border-radius: 0.35rem;
+    float: left;
+    margin: 0.75rem; // 12px
+    width: 317.33333333px / 1024px * 100%;
+
+    &:nth-of-type(4) {
+      clear: both
+    }
+  }
 }
 
 // Footer

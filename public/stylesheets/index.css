@@ -212,8 +212,31 @@ nav.site-nav {
     .tiny-ctas div input[type="submit"] {
       margin-top: 7.5%; }
 
+.welcome-message {
+  margin-top: 2.5rem;
+  text-align: center; }
+  .welcome-message p {
+    text-align: left; }
+  .welcome-message .video {
+    border-radius: 0.25rem;
+    margin: auto;
+    width: 80%; }
+
 .programs {
-  background-color: #5BCCE6; }
+  background-color: #5BCCE6;
+  margin-top: 0;
+  overflow: auto; }
+  .programs h1 {
+    padding-top: 5%;
+    margin-top: 0; }
+  .programs div {
+    background-color: #f178c4;
+    border-radius: 0.35rem;
+    float: left;
+    margin: 0.75rem;
+    width: 30.98958%; }
+    .programs div:nth-of-type(4) {
+      clear: both; }
 
 footer .contact {
   background-color: #E53A35; }
