@@ -25,11 +25,21 @@ body {
     text-transform: uppercase;
   }
 
-  p {
+  p,
+  blockquote,
+  cite {
     line-height: 175%;
     margin: 1rem auto;
     max-width: 700px;
     width: 80%;
+  }
+
+  cite {
+    display: block;
+    font-weight: bold;
+    text-align: right;
+    position: relative;
+    right: 1rem;
   }
 }
 
