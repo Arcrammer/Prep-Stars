@@ -4,6 +4,7 @@
  * Alexander Rhett Crammer
  * Monday, 11 April, 2016
  */
+@import "settings.scss";
 
 // Structure
 body {
@@ -44,12 +45,167 @@ body {
 }
 
 .normal-weight {
+  font-weight: 500;
+}
+
+// Top Bar
+nav.site-nav {
+  background-color: $light-blue;
+  height: 100px;
+  overflow: auto;
+
+
+  // Escape Hatch
+  .escape-hatch {
+    display: block;
+    float: left;
+    padding: 12.5px;
+    text-align: center;
+    width: 75px / 1024px * 100%;
+
+    img {
+      max-width: 75px;
+      max-height: 75px;
+    }
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+  .dropbtn:hover {
+    background: #246D90;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    padding: 15px 5px 15px 5px;
+    font-style: normal;
+  }
+
+  .drop:hover {
+    color: lighten($nav-link-color, 32.5%);
+    font-style: normal;
+  }
+
+  ul.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+  ul.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+
+  ul.dropdown-content a:hover {background-color: #f1f1f1}
+
+
+  ul.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+  ul.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+
+  // Links
+  a {
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 225ms;
+
+    &:link,
+    &:visited {
+      color: $nav-link-color;
+    }
+
+    &:hover {
+      font-style: italic;
+    }
+
+    &:active {
+      color: darken($nav-link-color, 25%);
+    }
+  }
+
+  > ul {
+    float: right;
+    height: 100px;
+    text-align: right;
+    width: 924px / 1024px * 100%;
+
+    > li {
+      display: inline;
+      line-height: 100px;
+
+      &:last-of-type {
+        margin-right: 5%;
+      }
+
+      a {
+        padding: 0 1.25%;
+
+        img {
+          width: 25px;
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+}
+
+// Announcements
+.announcement {
+  background-color: #FFB74D;
+  color: $orange;
+  font-weight: 500;
+  overflow: auto;
+  position: relative;
+
+  h1 {
+    float: left;
+    font-size: 1.55rem;
+    padding: 2.5rem;
+    padding-right: 0;
+    text-transform: uppercase;
+    width: 50%;
+  }
+
+  button {
+    background-color: $orange;
+    color: $yellow;
+    border: 0;
+    float: right;
+    font-size: 1rem;
+    padding: 0 3%;
+    position: absolute;
+    top: 25%;
+    right: 5%;
+    bottom: 25%;
+    text-transform: uppercase;
+  }
 }
 
 // Buttons
 button, input[type="submit"] {
   cursor: pointer;
   transition: all 225ms;
+}
+
+// Footer
+footer .contact-and-social {
+  background-color: #E53A35;
+}
+
+footer .end {
+  background-color: #43A047;
 }
 
 // Fonts
