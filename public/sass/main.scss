@@ -233,6 +233,17 @@ footer .contact-and-social {
   background-color: #E53A35;
 }
 
+footer .latest-photos {
+  margin: 0 25px / 1024px * 100%;
+  margin-bottom: 2.5%;
+
+  img {
+    border-radius: 0.225rem;
+    margin: 10px / 1024px * 100%;
+    width: 150.66666667px / 1024px * 100%;
+  }
+}
+
 footer .end {
   background-color: #43A047;
 }

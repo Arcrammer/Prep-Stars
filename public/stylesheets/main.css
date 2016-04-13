@@ -161,6 +161,14 @@ button, input[type="submit"] {
 footer .contact-and-social {
   background-color: #E53A35; }
 
+footer .latest-photos {
+  margin: 0 2.44141%;
+  margin-bottom: 2.5%; }
+  footer .latest-photos img {
+    border-radius: 0.225rem;
+    margin: 0.97656%;
+    width: 14.71354%; }
+
 footer .end {
   background-color: #43A047; }
 
