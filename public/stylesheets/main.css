@@ -153,6 +153,17 @@ nav.site-nav {
       background-color: #093039;
       color: #18849d; }
 
+button {
+  border: 0;
+  color: #efefef;
+  font-family: "Roboto";
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 0.025rem;
+  outline: none;
+  padding: 0.75rem 2rem;
+  text-transform: uppercase; }
+
 button,
 input[type="text"],
 input[type="submit"] {

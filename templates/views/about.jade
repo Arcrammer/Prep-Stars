@@ -1,4 +1,12 @@
 extends ../layouts/default
 
+block extra_styles
+  link(rel="stylesheet", href="/stylesheets/about.css")
+
 block content
-  h1 This is the About page
+  div(class="donate")
+    button(class="donate-button")
+      a Donate
+  div(class="title")
+    h1 About
+  

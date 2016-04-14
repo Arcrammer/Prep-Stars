@@ -1,0 +1,26 @@
+/**
+ * about.scss
+ *
+ * Alexander Rhett Crammer
+ * Wednesday, 13 April, 2015
+ */
+/**
+ * settings.scss
+ *
+ * Alexander Rhett Crammer
+ * Wednesday, 13 April, 2016
+ */
+.donate {
+  background-color: #cf88c9;
+  text-align: right; }
+
+.donate-button {
+  background-color: #FFB74D; }
+
+.title {
+  background-color: #873780; }
+  .title h1 {
+    color: #e8c8e6;
+    font-size: 4rem;
+    padding: 2rem 5rem;
+    text-transform: uppercase; }

@@ -1,0 +1,30 @@
+/**
+ * about.scss
+ *
+ * Alexander Rhett Crammer
+ * Wednesday, 13 April, 2015
+ */
+@import "settings.scss";
+
+// Donate bar
+.donate {
+  background-color: lighten($purple, 30%);
+  text-align: right;
+}
+
+// Donate Button
+.donate-button {
+  background-color: $yellow;
+}
+
+// Title
+.title {
+  background-color: $purple;
+
+  h1 {
+    color: lighten($purple, 47.5%);
+    font-size: 4rem;
+    padding: 2rem 5rem;
+    text-transform: uppercase;
+  }
+}

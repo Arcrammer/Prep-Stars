@@ -19,7 +19,7 @@ $powdery-tiny-cta-tint: #9F719E;
 // Our Programs Section Colors
 $our-programs-red: #EF5350;
 $our-programs-green: #66BB6A;
-$our-programs-purple: #873780;
+$our-programs-purple: $purple;
 $our-programs-orange: #FFB74D;
 $our-programs-grey: #E0E0E0;
 
@@ -95,7 +95,7 @@ $grey-text-color: darken($our-programs-grey, 32.5%);
 
 // Tiny CTAs
 .tiny-ctas {
-  background-color: #873780;
+  background-color: $purple;
   padding: 1.4705882353%  6.862745098%;
   overflow: auto;
 

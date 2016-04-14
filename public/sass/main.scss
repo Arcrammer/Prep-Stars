@@ -222,6 +222,20 @@ nav.site-nav {
 }
 
 // Buttons
+button {
+  border: 0;
+  color: #efefef;
+  font: {
+    family: "Roboto";
+    size: 1rem;
+    weight: bold;
+  }
+  letter-spacing: 0.025rem;
+  outline: none;
+  padding: 0.75rem 2rem;
+  text-transform: uppercase;
+}
+
 button,
 input[type="text"],
 input[type="submit"] {
