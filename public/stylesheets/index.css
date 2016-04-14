@@ -4,100 +4,12 @@
  * Alexander Rhett Crammer
  * Sunday, 10 April, 2016
  */
-nav.site-nav {
-  background-color: #5BCCE6;
-  height: 100px;
-  overflow: auto; }
-  nav.site-nav .escape-hatch {
-    display: block;
-    float: left;
-    padding: 12.5px;
-    text-align: center;
-    width: 7.32422%; }
-    nav.site-nav .escape-hatch img {
-      max-width: 75px;
-      max-height: 75px; }
-  nav.site-nav .dropdown {
-    position: relative;
-    display: inline-block; }
-  nav.site-nav .dropbtn:hover {
-    background: #246D90;
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    padding: 15px 5px 15px 5px;
-    font-style: normal; }
-  nav.site-nav .drop:hover {
-    color: #7cbede;
-    font-style: normal; }
-  nav.site-nav ul.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); }
-  nav.site-nav ul.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block; }
-  nav.site-nav ul.dropdown-content a:hover {
-    background-color: #f1f1f1; }
-  nav.site-nav ul.dropdown:hover .dropdown-content {
-    display: block; }
-  nav.site-nav ul.dropdown:hover .dropbtn {
-    background-color: #3e8e41; }
-  nav.site-nav a {
-    text-decoration: none;
-    text-transform: uppercase;
-    transition: all 225ms; }
-    nav.site-nav a:link, nav.site-nav a:visited {
-      color: #246D90; }
-    nav.site-nav a:hover {
-      font-style: italic; }
-    nav.site-nav a:active {
-      color: #0b202a; }
-  nav.site-nav > ul {
-    float: right;
-    height: 100px;
-    text-align: right;
-    width: 90.23438%; }
-    nav.site-nav > ul > li {
-      display: inline;
-      line-height: 100px; }
-      nav.site-nav > ul > li:last-of-type {
-        margin-right: 5%; }
-      nav.site-nav > ul > li a {
-        padding: 0 1.25%; }
-        nav.site-nav > ul > li a img {
-          width: 25px;
-          vertical-align: middle; }
-
-.announcement {
-  background-color: #FFB74D;
-  color: #E65100;
-  font-weight: 500;
-  overflow: auto;
-  position: relative; }
-  .announcement h1 {
-    float: left;
-    font-size: 1.55rem;
-    padding: 2.5rem;
-    padding-right: 0;
-    text-transform: uppercase;
-    width: 50%; }
-  .announcement button {
-    background-color: #E65100;
-    color: #FFB74D;
-    border: 0;
-    float: right;
-    font-size: 1rem;
-    padding: 0 3%;
-    position: absolute;
-    top: 25%;
-    right: 5%;
-    bottom: 25%;
-    text-transform: uppercase; }
-
+/**
+ * settings.scss
+ *
+ * Alexander Rhett Crammer
+ * Wednesday, 13 April, 2016
+ */
 .slideshow {
   background-color: #333; }
 
@@ -123,6 +35,8 @@ nav.site-nav {
   width: 100%; }
 
 .slick-slider {
+  border-top: 0.25rem solid #20b3d4;
+  border-bottom: 0.25rem solid #54214e;
   margin-bottom: 0; }
 
 .slick-dots {
@@ -178,8 +92,14 @@ nav.site-nav {
       margin-top: 7.5%;
       text-indent: 0.75rem;
       width: 100%; }
-      .tiny-ctas div input[type="text"]::-webkit-input-placeholder, .tiny-ctas div input[type="text"]:-moz-placeholder, .tiny-ctas div input[type="text"]::-moz-placeholder, .tiny-ctas div input[type="text"]::-ms-input-placeholder {
-        color: #763083; }
+      .tiny-ctas div input[type="text"]::-webkit-input-placeholder {
+        color: #894993; }
+      .tiny-ctas div input[type="text"]:-moz-placeholder {
+        color: #894993; }
+      .tiny-ctas div input[type="text"]::-moz-placeholder {
+        color: #894993; }
+      .tiny-ctas div input[type="text"]::-ms-input-placeholder {
+        color: #894993; }
     .tiny-ctas div button, .tiny-ctas div input[type="submit"] {
       background-color: #E1BEE7;
       border: 0;
@@ -205,9 +125,17 @@ nav.site-nav {
     .tiny-ctas div input[type="submit"] {
       margin-top: 7.5%; }
 
-.programs {
-  background-color: #5BCCE6; }
+.welcome-message {
+  margin-top: 2.5rem;
+  text-align: center; }
+  .welcome-message p {
+    text-align: left; }
+  .welcome-message .video {
+    border-radius: 0.25rem;
+    margin: auto;
+    width: 80%; }
 
+<<<<<<< HEAD
 footer .announcement {
   background-color: #5BCCE6;
   min-height: 50px;
@@ -220,6 +148,91 @@ footer .announcement {
 
 footer .contact {
   background-color: #873780; }
+=======
+.programs {
+  margin-top: 0;
+  overflow: auto; }
+  .programs h1 {
+    padding-top: 5%;
+    margin-top: 0; }
+  .programs div {
+    background-color: #f178c4;
+    border-radius: 0.25rem;
+    float: left;
+    margin: 0.75rem;
+    text-align: center;
+    width: 30.98958%; }
+    .programs div:nth-of-type(4) {
+      clear: both; }
+    .programs div h1 {
+      border-top-left-radius: 0.25rem;
+      border-top-right-radius: 0.25rem;
+      padding-bottom: 5%; }
+    .programs div p {
+      text-align: left; }
+    .programs div img {
+      margin-top: 2.5%;
+      margin-bottom: 5%; }
+    .programs div:nth-of-type(1) img {
+      width: 20%; }
+    .programs div:nth-of-type(2) img {
+      width: 40%; }
+    .programs div:nth-of-type(3) img {
+      width: 25%; }
+    .programs div:nth-of-type(4) img {
+      width: 45%; }
+    .programs div:nth-of-type(5) img {
+      width: 40%; }
+    .programs div:nth-of-type(6) img {
+      width: 30%; }
+    .programs div:nth-of-type(1) {
+      background-color: #5BCCE6; }
+      .programs div:nth-of-type(1) h1 {
+        background-color: #1da0be;
+        color: #a8e4f2; }
+      .programs div:nth-of-type(1) p {
+        color: #157187; }
+    .programs div:nth-of-type(2) {
+      background-color: #EF5350; }
+      .programs div:nth-of-type(2) h1 {
+        background-color: #c71612;
+        color: #f6a3a2; }
+      .programs div:nth-of-type(2) p {
+        color: #8c0f0d; }
+    .programs div:nth-of-type(3) {
+      background-color: #66BB6A; }
+      .programs div:nth-of-type(3) h1 {
+        background-color: #3a813d;
+        color: #a4d6a6; }
+      .programs div:nth-of-type(3) p {
+        color: #265528; }
+    .programs div:nth-of-type(4) {
+      background-color: #873780; }
+      .programs div:nth-of-type(4) h1 {
+        background-color: #5a2555;
+        color: #bc5bb4; }
+      .programs div:nth-of-type(4) p {
+        color: #cb7fc4; }
+    .programs div:nth-of-type(5) {
+      background-color: #FFB74D; }
+      .programs div:nth-of-type(5) h1 {
+        background-color: #f39100;
+        color: #ffdba6; }
+      .programs div:nth-of-type(5) p {
+        color: #b36b00; }
+    .programs div:nth-of-type(6) {
+      background-color: #E0E0E0; }
+      .programs div:nth-of-type(6) h1 {
+        background-color: #adadad;
+        color: white; }
+      .programs div:nth-of-type(6) p {
+        color: #8d8d8d; }
+>>>>>>> 2b440e16df19dad473e394b21823161c1607049b
 
-footer .end {
-  background-color: #43A047; }
+.success-stories {
+  margin: auto 3.41797%;
+  margin-bottom: 2.5%; }
+  .success-stories img {
+    border-radius: 0.25rem;
+    margin: 1.95312%;
+    width: 21.09375%; }

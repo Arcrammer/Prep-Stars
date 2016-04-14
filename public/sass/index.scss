@@ -4,7 +4,9 @@
  * Alexander Rhett Crammer
  * Sunday, 10 April, 2016
  */
+@import "settings.scss";
 
+<<<<<<< HEAD
 // Top Bar
 nav.site-nav {
   background-color: #5BCCE6;
@@ -149,6 +151,38 @@ nav.site-nav {
     text-transform: uppercase;
   }
 }
+=======
+// Slick Colors
+$slick-tint: #FFCD2D;
+
+// Tiny CTA Colors
+$tiny-cta-tint: #722E6B;
+$dark-tiny-cta-tint: #5D2556;
+$light-tiny-cta-tint: #E1BEE7;
+$dark-tiny-cta-placeholder-tint: darken($light-tiny-cta-tint, 25%) * 0.75;
+$powdery-tiny-cta-tint: #9F719E;
+
+// Our Programs Section Colors
+$our-programs-red: #EF5350;
+$our-programs-green: #66BB6A;
+$our-programs-purple: #873780;
+$our-programs-orange: #FFB74D;
+$our-programs-grey: #E0E0E0;
+
+$blue-header-color: lighten($light-blue, 17.5%);
+$red-header-color: lighten($our-programs-red, 17.5%);
+$green-header-color: lighten($our-programs-green, 17.5%);
+$purple-header-color: lighten($our-programs-purple, 17.5%);
+$orange-header-color: lighten($our-programs-orange, 17.5%);
+$grey-header-color: lighten($our-programs-grey, 17.5%);
+
+$blue-text-color: darken($light-blue, 32.5%);
+$red-text-color: darken($our-programs-red, 32.5%);
+$green-text-color: darken($our-programs-green, 32.5%);
+$purple-text-color: lighten($our-programs-purple, 27.5%);
+$orange-text-color: darken($our-programs-orange, 30%);
+$grey-text-color: darken($our-programs-grey, 32.5%);
+>>>>>>> 2b440e16df19dad473e394b21823161c1607049b
 
 // Slick Slider
 .slideshow {
@@ -164,7 +198,7 @@ nav.site-nav {
   z-index: 1;
 
   &::before {
-    background-color: $slider-tint;
+    background-color: $slick-tint;
     padding: 15px;
   }
 }
@@ -182,6 +216,8 @@ nav.site-nav {
 }
 
 .slick-slider {
+  border-top: 0.25rem solid darken($light-blue, 15%);
+  border-bottom: 0.25rem solid darken($dark-tiny-cta-tint, 2.5%);
   margin-bottom: 0; // Default was 30px for the dots
 }
 
@@ -192,13 +228,13 @@ nav.site-nav {
     margin: 0 2.5px;
 
     button::before {
-      color: $slider-tint;
+      color: $slick-tint;
       font-size: 1rem;
       opacity: 0.75;
     }
 
     &.slick-active button::before {
-      color: darken($slider-tint, 25%);
+      color: darken($slick-tint, 25%);
       opacity: 1;
     }
   }
@@ -258,11 +294,22 @@ nav.site-nav {
       text-indent: 0.75rem;
       width: 100%;
 
-      &::-webkit-input-placeholder,
-      &:-moz-placeholder, // Firefox 18-
-      &::-moz-placeholder, // Firefox 19+
+      &::-webkit-input-placeholder {
+        color: $dark-tiny-cta-placeholder-tint;
+      }
+
+      &:-moz-placeholder {
+        // Firefox 18-
+        color: $dark-tiny-cta-placeholder-tint;
+      }
+
+      &::-moz-placeholder {
+        // Firefox 19+
+        color: $dark-tiny-cta-placeholder-tint;
+      }
+
       &::-ms-input-placeholder {
-        color: darken($light-tiny-cta-tint, 47.5%);
+        color: $dark-tiny-cta-placeholder-tint;
       }
     }
 
@@ -304,16 +351,166 @@ nav.site-nav {
   }
 }
 
+// Welcome Message
+.welcome-message {
+  margin-top: 2.5rem;
+  text-align: center;
+
+  p {
+    text-align: left;
+  }
+
+  .video {
+    border-radius: 0.25rem;
+    margin: auto;
+    width: 80%;
+  }
+}
+
 // Our Programs
 .programs {
-  background-color: #5BCCE6;
+  margin-top: 0;
+  overflow: auto;
+
+  h1 {
+    padding-top: 5%;
+    margin-top: 0;
+  }
+
+  div {
+    background-color: lighten(mediumvioletred, 27.5%);
+    border-radius: 0.25rem;
+    float: left;
+    margin: 0.75rem; // 12px
+    text-align: center;
+    width: 317.33333333px / 1024px * 100%;
+
+    &:nth-of-type(4) {
+      clear: both
+    }
+
+    h1 {
+      border-top: {
+        left-radius: 0.25rem;
+        right-radius: 0.25rem;
+      }
+      padding-bottom: 5%;
+    }
+
+    p {
+      text-align: left;
+    }
+
+    img {
+      margin: {
+        top: 2.5%;
+        bottom: 5%;
+      }
+    }
+
+    // Image sizes
+    &:nth-of-type(1) img {
+      width: 20%;
+    }
+    &:nth-of-type(2) img {
+      width: 40%;
+    }
+    &:nth-of-type(3) img {
+      width: 25%;
+    }
+    &:nth-of-type(4) img {
+      width: 45%;
+    }
+    &:nth-of-type(5) img {
+      width: 40%;
+    }
+    &:nth-of-type(6) img {
+      width: 30%;
+    }
+
+    // Colors
+    // Blue
+    &:nth-of-type(1) {
+      background-color: $light-blue;
+      h1 {
+        background-color: darken($light-blue, 20%);
+        color: $blue-header-color;
+      }
+      p {
+        color: $blue-text-color;
+      }
+    }
+
+    // Red
+    &:nth-of-type(2) {
+      background-color: $our-programs-red;
+      h1 {
+        background-color: darken($our-programs-red, 20%);
+        color: $red-header-color;
+      }
+      p {
+        color: $red-text-color;
+      }
+    }
+
+    // Green
+    &:nth-of-type(3) {
+      background-color: $our-programs-green;
+      h1 {
+        background-color: darken($our-programs-green, 20%);
+        color: $green-header-color;
+      }
+      p {
+        color: $green-text-color;
+      }
+    }
+
+    // Purple
+    &:nth-of-type(4) {
+      background-color: $our-programs-purple;
+      h1 {
+        background-color: darken($our-programs-purple, 12.5%);
+        color: $purple-header-color;
+      }
+      p {
+        color: $purple-text-color;
+      }
+    }
+
+    // Orange
+    &:nth-of-type(5) {
+      background-color: $our-programs-orange;
+      h1 {
+        background-color: darken($our-programs-orange, 17.5%);
+        color: $orange-header-color;
+      }
+      p {
+        color: $orange-text-color;
+      }
+    }
+
+    // Grey
+    &:nth-of-type(6) {
+      background-color: $our-programs-grey;
+      h1 {
+        background-color: darken($our-programs-grey, 20%);
+        color: $grey-header-color;
+      }
+      p {
+        color: $grey-text-color;
+      }
+    }
+  }
 }
 
-// Footer
-footer .contact {
-  background-color: #E53A35;
-}
+// Success Stories
+.success-stories {
+  margin: auto 35px / 1024px * 100%;
+  margin-bottom: 2.5%;
 
-footer .end {
-  background-color: #43A047;
+  img {
+    border-radius: 0.25rem;
+    margin: 20px / 1024px * 100%;
+    width: 216px / 1024px * 100%;
+  }
 }
