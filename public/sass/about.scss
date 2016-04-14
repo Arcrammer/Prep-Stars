@@ -1,0 +1,76 @@
+/**
+ * about.scss
+ *
+ * Alexander Rhett Crammer
+ * Wednesday, 13 April, 2015
+ */
+@import "settings.scss";
+
+// Structure
+main {
+  float: left;
+  width: 80%;
+}
+
+aside {
+  background-color: mediumvioletred;
+  float: right;
+  width: 20%;
+
+  img {
+    width: 100%;
+  }
+}
+
+// Donate bar
+.donate {
+  background-color: lighten($purple, 30%);
+  overflow: visible;
+  height: 30px;
+  text-align: right;
+}
+
+// Donate Button
+.donate-button {
+  background-color: darken($yellow, 7.5%);
+  border: {
+    top-left-radius: 0;
+    top-right-radius: 0;
+  }
+  color: lighten($orange, 50%);
+  float: right;
+  margin-right: 5%;
+
+  &:hover {
+    background-color: $yellow;
+  }
+
+  &:active {
+    background-color: darken($yellow, 42.5%);
+    color: darken($white, 45%);
+  }
+}
+
+// Title
+.title {
+  background-color: $purple;
+
+  h1 {
+    color: lighten($purple, 47.5%);
+    font-size: 4rem;
+    padding: 2rem 5rem;
+    text-transform: uppercase;
+  }
+}
+
+// Site Description
+.site-description {
+  margin: 2.5% auto;
+  width: 80%;
+}
+
+// Blue bar
+.blue-bottom-decoration {
+  background-color: $light-blue;
+  height: 200px;
+}
