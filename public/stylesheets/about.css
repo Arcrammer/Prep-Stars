@@ -10,12 +10,35 @@
  * Alexander Rhett Crammer
  * Wednesday, 13 April, 2016
  */
+main {
+  float: left;
+  width: 80%; }
+
+aside {
+  background-color: mediumvioletred;
+  float: right;
+  width: 20%; }
+  aside img {
+    width: 100%; }
+
 .donate {
   background-color: #cf88c9;
+  overflow: visible;
+  height: 30px;
   text-align: right; }
 
 .donate-button {
-  background-color: #FFB74D; }
+  background-color: #ffa827;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  color: #ffefe6;
+  float: right;
+  margin-right: 5%; }
+  .donate-button:hover {
+    background-color: #FFB74D; }
+  .donate-button:active {
+    background-color: #734500;
+    color: #818181; }
 
 .title {
   background-color: #873780; }
@@ -24,3 +47,11 @@
     font-size: 4rem;
     padding: 2rem 5rem;
     text-transform: uppercase; }
+
+.site-description {
+  margin: 2.5% auto;
+  width: 80%; }
+
+.blue-bottom-decoration {
+  background-color: #5BCCE6;
+  height: 200px; }
