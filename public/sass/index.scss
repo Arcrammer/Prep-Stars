@@ -5,17 +5,6 @@
  * Sunday, 10 April, 2016
  */
 
-// Variables
-$orange: #E65100;
-$white: #f4f4f4;
-$yellow: #FFB74D;
-$nav-link-color: #246D90;
-$slider-tint: #FFCD2D;
-$tiny-cta-tint: #722E6B;
-$dark-tiny-cta-tint: #5D2556;
-$light-tiny-cta-tint: #E1BEE7;
-$powdery-tiny-cta-tint: #9F719E;
-
 // Top Bar
 nav.site-nav {
   background-color: #5BCCE6;
@@ -41,7 +30,7 @@ nav.site-nav {
     position: relative;
     display: inline-block;
 }
-  
+
   .dropbtn:hover {
     background: #246D90;
     border-radius: 5px;
@@ -49,12 +38,12 @@ nav.site-nav {
     padding: 15px 5px 15px 5px;
     font-style: normal;
   }
-  
+
   .drop:hover {
     color: lighten($nav-link-color, 32.5%);
     font-style: normal;
   }
-  
+
   ul.dropdown-content {
     display: none;
     position: absolute;
@@ -69,7 +58,7 @@ nav.site-nav {
     text-decoration: none;
     display: block;
 }
-  
+
 
   ul.dropdown-content a:hover {background-color: #f1f1f1}
 
@@ -81,7 +70,7 @@ nav.site-nav {
   ul.dropdown:hover .dropbtn {
     background-color: #3e8e41;
 }
-  
+
 
   // Links
   a {
@@ -220,9 +209,9 @@ nav.site-nav {
   background-color: #873780;
   padding: 1.4705882353%  6.862745098%;
   overflow: auto;
-  
+
   ul.events {
-    position: relative; 
+    position: relative;
     margin-top: 25px;
     display: inline-block;
 
@@ -236,10 +225,10 @@ nav.site-nav {
     float: left;
     margin: 10px / 1020px * 100%;
     padding: 1rem;
+    position: relative;
     text-align: center;
     width: 198px / 1020px * 100%;
-    min-height: 210px; 
-    max-height: 100%; 
+    height: 210px;
 
     h1 {
       font-size: 1.35rem;
@@ -292,8 +281,12 @@ nav.site-nav {
         top: 0.75rem;
         bottom: 0.75rem;
       }
+      position: absolute;
+      right: 5%;
+      bottom: 5%;
+      left: 5%;
       text-transform: uppercase;
-      width: 100%;
+      width: 90%;
 
       &:hover {
         background-color: lighten($light-tiny-cta-tint, 12.5%);
@@ -316,21 +309,9 @@ nav.site-nav {
   background-color: #5BCCE6;
 }
 
-footer .announcement {
-  background-color: #5BCCE6;
-  min-height: 50px;
-  max-height: 100%;
-  color: #246D90;
-}
-
-.wrapper {
-  width: 80%; 
-  margin: 0 auto;
-}
-
 // Footer
 footer .contact {
-  background-color: #873780;
+  background-color: #E53A35;
 }
 
 footer .end {
