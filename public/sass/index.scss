@@ -6,80 +6,6 @@
  */
 @import "settings.scss";
 
-<<<<<<< HEAD
-// Top Bar
-nav.site-nav {
-  background-color: #5BCCE6;
-  height: 100px;
-  overflow: auto;
-
-
-  // Escape Hatch
-  .escape-hatch {
-    display: block;
-    float: left;
-    padding: 12.5px;
-    text-align: center;
-    width: 75px / 1024px * 100%;
-
-    img {
-      max-width: 75px;
-      max-height: 75px;
-    }
-  }
-
-  .site-nav ul ul {
-    display: none;
-    position: absolute;
-  }
-
-
-  // Links
-  a {
-    text-decoration: none;
-    text-transform: uppercase;
-    transition: all 225ms;
-
-    &:link,
-    &:visited {
-      color: $nav-link-color;
-    }
-
-    &:hover {
-      font-style: italic;
-    }
-
-    &:active {
-      color: darken($nav-link-color, 25%);
-    }
-  }
-
-  > ul {
-    float: right;
-    height: 100px;
-    text-align: right;
-    width: 924px / 1024px * 100%;
-
-    > li {
-      display: inline;
-      line-height: 100px;
-
-      &:last-of-type {
-        margin-right: 5%;
-      }
-
-      a {
-        padding: 0 1.25%;
-
-        img {
-          width: 25px;
-          vertical-align: middle;
-        }
-      }
-    }
-  }
-}
-
 // Announcements
 .announcement {
   background-color: #FFB74D;
@@ -110,7 +36,7 @@ nav.site-nav {
     bottom: 25%;
     text-transform: uppercase;
   }
-    
+
 }
 
 .announcement-blue {
@@ -130,7 +56,7 @@ nav.site-nav {
   }
   .announcement-blue button {
     background-color: #13687c;
-    color: #5BCCE6; 
+    color: #5BCCE6;
     border: 0;
     float: right;
     font-size: 1rem;
@@ -142,15 +68,13 @@ nav.site-nav {
     text-transform: uppercase;
 }
     .announcement-blue button:hover {
-      background-color: #d5f2f9; 
+      background-color: #d5f2f9;
 }
     .announcement-blue button:active {
       background-color: #093039;
-      color: #18849d; 
+      color: #18849d;
 }
 
-=======
->>>>>>> origin/master
 // Slick Colors
 $slick-tint: #FFCD2D;
 
@@ -408,27 +332,27 @@ $grey-text-color: darken($our-programs-grey, 32.5%);
 
     // Image sizes
     &:nth-of-type(1) img {
-      height: 30vh; 
+      height: 30vh;
       width: auto;
     }
     &:nth-of-type(2) img {
-      height: 30vh; 
+      height: 30vh;
       width: auto;
     }
     &:nth-of-type(3) img {
-      height: 30vh; 
+      height: 30vh;
       width: auto;
     }
     &:nth-of-type(4) img {
-      height: 30vh; 
+      height: 30vh;
       width: auto;
     }
     &:nth-of-type(5) img {
-      height: 30vh; 
+      height: 30vh;
       width: auto;
     }
     &:nth-of-type(6) img {
-      height: 30vh; 
+      height: 30vh;
       width: auto;
     }
 
