@@ -69,7 +69,8 @@
     position: relative;
     text-align: center;
     width: 19.41176%;
-    height: 210px; }
+    min-height: 210px;
+    max-height: 100%; }
     .tiny-ctas div h1 {
       font-size: 1.35rem;
       letter-spacing: 0.035rem;
@@ -134,6 +135,20 @@
     margin: auto;
     width: 80%; }
 
+<<<<<<< HEAD
+footer .announcement {
+  background-color: #5BCCE6;
+  min-height: 50px;
+  max-height: 100%;
+  color: #246D90; }
+
+.wrapper {
+  width: 80%;
+  margin: 0 auto; }
+
+footer .contact {
+  background-color: #873780; }
+=======
 .programs {
   margin-top: 0;
   overflow: auto; }
@@ -212,6 +227,7 @@
         color: white; }
       .programs div:nth-of-type(6) p {
         color: #8d8d8d; }
+>>>>>>> 2b440e16df19dad473e394b21823161c1607049b
 
 .success-stories {
   margin: auto 3.41797%;
