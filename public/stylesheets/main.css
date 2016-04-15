@@ -128,7 +128,6 @@ nav.site-nav {
     text-align: right;
     width: 90.23438%; }
     nav.site-nav ul li {
-      background-color: mediumvioletred;
       display: inline;
       line-height: 100px; }
       nav.site-nav ul li:last-of-type {
