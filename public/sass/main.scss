@@ -372,7 +372,81 @@ footer {
   }
 
   .end {
-    background-color: #43A047;
+    background-color: $light-blue;
+    border-top: 5px solid darken($light-blue, 10%);
+    overflow: auto;
+
+    div {
+      float: left;
+      padding: 25px;
+      width: 206px;
+    }
+
+    form {
+      input,
+      textarea {
+        background-color: #246d90;
+        border: 0;
+        border-radius: 0.15rem;
+        color: lighten($light-blue, 25%);
+        font: {
+          family: "Roboto", sans-serif;
+          size: 0.85rem;
+          weight: 300;
+        }
+        margin: 2.5% auto;
+        padding: 15px;
+        resize: none;
+        width: 191px;
+
+        @mixin footer-end-placeholder-style() {
+          color: $light-blue;
+          letter-spacing: 0.035rem;
+          text-transform: uppercase;
+        }
+
+        &::-webkit-input-placeholder {
+          @include footer-end-placeholder-style();
+        }
+
+        &:-moz-placeholder {
+          // Firefox 18-
+          @include footer-end-placeholder-style();
+        }
+
+        &::-moz-placeholder {
+          // Firefox 19+
+          @include footer-end-placeholder-style();
+        }
+
+        &::-ms-input-placeholder {
+          @include footer-end-placeholder-style();
+        }
+      }
+    }
+
+    input[type="submit"] {
+      color: $light-blue;
+      letter-spacing: 0.075rem;
+      padding: {
+        top: 6.5%;
+        bottom: 6.5%;
+      }
+      text: {
+        transform: uppercase;
+        indent: 0;
+      }
+      width: 45%;
+
+      &:hover {
+        background-color: lighten($light-blue, 27.5%);
+      }
+
+      &:active {
+        background-color: darken($light-blue, 50%);
+        color: darken($light-blue, 35%);
+      }
+    }
   }
 }
 

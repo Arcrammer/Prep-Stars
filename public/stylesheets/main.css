@@ -258,7 +258,59 @@ footer .latest-photos {
     width: 14.71354%; }
 
 footer .end {
-  background-color: #43A047; }
+  background-color: #5BCCE6;
+  border-top: 5px solid #2fbedf;
+  overflow: auto; }
+  footer .end div {
+    float: left;
+    padding: 25px;
+    width: 206px; }
+  footer .end form input,
+  footer .end form textarea {
+    background-color: #246d90;
+    border: 0;
+    border-radius: 0.15rem;
+    color: #caeef7;
+    font-family: "Roboto", sans-serif;
+    font-size: 0.85rem;
+    font-weight: 300;
+    margin: 2.5% auto;
+    padding: 15px;
+    resize: none;
+    width: 191px; }
+    footer .end form input::-webkit-input-placeholder,
+    footer .end form textarea::-webkit-input-placeholder {
+      color: #5BCCE6;
+      letter-spacing: 0.035rem;
+      text-transform: uppercase; }
+    footer .end form input:-moz-placeholder,
+    footer .end form textarea:-moz-placeholder {
+      color: #5BCCE6;
+      letter-spacing: 0.035rem;
+      text-transform: uppercase; }
+    footer .end form input::-moz-placeholder,
+    footer .end form textarea::-moz-placeholder {
+      color: #5BCCE6;
+      letter-spacing: 0.035rem;
+      text-transform: uppercase; }
+    footer .end form input::-ms-input-placeholder,
+    footer .end form textarea::-ms-input-placeholder {
+      color: #5BCCE6;
+      letter-spacing: 0.035rem;
+      text-transform: uppercase; }
+  footer .end input[type="submit"] {
+    color: #5BCCE6;
+    letter-spacing: 0.075rem;
+    padding-top: 6.5%;
+    padding-bottom: 6.5%;
+    text-transform: uppercase;
+    text-indent: 0;
+    width: 45%; }
+    footer .end input[type="submit"]:hover {
+      background-color: #d5f2f9; }
+    footer .end input[type="submit"]:active {
+      background-color: #093039;
+      color: #13687c; }
 
 @font-face {
   font-family: "Roboto";
