@@ -78,31 +78,34 @@ nav.site-nav {
     background: #246D90;
     border-radius: 5px;
     -webkit-border-radius: 5px;
-    padding: 15px 5px 5px 5px;
     font-style: normal;
   }
 
   li:hover .drop {
-    color: darken($nav-link-color, 32.5%);
+    color: #5BCCE6;
+    padding: 15px 15px 15px 4px;
+    border-radius 5px;
+    -webkit-border-radius: 5px;
     font-style: normal;
+    background: #246D90;
   }
 
   li.dropbtn ul.dropdown-content {
     -moz-column-count: 2;
-    -moz-column-gap: 15px;
+    -moz-column-gap: 10px;
     -webkit-column-count: 2;
-    -webkit-column-gap: 15px;
+    -webkit-column-gap: 10px;
     background-color: #246D90;
     border-radius: 5px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     -webkit-border-radius: 5px;
     column-count: 2;
-    column-gap: 15px;
+    column-gap: 10px;
     display: none;
     float: none;
     padding: 15px;
     position: absolute;
-    top: 3.8em;
+    top: 3.6em;
     text-align: left;
     width: 400px;
     z-index: 1;
