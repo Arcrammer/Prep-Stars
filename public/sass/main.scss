@@ -285,6 +285,7 @@ button {
 
 button,
 input[type="text"],
+input[type="email"],
 input[type="submit"] {
   border-radius: 0.25rem;
   cursor: pointer;
@@ -292,23 +293,99 @@ input[type="submit"] {
 }
 
 // Footer
-footer .contact-and-social {
-  background-color: #E53A35;
-}
+footer {
+  .contact-and-social {
+    background-color: $purple;
+    border: {
+      top: 5px solid darken($purple, 3.5%);
+      bottom: 5px solid darken($purple, 3.5%);
+    }
+    overflow: auto;
+    padding: 1.75rem 3rem;
 
-footer .latest-photos {
-  margin: 0 (25px / 1024px * 100%);
-  margin-bottom: 2.5%;
+    img {
+      max-width: 65px;
+      width: 12.5%;
+    }
 
-  img {
-    border-radius: 0.225rem;
-    margin: 10px / 1024px * 100%;
-    width: 150.66667px / 1024px * 100%;
+    .left, .right {
+      float: left;
+      position: relative;
+      width: 510px / 1024px * 100%;
+    }
+
+    .left {
+      border-right: 1px solid darken($purple, 15%);
+
+      img {
+        margin-left: 2.5%;
+      }
+
+      input {
+        background-color: darken($purple, 10%);
+        border: 0;
+        color: lighten($purple, 35%);
+        font: {
+          family: "Roboto", sans-serif;
+          size: 0.85rem;
+        }
+        letter-spacing: 0.025rem;
+        margin-left: 7.5%;
+        position: absolute;
+        text-align: center;
+        top: 10%;
+        right: 10%;
+        bottom: 10%;
+        width: 65%;
+
+        &::-webkit-input-placeholder {
+          color: $purple;
+        }
+
+        &:-moz-placeholder {
+          // Firefox 18-
+          color: $purple;
+        }
+
+        &::-moz-placeholder {
+          // Firefox 19+
+          color: $purple;
+        }
+
+        &::-ms-input-placeholder {
+          color: $purple;
+        }
+      }
+    }
+
+    .right {
+      border-left: 1px solid darken($purple, 15%);
+      text-align: center;
+
+      a {
+        margin: 0 3.5%;
+      }
+    }
   }
-}
 
-footer .end {
-  background-color: #43A047;
+  .latest-photos {
+    margin: 0 (25px / 1024px * 100%);
+    margin-bottom: 2.5%;
+
+    a {
+      display: block
+    }
+
+    img {
+      border-radius: 0.225rem;
+      margin: 10px / 1024px * 100%;
+      width: 150.66667px / 1024px * 100%;
+    }
+  }
+
+  .end {
+    background-color: #43A047;
+  }
 }
 
 // Fonts
