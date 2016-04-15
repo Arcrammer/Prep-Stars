@@ -36,7 +36,6 @@
     bottom: 25%;
     text-transform: uppercase;
   }
-
 }
 
 .announcement-blue {
@@ -45,8 +44,8 @@
   font-weight: 500;
   overflow: auto;
   position: relative;
-  }
-  .announcement-blue h1 {
+
+  h1 {
     float: left;
     font-size: 1.55rem;
     padding: 2.5rem;
@@ -54,7 +53,8 @@
     text-transform: uppercase;
     width: 50%;
   }
-  .announcement-blue button {
+
+  button {
     background-color: #13687c;
     color: #5BCCE6;
     border: 0;
@@ -66,13 +66,16 @@
     right: 5%;
     bottom: 25%;
     text-transform: uppercase;
-}
-    .announcement-blue button:hover {
+
+    &:hover {
       background-color: #d5f2f9;
-}
-    .announcement-blue button:active {
+    }
+
+    &active {
       background-color: #093039;
       color: #18849d;
+    }
+  }
 }
 
 // Slick Colors
@@ -172,9 +175,7 @@ $grey-text-color: darken($our-programs-grey, 32.5%);
     position: relative;
     margin-top: 25px;
     display: inline-block;
-
   }
-
 
   div {
     background-color: $tiny-cta-tint;
@@ -211,7 +212,7 @@ $grey-text-color: darken($our-programs-grey, 32.5%);
         family: "Roboto";
         size: 0.95rem;
         weight: bold;
-      }
+      };
       margin-top: 7.5%;
       text-indent: 0.75rem;
       width: 100%;
@@ -244,12 +245,12 @@ $grey-text-color: darken($our-programs-grey, 32.5%);
         family: "Roboto";
         size: 0.9rem;
         weight: bold;
-      }
+      };
       outline: none;
       padding: {
         top: 0.75rem;
         bottom: 0.75rem;
-      }
+      };
       position: absolute;
       right: 5%;
       bottom: 5%;
@@ -303,19 +304,21 @@ $grey-text-color: darken($our-programs-grey, 32.5%);
     background-color: lighten(mediumvioletred, 27.5%);
     border-radius: 0.25rem;
     float: left;
-    margin: 0.75rem; // 12px
+    margin: 0.75rem;
+
+    // 12px
     text-align: center;
-    width: 317.33333333px / 1024px * 100%;
+    width: 317.33333px / 1024px * 100%;
 
     &:nth-of-type(4) {
-      clear: both
+      clear: both;
     }
 
     h1 {
       border-top: {
         left-radius: 0.25rem;
         right-radius: 0.25rem;
-      }
+      };
       padding-bottom: 5%;
     }
 
@@ -327,7 +330,7 @@ $grey-text-color: darken($our-programs-grey, 32.5%);
       margin: {
         top: 2.5%;
         bottom: 5%;
-      }
+      };
     }
 
     // Image sizes
@@ -335,22 +338,27 @@ $grey-text-color: darken($our-programs-grey, 32.5%);
       height: 30vh;
       width: auto;
     }
+
     &:nth-of-type(2) img {
       height: 30vh;
       width: auto;
     }
+
     &:nth-of-type(3) img {
       height: 30vh;
       width: auto;
     }
+
     &:nth-of-type(4) img {
       height: 30vh;
       width: auto;
     }
+
     &:nth-of-type(5) img {
       height: 30vh;
       width: auto;
     }
+
     &:nth-of-type(6) img {
       height: 30vh;
       width: auto;
@@ -360,10 +368,12 @@ $grey-text-color: darken($our-programs-grey, 32.5%);
     // Blue
     &:nth-of-type(1) {
       background-color: $light-blue;
+
       h1 {
         background-color: darken($light-blue, 20%);
         color: $blue-header-color;
       }
+
       p {
         color: $blue-text-color;
       }
@@ -372,10 +382,12 @@ $grey-text-color: darken($our-programs-grey, 32.5%);
     // Red
     &:nth-of-type(2) {
       background-color: $our-programs-red;
+
       h1 {
         background-color: darken($our-programs-red, 20%);
         color: $red-header-color;
       }
+
       p {
         color: $red-text-color;
       }
@@ -384,10 +396,12 @@ $grey-text-color: darken($our-programs-grey, 32.5%);
     // Green
     &:nth-of-type(3) {
       background-color: $our-programs-green;
+
       h1 {
         background-color: darken($our-programs-green, 20%);
         color: $green-header-color;
       }
+
       p {
         color: $green-text-color;
       }
@@ -396,10 +410,12 @@ $grey-text-color: darken($our-programs-grey, 32.5%);
     // Purple
     &:nth-of-type(4) {
       background-color: $our-programs-purple;
+
       h1 {
         background-color: darken($our-programs-purple, 12.5%);
         color: $purple-header-color;
       }
+
       p {
         color: $purple-text-color;
       }
@@ -408,10 +424,12 @@ $grey-text-color: darken($our-programs-grey, 32.5%);
     // Orange
     &:nth-of-type(5) {
       background-color: $our-programs-orange;
+
       h1 {
         background-color: darken($our-programs-orange, 17.5%);
         color: $orange-header-color;
       }
+
       p {
         color: $orange-text-color;
       }
@@ -420,10 +438,12 @@ $grey-text-color: darken($our-programs-grey, 32.5%);
     // Grey
     &:nth-of-type(6) {
       background-color: $our-programs-grey;
+
       h1 {
         background-color: darken($our-programs-grey, 20%);
         color: $grey-header-color;
       }
+
       p {
         color: $grey-text-color;
       }
@@ -433,7 +453,7 @@ $grey-text-color: darken($our-programs-grey, 32.5%);
 
 // Success Stories
 .success-stories {
-  margin: auto 35px / 1024px * 100%;
+  margin: auto (35px / 1024px * 100%);
   margin-bottom: 2.5%;
 
   img {
