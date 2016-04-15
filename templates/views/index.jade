@@ -10,14 +10,10 @@ block extra_scripts
 
 block content
   section(class="slideshow")
-    div
-      img(src="http://lorempixel.com/g/1200/600/sports")
-    div
-      img(src="http://lorempixel.com/g/1200/600/sports")
-    div
-      img(src="http://lorempixel.com/g/1200/600/sports")
-    div
-      img(src="http://lorempixel.com/g/1200/600/sports")
+    - for (var i=0; i<4; i++){
+      div
+        img(src="http://lorempixel.com/g/1200/600/sports")
+    - }
   section(class="tiny-ctas")
     div
       h1 Testimonials
@@ -52,27 +48,27 @@ block content
     div
       h1 Basketball
       p In aliquam leo in erat venenatis ornare. In vulputate eu leo sed mattis. Cras elit odio, porttitor euismod faucibus vitae, ultrices vitae ante. Vivamus ac diam tristique dui facilisis volutpat et at lacus. Morbi sodales erat ut quamhendrerit eleifend. In vestibulum ac odio at euismod. Mauris quis mi ut tellus vehicula vestibulum maximus vehicula odio. Integer non scelerisque elit. Nulla semper lorem sit amet augue pharetra facilisis. Donec vel vehicula dolor, non semper nunc.
-      img(src="/images/player-basketball.png", width="200")
+      img(src="/images/player-basketball.png")
     div
       h1 Lacrosse
       p In aliquam leo in erat venenatis ornare. In vulputate eu leo sed mattis. Cras elit odio, porttitor euismod faucibus vitae, ultrices vitae ante. Vivamus ac diam tristique dui facilisis volutpat et at lacus. Morbi sodales erat ut quamhendrerit eleifend. In vestibulum ac odio at euismod. Mauris quis mi ut tellus vehicula vestibulum maximus vehicula odio. Integer non scelerisque elit. Nulla semper lorem sit amet augue pharetra facilisis. Donec vel vehicula dolor, non semper nunc.
-      img(src="/images/player-lacrosse.png", width="200")
+      img(src="/images/player-lacrosse.png")
     div
       h1 Football
       p In aliquam leo in erat venenatis ornare. In vulputate eu leo sed mattis. Cras elit odio, porttitor euismod faucibus vitae, ultrices vitae ante. Vivamus ac diam tristique dui facilisis volutpat et at lacus. Morbi sodales erat ut quamhendrerit eleifend. In vestibulum ac odio at euismod. Mauris quis mi ut tellus vehicula vestibulum maximus vehicula odio. Integer non scelerisque elit. Nulla semper lorem sit amet augue pharetra facilisis. Donec vel vehicula dolor, non semper nunc.
-      img(src="/images/player-football.png", width="200")
+      img(src="/images/player-football.png")
     div
       h1 Tennis
       p In aliquam leo in erat venenatis ornare. In vulputate eu leo sed mattis. Cras elit odio, porttitor euismod faucibus vitae, ultrices vitae ante. Vivamus ac diam tristique dui facilisis volutpat et at lacus. Morbi sodales erat ut quamhendrerit eleifend. In vestibulum ac odio at euismod. Mauris quis mi ut tellus vehicula vestibulum maximus vehicula odio. Integer non scelerisque elit. Nulla semper lorem sit amet augue pharetra facilisis. Donec vel vehicula dolor, non semper nunc.
-      img(src="/images/player-tennis.png", width="200")
+      img(src="/images/player-tennis.png")
     div
       h1 Soccer
       p In aliquam leo in erat venenatis ornare. In vulputate eu leo sed mattis. Cras elit odio, porttitor euismod faucibus vitae, ultrices vitae ante. Vivamus ac diam tristique dui facilisis volutpat et at lacus. Morbi sodales erat ut quamhendrerit eleifend. In vestibulum ac odio at euismod. Mauris quis mi ut tellus vehicula vestibulum maximus vehicula odio. Integer non scelerisque elit. Nulla semper lorem sit amet augue pharetra facilisis. Donec vel vehicula dolor, non semper nunc.
-      img(src="/images/player-soccer.png", width="200")
+      img(src="/images/player-soccer.png")
     div
       h1 Golf
       p In aliquam leo in erat venenatis ornare. In vulputate eu leo sed mattis. Cras elit odio, porttitor euismod faucibus vitae, ultrices vitae ante. Vivamus ac diam tristique dui facilisis volutpat et at lacus. Morbi sodales erat ut quamhendrerit eleifend. In vestibulum ac odio at euismod. Mauris quis mi ut tellus vehicula vestibulum maximus vehicula odio. Integer non scelerisque elit. Nulla semper lorem sit amet augue pharetra facilisis. Donec vel vehicula dolor, non semper nunc.
-      img(src="/images/player-golf.png", width="200")
+      img(src="/images/player-golf.png")
   section(class="announcement-blue")
     h1 Less Important Event Announcement Here
     button Register    
@@ -80,66 +76,71 @@ block content
     h1 Our Success Stories
     blockquote This exciting new project will provide invaluable recreational and educational opportunities for California youth. By offering young people the change to enjoy non-traditional sports, build confidence, sportsmanship, and meet higher academic challenges, it will enhance many lives.
     cite &mdash; Former Gov. Gray Davis
-    img(src="http://lorempixel.com/g/500/500/sports")
-    img(src="http://lorempixel.com/g/500/500/sports")
-    img(src="http://lorempixel.com/g/500/500/sports")
-    img(src="http://lorempixel.com/g/500/500/sports")
+    - for (var i=0; i<4; i++){
+      img(src="http://lorempixel.com/g/500/500/sports")
+    - }
   footer
     section(class="contact-and-social")
-      img(src="/icons/mail.png", width="100")
-      input(type="text")
-      img(src="/icons/twitter.png", width="100")
-      img(src="/icons/facebook.png", width="100")
-      img(src="/icons/instagram.png", width="100")
+      div(class="left")
+        img(src="/icons/mail.png", alt="Mail Icon")
+        form(action="/api/enable-newsletter/", method="POST")
+          input(type="email", placeholder="Get Email Updates")
+      div(class="right")
+        a(href="#")
+          img(src="/icons/twitter.png", alt="Twitter Icon")
+        a(href="#")
+          img(src="/icons/facebook.png", alt="Facebook Icon")
+        a(href="#")
+          img(src="/icons/instagram.png", alt="Instagram Icon")
     section(class="latest-photos text-section")
       h1 Latest Photos
-      img(src="http://lorempixel.com/g/500/500/sports")
-      img(src="http://lorempixel.com/g/500/500/sports")
-      img(src="http://lorempixel.com/g/500/500/sports")
-      img(src="http://lorempixel.com/g/500/500/sports")
-      img(src="http://lorempixel.com/g/500/500/sports")
-      img(src="http://lorempixel.com/g/500/500/sports")
-      img(src="http://lorempixel.com/g/500/500/sports")
-      img(src="http://lorempixel.com/g/500/500/sports")
-      img(src="http://lorempixel.com/g/500/500/sports")
-      img(src="http://lorempixel.com/g/500/500/sports")
-      img(src="http://lorempixel.com/g/500/500/sports")
-      img(src="http://lorempixel.com/g/500/500/sports")
-      img(src="http://lorempixel.com/g/500/500/sports")
-      img(src="http://lorempixel.com/g/500/500/sports")
-      img(src="http://lorempixel.com/g/500/500/sports")
-      img(src="http://lorempixel.com/g/500/500/sports")
-      img(src="http://lorempixel.com/g/500/500/sports")
-      img(src="http://lorempixel.com/g/500/500/sports")
+      - for (var i=0; i<18; i++){
+        img(src="http://lorempixel.com/g/500/500/sports")
+      - }
     section(class="end")
-      form(id="contact-form")
-        input(type="text", name="email")
-        input(type="text", name="subject")
-        textarea(name="message")
-        input(type="submit", value="Submit")
+      div
+        form(id="contact-form", action="/api/send-message")
+          input(type="email", name="email", placeholder="Email")
+          input(type="text", name="subject", placeholder="Subject")
+          textarea(name="message", rows="8", placeholder="Message")
+          input(type="submit", value="Send")
       div
         h1 About Us
-          ul
-            li Mission & Visiongu
-            li Partners
-            li Team
-            li History
-            li Impact
-            li FAQs
+        ul
+          li
+            a(href="#") Mission & Vision
+          li
+            a(href="#") Partners
+          li
+            a(href="#") Team
+          li
+            a(href="#") History
+          li
+            a(href="#") Impact
+          li
+            a(href="#") FAQs
       div
         h1 Our Work
-          ul
-            li Where we Work
-            li Advocates for Change
-            li Programs
-            li Health & Wellness
+        ul
+          li
+            a(href="#") Where we Work
+          li
+            a(href="#") Advocates for Change
+          li
+            a(href="#") Programs
+          li
+            a(href="#") Health & Wellness
       div
         h1 How You Can Help
-          ul
-            li Volunteer
-            li Donate
-            li Ways to Give
-            li Become a Partner
+        ul
+          li
+            a(href="#") Volunteer
+          li
+            a(href="#") Donate
+          li
+            a(href="#") Ways to Give
+          li
+            a(href="#") Become a Partner
       div
         h1 Contact Us
         address Prep Stars of America

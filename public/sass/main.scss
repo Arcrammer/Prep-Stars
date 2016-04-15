@@ -423,29 +423,59 @@ footer {
           @include footer-end-placeholder-style();
         }
       }
+
+      input[type="submit"] {
+        color: $light-blue;
+        letter-spacing: 0.075rem;
+        padding: {
+          top: 6.5%;
+          bottom: 6.5%;
+        }
+        text: {
+          transform: uppercase;
+          indent: 0;
+        }
+        width: 45%;
+
+        &:hover {
+          background-color: lighten($light-blue, 27.5%);
+        }
+
+        &:active {
+          background-color: darken($light-blue, 50%);
+          color: darken($light-blue, 35%);
+        }
+      }
     }
 
-    input[type="submit"] {
-      color: $light-blue;
-      letter-spacing: 0.075rem;
-      padding: {
-        top: 6.5%;
-        bottom: 6.5%;
-      }
-      text: {
-        transform: uppercase;
-        indent: 0;
-      }
-      width: 45%;
+    h1 {
+      color: darken($light-blue, 35%);
+      text-transform: uppercase;
+    }
 
-      &:hover {
-        background-color: lighten($light-blue, 27.5%);
-      }
+    ul {
+      margin-top: 7.5%;
 
-      &:active {
-        background-color: darken($light-blue, 50%);
-        color: darken($light-blue, 35%);
+      li {
+        font-weight: 300;
+        margin: 2.75% auto;
+        text-transform: uppercase;
       }
+    }
+
+    a:link,
+    a:visited {
+      color: darken($light-blue, 35%);
+      letter-spacing: 0.015rem;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: red;
+    }
+
+    a:active {
+      color: darken($light-blue);
     }
   }
 }

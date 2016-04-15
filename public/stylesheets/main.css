@@ -298,7 +298,7 @@ footer .end {
       color: #5BCCE6;
       letter-spacing: 0.035rem;
       text-transform: uppercase; }
-  footer .end input[type="submit"] {
+  footer .end form input[type="submit"] {
     color: #5BCCE6;
     letter-spacing: 0.075rem;
     padding-top: 6.5%;
@@ -306,11 +306,24 @@ footer .end {
     text-transform: uppercase;
     text-indent: 0;
     width: 45%; }
-    footer .end input[type="submit"]:hover {
+    footer .end form input[type="submit"]:hover {
       background-color: #d5f2f9; }
-    footer .end input[type="submit"]:active {
+    footer .end form input[type="submit"]:active {
       background-color: #093039;
       color: #13687c; }
+  footer .end h1, footer .end li {
+    color: #13687c;
+    text-transform: uppercase; }
+  footer .end ul {
+    margin-top: 7.5%; }
+    footer .end ul li {
+      font-weight: 300;
+      margin: 2.75% auto; }
+      footer .end ul li a:link,
+      footer .end ul li a:visited {
+        color: #13687c;
+        letter-spacing: 0.015rem;
+        text-decoration: none; }
 
 @font-face {
   font-family: "Roboto";
