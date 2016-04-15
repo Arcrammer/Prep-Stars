@@ -190,6 +190,10 @@ nav.site-nav {
 // Announcements
 .announcement {
   background-color: $yellow;
+  border: {
+    top: 5px solid darken($yellow, 3.5%);
+    bottom: 5px solid darken($yellow, 3.5%);
+  }
   color: $orange;
   font-weight: 500;
   overflow: auto;
@@ -197,7 +201,7 @@ nav.site-nav {
 
   h1 {
     float: left;
-    font-size: 1.55rem;
+    font-size: 1.35rem;
     padding: 2.5rem;
     padding-right: 0;
     text-transform: uppercase;
@@ -229,33 +233,17 @@ nav.site-nav {
 }
 
 .announcement-blue {
+  @extend .announcement;
   background-color: $light-blue;
-  color: darken($light-blue, 35%);
-  font-weight: 500;
-  overflow: auto;
-  position: relative;
-
-  .announcement-blue h1 {
-    float: left;
-    font-size: 1.55rem;
-    padding: 2.5rem;
-    padding-right: 0;
-    text-transform: uppercase;
-    width: 50%;
+  border: {
+    top: 5px solid darken($light-blue, 3.5%);
+    bottom: 5px solid darken($light-blue, 3.5%);
   }
+  color: darken($light-blue, 35%);
 
-  .announcement-blue button {
+  button {
     background-color: darken($light-blue, 35%);
     color: $light-blue;
-    border: 0;
-    float: right;
-    font-size: 1rem;
-    padding: 0 3%;
-    position: absolute;
-    top: 25%;
-    right: 5%;
-    bottom: 25%;
-    text-transform: uppercase;
 
     &:hover {
       background-color: lighten($light-blue, 27.5%);

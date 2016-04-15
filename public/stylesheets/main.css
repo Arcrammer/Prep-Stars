@@ -136,20 +136,22 @@ nav.site-nav {
           width: 25px;
           vertical-align: middle; }
 
-.announcement {
+.announcement, .announcement-blue {
   background-color: #FFB74D;
+  border-top: 5px solid #ffb03b;
+  border-bottom: 5px solid #ffb03b;
   color: #E65100;
   font-weight: 500;
   overflow: auto;
   position: relative; }
-  .announcement h1 {
+  .announcement h1, .announcement-blue h1 {
     float: left;
-    font-size: 1.55rem;
+    font-size: 1.35rem;
     padding: 2.5rem;
     padding-right: 0;
     text-transform: uppercase;
     width: 75%; }
-  .announcement button {
+  .announcement button, .announcement-blue button {
     background-color: #E65100;
     color: #FFB74D;
     border: 0;
@@ -161,40 +163,23 @@ nav.site-nav {
     right: 5%;
     bottom: 25%;
     text-transform: uppercase; }
-    .announcement button:hover {
+    .announcement button:hover, .announcement-blue button:hover {
       background-color: #ff6b1a; }
-    .announcement button:active {
+    .announcement button:active, .announcement-blue button:active {
       background-color: #672400;
       color: #cd7a00; }
 
 .announcement-blue {
   background-color: #5BCCE6;
-  color: #13687c;
-  font-weight: 500;
-  overflow: auto;
-  position: relative; }
-  .announcement-blue .announcement-blue h1 {
-    float: left;
-    font-size: 1.55rem;
-    padding: 2.5rem;
-    padding-right: 0;
-    text-transform: uppercase;
-    width: 50%; }
-  .announcement-blue .announcement-blue button {
+  border-top: 5px solid #4cc7e4;
+  border-bottom: 5px solid #4cc7e4;
+  color: #13687c; }
+  .announcement-blue button {
     background-color: #13687c;
-    color: #5BCCE6;
-    border: 0;
-    float: right;
-    font-size: 1rem;
-    padding: 0 3%;
-    position: absolute;
-    top: 25%;
-    right: 5%;
-    bottom: 25%;
-    text-transform: uppercase; }
-    .announcement-blue .announcement-blue button:hover {
+    color: #5BCCE6; }
+    .announcement-blue button:hover {
       background-color: #d5f2f9; }
-    .announcement-blue .announcement-blue button:active {
+    .announcement-blue button:active {
       background-color: #093039;
       color: #18849d; }
 
