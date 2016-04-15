@@ -264,66 +264,100 @@ footer .end {
   footer .end div {
     float: left;
     padding: 25px;
-    width: 206px; }
-  footer .end form input,
-  footer .end form textarea {
-    background-color: #246d90;
-    border: 0;
-    border-radius: 0.15rem;
-    color: #caeef7;
-    font-family: "Roboto", sans-serif;
+    width: 154.8px; }
+  footer .end form {
+    width: 159.8px; }
+    footer .end form input,
+    footer .end form textarea {
+      background-color: #246d90;
+      border: 0;
+      border-radius: 0.15rem;
+      color: #caeef7;
+      font-family: "Roboto", sans-serif;
+      font-size: 0.85rem;
+      font-weight: 300;
+      margin: 2.5% auto;
+      padding: 15px;
+      resize: none;
+      width: 129.8px; }
+      footer .end form input::-webkit-input-placeholder,
+      footer .end form textarea::-webkit-input-placeholder {
+        color: #5BCCE6;
+        letter-spacing: 0.035rem;
+        text-transform: uppercase; }
+      footer .end form input:-moz-placeholder,
+      footer .end form textarea:-moz-placeholder {
+        color: #5BCCE6;
+        letter-spacing: 0.035rem;
+        text-transform: uppercase; }
+      footer .end form input::-moz-placeholder,
+      footer .end form textarea::-moz-placeholder {
+        color: #5BCCE6;
+        letter-spacing: 0.035rem;
+        text-transform: uppercase; }
+      footer .end form input::-ms-input-placeholder,
+      footer .end form textarea::-ms-input-placeholder {
+        color: #5BCCE6;
+        letter-spacing: 0.035rem;
+        text-transform: uppercase; }
+    footer .end form input[type="submit"] {
+      color: #5BCCE6;
+      letter-spacing: 0.075rem;
+      padding: 6.5%;
+      text-transform: uppercase;
+      text-indent: 0;
+      width: 100%; }
+      footer .end form input[type="submit"]:hover {
+        background-color: #d5f2f9; }
+      footer .end form input[type="submit"]:active {
+        background-color: #093039;
+        color: #13687c; }
+  footer .end .contact-information {
+    color: #13687c;
+    font-weight: 300;
+    text-transform: uppercase; }
+    footer .end .contact-information h1 {
+      font-weight: 700;
+      margin-bottom: 2.5%; }
+    footer .end .contact-information address, footer .end .contact-information p {
+      line-height: 175%; }
+    footer .end .contact-information .medium {
+      padding: 0;
+      width: 100%; }
+      footer .end .contact-information .medium p {
+        font-size: 0.75rem; }
+      footer .end .contact-information .medium img {
+        float: left;
+        margin: 1.5%;
+        width: 12.5%; }
+  footer .end .copyright {
+    color: #13687c;
+    clear: both;
     font-size: 0.85rem;
     font-weight: 300;
-    margin: 2.5% auto;
-    padding: 15px;
-    resize: none;
-    width: 191px; }
-    footer .end form input::-webkit-input-placeholder,
-    footer .end form textarea::-webkit-input-placeholder {
-      color: #5BCCE6;
-      letter-spacing: 0.035rem;
-      text-transform: uppercase; }
-    footer .end form input:-moz-placeholder,
-    footer .end form textarea:-moz-placeholder {
-      color: #5BCCE6;
-      letter-spacing: 0.035rem;
-      text-transform: uppercase; }
-    footer .end form input::-moz-placeholder,
-    footer .end form textarea::-moz-placeholder {
-      color: #5BCCE6;
-      letter-spacing: 0.035rem;
-      text-transform: uppercase; }
-    footer .end form input::-ms-input-placeholder,
-    footer .end form textarea::-ms-input-placeholder {
-      color: #5BCCE6;
-      letter-spacing: 0.035rem;
-      text-transform: uppercase; }
-  footer .end form input[type="submit"] {
-    color: #5BCCE6;
-    letter-spacing: 0.075rem;
-    padding-top: 6.5%;
-    padding-bottom: 6.5%;
-    text-transform: uppercase;
-    text-indent: 0;
-    width: 45%; }
-    footer .end form input[type="submit"]:hover {
-      background-color: #d5f2f9; }
-    footer .end form input[type="submit"]:active {
-      background-color: #093039;
-      color: #13687c; }
-  footer .end h1, footer .end li {
+    margin: 15.0% auto 2.5%;
+    text-align: center;
+    text-transform: uppercase; }
+  footer .end h1 {
     color: #13687c;
     text-transform: uppercase; }
   footer .end ul {
     margin-top: 7.5%; }
     footer .end ul li {
       font-weight: 300;
-      margin: 2.75% auto; }
-      footer .end ul li a:link,
-      footer .end ul li a:visited {
-        color: #13687c;
-        letter-spacing: 0.015rem;
-        text-decoration: none; }
+      line-height: 125%;
+      margin: 5% auto;
+      text-transform: uppercase; }
+  footer .end a:link,
+  footer .end a:visited {
+    color: #13687c;
+    letter-spacing: 0.015rem;
+    text-decoration: none;
+    transition: all 125ms; }
+  footer .end a:hover {
+    color: #c5ffff; }
+  footer .end a:active {
+    color: black; }
 
 @font-face {
   font-family: "Roboto";

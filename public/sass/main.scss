@@ -379,10 +379,13 @@ footer {
     div {
       float: left;
       padding: 25px;
-      width: 206px;
+      width: 154.8px;
     }
 
+    // Message Form
     form {
+      width: 159.8px;
+
       input,
       textarea {
         background-color: #246d90;
@@ -397,7 +400,7 @@ footer {
         margin: 2.5% auto;
         padding: 15px;
         resize: none;
-        width: 191px;
+        width: 129.8px;
 
         @mixin footer-end-placeholder-style() {
           color: $light-blue;
@@ -427,15 +430,12 @@ footer {
       input[type="submit"] {
         color: $light-blue;
         letter-spacing: 0.075rem;
-        padding: {
-          top: 6.5%;
-          bottom: 6.5%;
-        }
+        padding: 6.5%;
         text: {
           transform: uppercase;
           indent: 0;
         }
-        width: 45%;
+        width: 100%;
 
         &:hover {
           background-color: lighten($light-blue, 27.5%);
@@ -448,6 +448,53 @@ footer {
       }
     }
 
+    // Contact Information
+    .contact-information {
+      color: darken($light-blue, 35%);
+      font-weight: 300;
+      text-transform: uppercase;
+
+      h1 {
+        font-weight: 700;
+        margin-bottom: 2.5%;
+      }
+
+      address, p {
+        line-height: 175%;
+      }
+
+      .medium {
+        padding: 0;
+        width: 100%;
+
+        p {
+          font-size: 0.75rem;
+        }
+
+        img {
+          float: left;
+          margin: 1.5%;
+          width: 12.5%;
+        }
+      }
+    }
+
+    // Copyright
+    .copyright {
+      color: darken($light-blue, 35%);
+      clear: both;
+      font: {
+        size: 0.85rem;
+        weight: 300;
+      }
+      margin: 15.0% auto 2.5%;
+      text: {
+        align: center;
+        transform: uppercase;
+      }
+    }
+
+    // Everything Else
     h1 {
       color: darken($light-blue, 35%);
       text-transform: uppercase;
@@ -458,7 +505,8 @@ footer {
 
       li {
         font-weight: 300;
-        margin: 2.75% auto;
+        line-height: 125%;
+        margin: 5% auto;
         text-transform: uppercase;
       }
     }
@@ -468,14 +516,15 @@ footer {
       color: darken($light-blue, 35%);
       letter-spacing: 0.015rem;
       text-decoration: none;
+      transition: all 125ms;
     }
 
     a:hover {
-      color: red;
+      color: lighten($light-blue, 15%) * 1.25;
     }
 
     a:active {
-      color: darken($light-blue);
+      color: darken($light-blue, 75%) * 1.25;
     }
   }
 }
