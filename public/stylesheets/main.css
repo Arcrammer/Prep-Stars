@@ -123,7 +123,7 @@ body {
     text-decoration: none;
     text-transform: uppercase;
     transition: all 225ms; }
-  .site-nav li:hover a {
+  .site-nav a:hover {
     color: #c5ffff; }
   .site-nav a:active {
     color: black; }
@@ -162,6 +162,7 @@ body {
   .announcement h1, .announcement-blue h1 {
     float: left;
     font-size: 1.35rem;
+    line-height: 125%;
     padding: 2.5rem;
     padding-right: 0;
     text-transform: uppercase;
@@ -384,9 +385,62 @@ footer .end {
     margin: auto;
     max-width: 1440px; } }
 
-@media only screen and (max-width: 964px) {
+@media only screen and (max-width: 600px) {
   .site-nav ul {
-    display: none; } }
+    display: none; }
+  .text-section h1 {
+    font-size: 1.75rem;
+    line-height: 135%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%; }
+  .text-section p,
+  .text-section blockquote,
+  .text-section cite {
+    width: 82.5%; }
+  .text-section blockquote {
+    width: 100%; }
+  .announcement, .announcement-blue {
+    border-width: 0.5rem;
+    margin: 7.5% 0; }
+    .announcement h1, .announcement-blue h1 {
+      font-size: 1.25rem;
+      width: 50%; }
+    .announcement button, .announcement-blue button {
+      padding: 0 1.5rem;
+      top: 32.5%;
+      right: 5%;
+      bottom: 32.5%; }
+  footer .contact-and-social {
+    border-width: 0.5rem;
+    margin-bottom: 7.5%;
+    padding: 1.75rem 1.5rem; }
+    footer .contact-and-social .left, footer .contact-and-social .right {
+      border: 0;
+      width: 100%; }
+    footer .contact-and-social .left input {
+      font-size: 1.15rem;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      width: 72.5%; }
+    footer .contact-and-social .right {
+      margin-top: 7.5%; }
+    footer .contact-and-social img {
+      width: 15%; }
+  footer .latest-photos img {
+    margin: 10px;
+    width: 176.906px; }
+    footer .latest-photos img:nth-of-type(1n+7) {
+      display: none; }
+  footer .end {
+    border-width: 0.4rem; }
+    footer .end div {
+      margin: 3.5% 0;
+      width: 100%; }
+    footer .end .copyright {
+      line-height: 175%;
+      margin-bottom: 5%; } }
 
 @font-face {
   font-family: "Roboto";

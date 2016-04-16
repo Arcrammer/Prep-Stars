@@ -59,6 +59,7 @@
 
 .tiny-ctas {
   background-color: #873780;
+  border-bottom: 0.25rem solid #54214e;
   padding: 15px 35px;
   overflow: auto; }
   .tiny-ctas ul.events {
@@ -130,6 +131,7 @@
         background-color: #3b1841;
         color: #754f74; }
     .tiny-ctas div input[type="submit"] {
+      -webkit-appearance: none;
       margin-top: 7.5%; }
 
 .welcome-message {
@@ -152,9 +154,9 @@
     background-color: #f178c4;
     border-radius: 0.25rem;
     float: left;
-    margin: 0.75rem;
+    margin: 1.31004%;
     text-align: center;
-    width: 30.98958%; }
+    width: 30.71325%; }
     .programs div:nth-of-type(4) {
       clear: both; }
     .programs div h1 {
@@ -246,20 +248,54 @@
     margin: 1.11857%;
     padding: 1.67785%;
     width: 44.40716%; }
+    .tiny-ctas div h1 {
+      margin-top: 1.25rem; }
     .tiny-ctas div p {
-      text-align: center; }
+      margin: auto;
+      text-align: center;
+      width: 90%; }
     .tiny-ctas div input[type="email"] {
       width: 95%; } }
 
 @media only screen and (max-width: 600px) {
-  .tiny-ctas div {
-    float: none;
-    margin: 1.88679% auto;
-    padding: 2.83019%;
-    max-width: 60%;
-    width: 90.56604%; }
-    .tiny-ctas div button {
-      margin: auto; } }
+  .slick-slider {
+    border-width: 0.25rem; }
+  .welcome-message .video {
+    border-radius: 0;
+    width: 100%; }
+  .tiny-ctas {
+    border-width: 0.25rem; }
+    .tiny-ctas div {
+      float: none;
+      margin: 5% auto;
+      padding: 2.83019%;
+      width: 95%; }
+      .tiny-ctas div button {
+        margin: auto;
+        transition: all 0;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none; }
+      .tiny-ctas div input[type="email"] {
+        margin-top: 0;
+        width: 90%; }
+  .programs {
+    margin: 5% auto; }
+    .programs div {
+      float: none;
+      margin: 5.7971%;
+      width: 67.95491%;
+      width: 90%; }
+      .programs div h1 {
+        width: 100%; }
+  .success-stories {
+    margin: 10% 8.45411%; }
+    .success-stories img {
+      margin: 2.90698%;
+      width: 44.18605%; } }
 
 @media only screen and (max-width: 475px) {
   .tiny-ctas div {

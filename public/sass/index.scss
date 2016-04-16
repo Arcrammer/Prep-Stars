@@ -110,6 +110,7 @@ $grey-text-color: darken($our-programs-grey, 32.5%);
 // Tiny CTAs
 .tiny-ctas {
   background-color: $purple;
+  border-bottom: 0.25rem solid darken($dark-tiny-cta-tint, 2.5%);
   padding: 15px 35px;
   overflow: auto;
 
@@ -213,6 +214,7 @@ $grey-text-color: darken($our-programs-grey, 32.5%);
     }
 
     input[type="submit"] {
+      -webkit-appearance: none;
       margin-top: 7.5%;
     }
   }
@@ -248,11 +250,9 @@ $grey-text-color: darken($our-programs-grey, 32.5%);
     background-color: lighten(mediumvioletred, 27.5%);
     border-radius: 0.25rem;
     float: left;
-    margin: 0.75rem;
-
-    // 12px
+    margin: 12px / 916px * 100%;
     text-align: center;
-    width: 317.33333px / 1024px * 100%;
+    width: 281.33333333px / 916px * 100%;
 
     &:nth-of-type(4) {
       clear: both;
@@ -427,8 +427,14 @@ $grey-text-color: darken($our-programs-grey, 32.5%);
       padding: 15px / 894px * 100%;
       width: 397px / 894px * 100%;
 
+      h1 {
+        margin-top: 1.25rem;
+      }
+
       p {
+        margin: auto;
         text-align: center;
+        width: 90%;
       }
 
       input[type="email"] {
@@ -439,18 +445,72 @@ $grey-text-color: darken($our-programs-grey, 32.5%);
 }
 
 @media only screen and (max-width: 600px) {
+  // Slick
+  .slick-slider {
+    border-width: 0.25rem;
+  }
+
+  // Welcome Message
+  .welcome-message .video {
+    border-radius: 0;
+    width: 100%;
+  }
+
   // Tiny CTAs
   .tiny-ctas {
+    border-width: 0.25rem;
+
     div {
       float: none;
-      margin: 10px / 530px * 100% auto;
+      margin: 5% auto;
       padding: 15px / 530px * 100%;
-      max-width: 60%;
-      width: 480px / 530px * 100%;
+      width: 95%;
 
       button {
         margin: auto;
+        transition: all 0;
+
+        // There's a bug in Mobile Safari where
+        // tapping a button will show
+        // the copy, define, speak... menu
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
       }
+
+      input[type="email"] {
+        margin-top: 0;
+        width: 90%;
+      }
+    }
+  }
+
+  // Our Programs
+  .programs {
+    margin: 5% auto;
+
+    div {
+      float: none;
+      margin: 24px / 414px * 100%;
+      width: 281.33333333px / 414px * 100%;
+      width: 90%;
+
+      h1 {
+        width: 100%;
+      }
+    }
+  }
+
+  // Success Stories
+  .success-stories {
+    margin: 10% (35px / 414px * 100%);
+
+    img {
+      margin: 10px / 344px * 100%;
+      width: 152px / 344px * 100%;
     }
   }
 }

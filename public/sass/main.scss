@@ -14,6 +14,7 @@ body {
   font-weight: 700;
 }
 
+// Text Sections
 .text-section {
   font-weight: 500;
   margin: 3.5rem auto;
@@ -121,13 +122,13 @@ body {
 
   ul.dropdown-content li {
     display: block;
-    float: left; 
+    float: left;
   }
-  
+
   ul.dropdown-content li:hover {
     padding: {
-      top: 0; 
-      bottom: 0; 
+      top: 0;
+      bottom: 0;
     }
   }
 
@@ -224,6 +225,7 @@ body {
   h1 {
     float: left;
     font-size: 1.35rem;
+    line-height: 125%;
     padding: 2.5rem;
     padding-right: 0;
     text-transform: uppercase;
@@ -567,13 +569,110 @@ footer {
   }
 }
 
-@media only screen and (max-width: 964px) {
+@media only screen and (max-width: 600px) {
   // Top Bar
   .site-nav ul {
     // TODO: Figure out what to do
     // with this navigation list
     // for thin layouts
     display: none;
+  }
+
+  // Text Sections
+  .text-section {
+    h1 {
+      font-size: 1.75rem;
+      line-height: 135%;
+      margin: {
+        left: auto;
+        right: auto;
+      }
+      width: 90%;
+    }
+
+    p,
+    blockquote,
+    cite {
+      width: 82.5%;
+    }
+
+    blockquote {
+      width: 100%;
+    }
+  }
+
+  // Announcements
+  .announcement {
+    border-width: 0.5rem;
+    margin: 7.5% 0;
+
+    h1 {
+      font-size: 1.25rem;
+      width: 50%;
+    }
+
+    button {
+      padding: 0 1.5rem;
+      top: 32.5%;
+      right: 5%;
+      bottom: 32.5%;
+    }
+  }
+
+  // Footer
+  footer {
+    .contact-and-social {
+      border-width: 0.5rem;
+      margin-bottom: 7.5%;
+      padding: 1.75rem 1.5rem;
+
+      .left, .right {
+        border: 0;
+        width: 100%;
+      }
+
+      .left input {
+        font-size: 1.15rem;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        width: 72.5%;
+      }
+
+      .right {
+        margin-top: 7.5%;
+      }
+
+      img {
+        width: 15%;
+      }
+    }
+
+    .latest-photos {
+      img {
+        margin: 10px;
+        width: 176.906px;
+
+        // Only show six
+        &:nth-of-type(1n+7) {
+          display: none;
+        }
+      }
+    }
+
+    .end {
+      border-width: 0.4rem;
+
+      div {
+        margin: 3.5% 0;
+        width: 100%;
+      }
+
+      .copyright {
+        line-height: 175%;
+        margin-bottom: 5%;
+      }
+    }
   }
 }
 

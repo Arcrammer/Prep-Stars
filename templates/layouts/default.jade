@@ -3,6 +3,9 @@ html
   head
     title= title
     
+    //- Metadata
+    meta(name="viewport", content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no")
+    
     //- Links
     link(rel='stylesheet', href='/stylesheets/reset.css')
     link(rel='stylesheet', href='/stylesheets/main.css')
@@ -12,7 +15,7 @@ html
     script(src="/vendor/jquery/dist/jquery.min.js")
     block extra_scripts
     
-  body
+  body(ontouchstart)
     nav(class="site-nav")
       div
         a(class="escape-hatch", href="/")
