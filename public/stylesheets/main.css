@@ -374,7 +374,7 @@ footer .end {
     letter-spacing: 0.015rem;
     text-decoration: none;
     transition: all 125ms; }
-  footer .end:hover a {
+  footer .end a:hover {
     color: #c5ffff; }
   footer .end a:active {
     color: black; }
