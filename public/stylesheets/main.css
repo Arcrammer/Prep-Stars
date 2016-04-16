@@ -62,7 +62,8 @@ body {
     border-bottom-left-radius: 0;
     -webkit-bottom-left-radius: 0;
     -webkit-border-radius: 5px;
-    font-style: normal; }
+    font-style: normal;
+    background: #246D90; }
   .site-nav li.dropbtn ul.dropdown-content {
     -moz-column-count: 2;
     -moz-column-gap: 10px;
@@ -78,7 +79,7 @@ body {
     float: none;
     padding: 15px;
     position: absolute;
-    top: 3.4em;
+    top: 3.2em;
     text-align: left;
     min-width: 400px;
     max-width: 500px;
@@ -109,7 +110,6 @@ body {
     text-transform: capitalize;
     font-size: 1.4em; }
   .site-nav li.dropbtn:hover ul.dropdown-content {
-    background-color: mediumaquamarine;
     display: inline;
     float: left; }
   .site-nav a:link,
@@ -344,7 +344,7 @@ footer .end {
       footer .end .contact-information .medium img {
         float: left;
         margin: 1.5%;
-        width: 12.5%; }
+        width: 5%; }
   footer .end .copyright {
     color: #13687c;
     clear: both;

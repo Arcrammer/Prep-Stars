@@ -78,7 +78,7 @@ body {
     -webkit-bottom-left-radius: 0;
     -webkit-border-radius: 5px;
     font-style: normal;
-    // background: #246D90;
+    background: #246D90;
   }
 
   li.dropbtn ul.dropdown-content {
@@ -96,7 +96,7 @@ body {
     float: none;
     padding: 15px;
     position: absolute;
-    top: 3.4em;
+    top: 3.2em;
     text-align: left;
     min-width: 400px;
     max-width: 500px;
@@ -139,7 +139,6 @@ body {
   }
 
   li.dropbtn:hover ul.dropdown-content {
-    background-color: mediumaquamarine;
     display: inline;
     float: left;
   }
@@ -495,7 +494,7 @@ footer {
         img {
           float: left;
           margin: 1.5%;
-          width: 12.5%;
+          width: 5%;
         }
       }
     }
