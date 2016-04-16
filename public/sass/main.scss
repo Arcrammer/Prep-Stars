@@ -73,6 +73,7 @@ body {
       top: 0.75rem;
       bottom: 0.75rem;
     }
+    color: #5BCCE6;
     border-radius: 5px;
     border-bottom-left-radius: 0;
     -webkit-bottom-left-radius: 0;
@@ -120,6 +121,14 @@ body {
 
   ul.dropdown-content li {
     display: block;
+    float: left; 
+  }
+  
+  ul.dropdown-content li:hover {
+    padding: {
+      top: 0; 
+      bottom: 0; 
+    }
   }
 
   ul.dropdown-content li p {
