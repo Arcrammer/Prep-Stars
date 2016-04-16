@@ -17,21 +17,21 @@ $dark-tiny-cta-placeholder-tint: darken($light-tiny-cta-tint, 25%) * 0.75;
 $powdery-tiny-cta-tint: #9F719E;
 
 // Our Programs Section Colors
-$our-programs-red: #EF5350;
+$red: #EF5350;
 $our-programs-green: #66BB6A;
 $our-programs-purple: $purple;
 $our-programs-orange: #FFB74D;
 $our-programs-grey: #E0E0E0;
 
 $blue-header-color: lighten($light-blue, 17.5%);
-$red-header-color: lighten($our-programs-red, 17.5%);
+$red-header-color: lighten($red, 17.5%);
 $green-header-color: lighten($our-programs-green, 17.5%);
 $purple-header-color: lighten($our-programs-purple, 17.5%);
 $orange-header-color: lighten($our-programs-orange, 17.5%);
 $grey-header-color: lighten($our-programs-grey, 17.5%);
 
 $blue-text-color: darken($light-blue, 32.5%);
-$red-text-color: darken($our-programs-red, 32.5%);
+$red-text-color: darken($red, 32.5%);
 $green-text-color: darken($our-programs-green, 32.5%);
 $purple-text-color: lighten($our-programs-purple, 27.5%);
 $orange-text-color: darken($our-programs-orange, 30%);
@@ -58,10 +58,24 @@ $grey-text-color: darken($our-programs-grey, 32.5%);
 
 .slick-prev {
   left: 0;
+
+  &::before {
+    border: {
+      top-right-radius: 0.35rem;
+      bottom-right-radius: 0.35rem;
+    }
+  }
 }
 
 .slick-next {
   width: inherit;
+
+  &::before {
+    border: {
+      top-left-radius: 0.35rem;
+      bottom-left-radius: 0.35rem;
+    }
+  }
 }
 
 .slick-slide img {
@@ -96,25 +110,27 @@ $grey-text-color: darken($our-programs-grey, 32.5%);
 // Tiny CTAs
 .tiny-ctas {
   background-color: $purple;
-  padding: 1.4705882353%  6.862745098%;
+  padding: 15px 35px;
   overflow: auto;
 
   ul.events {
     position: relative;
     margin-top: 25px;
+    line-height: 175%;
     display: inline-block;
   }
 
   div {
     background-color: $tiny-cta-tint;
-    border-radius: 5px;
+    border-radius: 0.5rem;
     color: $light-tiny-cta-tint;
     float: left;
-    margin: 10px / 1020px * 100%;
-    padding: 1rem;
+    margin: 10px / 954px * 100%;
+    padding: 15px / 954px * 100%;
     position: relative;
     text-align: center;
-    width: 198px / 1020px * 100%;
+    transition: all 175ms;
+    width: 188.5px / 954px * 100%;
     height: 210px;
 
     h1 {
@@ -131,7 +147,7 @@ $grey-text-color: darken($our-programs-grey, 32.5%);
       text-align: left;
     }
 
-    input[type="text"] {
+    input[type="email"] {
       background-color: $light-tiny-cta-tint;
       border: 0;
       color: darken($light-tiny-cta-tint, 55%);
@@ -309,10 +325,10 @@ $grey-text-color: darken($our-programs-grey, 32.5%);
 
     // Red
     &:nth-of-type(2) {
-      background-color: $our-programs-red;
+      background-color: $red;
 
       h1 {
-        background-color: darken($our-programs-red, 20%);
+        background-color: darken($red, 20%);
         color: $red-header-color;
       }
 
@@ -388,5 +404,62 @@ $grey-text-color: darken($our-programs-grey, 32.5%);
     border-radius: 0.25rem;
     margin: 20px / 1024px * 100%;
     width: 216px / 1024px * 100%;
+  }
+}
+
+// Responsiveness
+@media only screen and (max-width: 1440px) {
+  // Tiny CTAs
+  .tiny-ctas {
+    div {
+      margin: 10px / 1370px * 100%;
+      padding: 15px / 1370px * 100%;
+      width: 292.5px / 1370px * 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: 964px) {
+  // Tiny CTAs
+  .tiny-ctas {
+    div {
+      margin: 10px / 894px * 100%;
+      padding: 15px / 894px * 100%;
+      width: 397px / 894px * 100%;
+
+      p {
+        text-align: center;
+      }
+
+      input[type="email"] {
+        width: 95%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  // Tiny CTAs
+  .tiny-ctas {
+    div {
+      float: none;
+      margin: 10px / 530px * 100% auto;
+      padding: 15px / 530px * 100%;
+      max-width: 60%;
+      width: 480px / 530px * 100%;
+
+      button {
+        margin: auto;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 475px) {
+  // Tiny CTAs
+  .tiny-ctas {
+    div {
+      min-width: 90%;
+    }
   }
 }

@@ -49,9 +49,8 @@ body {
 }
 
 // Top Bar
-nav.site-nav {
+.site-nav {
   background-color: $light-blue;
-  height: 102px;
   overflow: auto;
 
   nav.site-nav ul li {
@@ -60,20 +59,7 @@ nav.site-nav {
     list-style: none;
   }
 
-  // Escape Hatch
-  .escape-hatch {
-    display: block;
-    float: left;
-    padding: 12.5px;
-    text-align: center;
-    width: 75px / 1024px * 100%;
-
-    img {
-      max-width: 75px;
-      max-height: 75px;
-    }
-  }
-
+  // Dropdown Menu
   li > li:hover {
     background: #246D90;
     border-radius: 5px;
@@ -81,15 +67,22 @@ nav.site-nav {
     font-style: normal;
   }
 
-  li:hover .drop {
+  li:hover {
     color: #5BCCE6;
+<<<<<<< HEAD
     padding: 15px 15px 15px 15px;
+=======
+    padding: {
+      top: 0.75rem;
+      bottom: 0.75rem;
+    }
+>>>>>>> origin/master
     border-radius: 5px;
     border-bottom-left-radius: 0;
-    -webkit-bottom-left-radius: 0; 
+    -webkit-bottom-left-radius: 0;
     -webkit-border-radius: 5px;
     font-style: normal;
-    background: #246D90;
+    // background: #246D90;
   }
 
   li.dropbtn ul.dropdown-content {
@@ -150,7 +143,7 @@ nav.site-nav {
   }
 
   li.dropbtn:hover ul.dropdown-content {
-    background-color: #246D90;
+    background-color: mediumaquamarine;
     display: inline;
     float: left;
   }
@@ -172,9 +165,23 @@ nav.site-nav {
     color: darken($nav-link-color, 50%);
   }
 
+  // Escape Hatch
+  .escape-hatch {
+    display: block;
+    float: left;
+    padding: 12.5px / 1024px * 100%;
+    text-align: center;
+    width: 75px / 1024px * 100%;
+
+    img {
+      max-width: 75px;
+      max-height: 75px;
+    }
+  }
+
+  // Link List
   ul {
     float: right;
-    height: 102px;
     text-align: right;
     width: 924px / 1024px * 100%;
 
@@ -200,12 +207,12 @@ nav.site-nav {
 
 // Announcements
 .announcement {
-  background-color: $yellow;
+  background-color: $red;
   border: {
-    top: 5px solid darken($yellow, 3.5%);
-    bottom: 5px solid darken($yellow, 3.5%);
+    top: 5px solid darken($red, 3.5%);
+    bottom: 5px solid darken($red, 3.5%);
   }
-  color: $orange;
+  color: #B71C1C;
   font-weight: 500;
   overflow: auto;
   position: relative;
@@ -220,8 +227,8 @@ nav.site-nav {
   }
 
   button {
-    background-color: $orange;
-    color: $yellow;
+    background-color: #B71C1C;
+    color: $red;
     border: 0;
     float: right;
     font-size: 1rem;
@@ -233,12 +240,12 @@ nav.site-nav {
     text-transform: uppercase;
 
     &:hover {
-      background-color: lighten($orange, 10%);
+      background-color: lighten(#B71C1C, 10%);
     }
 
     &:active {
-      background-color: darken($orange, 25%);
-      color: darken($yellow, 25%);
+      background-color: darken(#B71C1C, 25%);
+      color: darken($red, 25%);
     }
   }
 }
@@ -251,6 +258,10 @@ nav.site-nav {
     bottom: 5px solid darken($light-blue, 3.5%);
   }
   color: darken($light-blue, 35%);
+  
+  .announcment-blue h1 {
+    color: #246D90;
+  }
 
   button {
     background-color: darken($light-blue, 35%);
@@ -384,14 +395,16 @@ footer {
 
   .end {
     background-color: $light-blue;
-    border-top: 5px solid darken($light-blue, 10%);
+    border-top: 0.35rem solid darken($light-blue, 10%);
     overflow: auto;
+    padding: 2.5rem 3.5rem;
+    padding-bottom: 0;
 
     div {
       float: left;
-      padding: 5px;
-      margin: 5px;
-      width: 20%;
+      padding: 5px / 1024px * 100%;
+      margin: 5px / 1024px * 100%;
+      width: 236px / 1024px * 100%;
     }
 
     // Message Form
@@ -499,7 +512,7 @@ footer {
         size: 0.85rem;
         weight: 300;
       }
-      margin: 15.0% auto 2.5%;
+      padding: 7.5% 0 2.5%;
       text: {
         align: center;
         transform: uppercase;
@@ -538,6 +551,25 @@ footer {
     a:active {
       color: darken($light-blue, 75%) * 1.25;
     }
+  }
+}
+
+// Responsiveness
+@media only screen and (max-width: 1440px) {
+  // Top Bar
+  .site-nav div {
+    margin: auto;
+    max-width: 1440px;
+  }
+}
+
+@media only screen and (max-width: 964px) {
+  // Top Bar
+  .site-nav ul {
+    // TODO: Figure out what to do
+    // with this navigation list
+    // for thin layouts
+    display: none;
   }
 }
 
