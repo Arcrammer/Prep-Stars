@@ -201,7 +201,7 @@ body {
     top: 5px solid darken($red, 3.5%);
     bottom: 5px solid darken($red, 3.5%);
   }
-  color: $yellow;
+  color: #B71C1C;
   font-weight: 500;
   overflow: auto;
   position: relative;
@@ -216,7 +216,7 @@ body {
   }
 
   button {
-    background-color: $yellow;
+    background-color: #B71C1C;
     color: $red;
     border: 0;
     float: right;
@@ -229,11 +229,11 @@ body {
     text-transform: uppercase;
 
     &:hover {
-      background-color: lighten($yellow, 10%);
+      background-color: lighten(#B71C1C, 10%);
     }
 
     &:active {
-      background-color: darken($yellow, 25%);
+      background-color: darken(#B71C1C, 25%);
       color: darken($red, 25%);
     }
   }

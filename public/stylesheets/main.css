@@ -145,7 +145,7 @@ body {
   background-color: #EF5350;
   border-top: 5px solid #ee4340;
   border-bottom: 5px solid #ee4340;
-  color: #FFB74D;
+  color: #B71C1C;
   font-weight: 500;
   overflow: auto;
   position: relative; }
@@ -157,7 +157,7 @@ body {
     text-transform: uppercase;
     width: 75%; }
   .announcement button, .announcement-blue button {
-    background-color: #FFB74D;
+    background-color: #B71C1C;
     color: #EF5350;
     border: 0;
     float: right;
@@ -169,9 +169,9 @@ body {
     bottom: 25%;
     text-transform: uppercase; }
     .announcement button:hover, .announcement-blue button:hover {
-      background-color: #ffcc80; }
+      background-color: #de2828; }
     .announcement button:active, .announcement-blue button:active {
-      background-color: #cd7a00;
+      background-color: #480b0b;
       color: #af1310; }
 
 .announcement-blue {
