@@ -72,8 +72,7 @@ nav.site-nav {
     border-bottom-left-radius: 0;
     -webkit-bottom-left-radius: 0;
     -webkit-border-radius: 5px;
-    font-style: normal;
-    background: #246D90; }
+    font-style: normal; }
   nav.site-nav li.dropbtn ul.dropdown-content {
     -moz-column-count: 2;
     -moz-column-gap: 10px;
