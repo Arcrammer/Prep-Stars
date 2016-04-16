@@ -380,14 +380,16 @@ footer {
 
   .end {
     background-color: $light-blue;
-    border-top: 5px solid darken($light-blue, 10%);
+    border-top: 0.35rem solid darken($light-blue, 10%);
     overflow: auto;
+    padding: 2.5rem 3.5rem;
+    padding-bottom: 0;
 
     div {
       float: left;
-      padding: 5px;
-      margin: 5px;
-      width: 20%;
+      padding: 5px / 1024px * 100%;
+      margin: 5px / 1024px * 100%;
+      width: 236px / 1024px * 100%;
     }
 
     // Message Form
@@ -495,7 +497,7 @@ footer {
         size: 0.85rem;
         weight: 300;
       }
-      margin: 15.0% auto 2.5%;
+      padding: 7.5% 0 2.5%;
       text: {
         align: center;
         transform: uppercase;
