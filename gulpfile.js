@@ -48,7 +48,7 @@ gulp.task('watch', [
 
 gulp.task('runMongo', shell.task('mongod'));
 
-gulp.task('runBrowserSync', shell.task('browser-sync start --config=bs-config.js'));
+gulp.task('runBrowserSync', shell.task('browser-sync start --config="bs-config.js"'));
 
 gulp.task('default', [
   'watch',

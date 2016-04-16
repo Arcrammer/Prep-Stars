@@ -53,22 +53,24 @@
 
 .tiny-ctas {
   background-color: #873780;
-  padding: 1.4705882353%  6.862745098%;
+  padding: 15px 35px;
   overflow: auto; }
   .tiny-ctas ul.events {
     position: relative;
     margin-top: 25px;
+    line-height: 175%;
     display: inline-block; }
   .tiny-ctas div {
     background-color: #722E6B;
-    border-radius: 5px;
+    border-radius: 0.5rem;
     color: #E1BEE7;
     float: left;
-    margin: 0.98039%;
-    padding: 1rem;
+    margin: 1.04822%;
+    padding: 1.57233%;
     position: relative;
     text-align: center;
-    width: 19.41176%;
+    transition: all 175ms;
+    width: 19.75891%;
     height: 210px; }
     .tiny-ctas div h1 {
       font-size: 1.35rem;
@@ -80,7 +82,7 @@
       line-height: 150%;
       letter-spacing: 0.05rem;
       text-align: left; }
-    .tiny-ctas div input[type="text"] {
+    .tiny-ctas div input[type="email"] {
       background-color: #E1BEE7;
       border: 0;
       color: #5d2667;
@@ -91,13 +93,13 @@
       margin-top: 7.5%;
       text-indent: 0.75rem;
       width: 100%; }
-      .tiny-ctas div input[type="text"]::-webkit-input-placeholder {
+      .tiny-ctas div input[type="email"]::-webkit-input-placeholder {
         color: #894993; }
-      .tiny-ctas div input[type="text"]:-moz-placeholder {
+      .tiny-ctas div input[type="email"]:-moz-placeholder {
         color: #894993; }
-      .tiny-ctas div input[type="text"]::-moz-placeholder {
+      .tiny-ctas div input[type="email"]::-moz-placeholder {
         color: #894993; }
-      .tiny-ctas div input[type="text"]::-ms-input-placeholder {
+      .tiny-ctas div input[type="email"]::-ms-input-placeholder {
         color: #894993; }
     .tiny-ctas div button, .tiny-ctas div input[type="submit"] {
       background-color: #E1BEE7;
@@ -226,3 +228,33 @@
     border-radius: 0.25rem;
     margin: 1.95312%;
     width: 21.09375%; }
+
+@media only screen and (max-width: 1440px) {
+  .tiny-ctas div {
+    margin: 0.72993%;
+    padding: 1.09489%;
+    width: 21.35036%; } }
+
+@media only screen and (max-width: 964px) {
+  .tiny-ctas div {
+    margin: 1.11857%;
+    padding: 1.67785%;
+    width: 44.40716%; }
+    .tiny-ctas div p {
+      text-align: center; }
+    .tiny-ctas div input[type="email"] {
+      width: 95%; } }
+
+@media only screen and (max-width: 600px) {
+  .tiny-ctas div {
+    float: none;
+    margin: 1.88679% auto;
+    padding: 2.83019%;
+    max-width: 60%;
+    width: 90.56604%; }
+    .tiny-ctas div button {
+      margin: auto; } }
+
+@media only screen and (max-width: 475px) {
+  .tiny-ctas div {
+    min-width: 90%; } }
