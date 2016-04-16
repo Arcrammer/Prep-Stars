@@ -196,12 +196,12 @@ body {
 
 // Announcements
 .announcement {
-  background-color: $yellow;
+  background-color: $red;
   border: {
-    top: 5px solid darken($yellow, 3.5%);
-    bottom: 5px solid darken($yellow, 3.5%);
+    top: 5px solid darken($red, 3.5%);
+    bottom: 5px solid darken($red, 3.5%);
   }
-  color: $orange;
+  color: $yellow;
   font-weight: 500;
   overflow: auto;
   position: relative;
@@ -216,8 +216,8 @@ body {
   }
 
   button {
-    background-color: $orange;
-    color: $yellow;
+    background-color: $yellow;
+    color: $red;
     border: 0;
     float: right;
     font-size: 1rem;
@@ -229,12 +229,12 @@ body {
     text-transform: uppercase;
 
     &:hover {
-      background-color: lighten($orange, 10%);
+      background-color: lighten($yellow, 10%);
     }
 
     &:active {
-      background-color: darken($orange, 25%);
-      color: darken($yellow, 25%);
+      background-color: darken($yellow, 25%);
+      color: darken($red, 25%);
     }
   }
 }

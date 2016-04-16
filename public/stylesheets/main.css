@@ -142,10 +142,10 @@ body {
           vertical-align: middle; }
 
 .announcement, .announcement-blue {
-  background-color: #FFB74D;
-  border-top: 5px solid #ffb03b;
-  border-bottom: 5px solid #ffb03b;
-  color: #E65100;
+  background-color: #EF5350;
+  border-top: 5px solid #ee4340;
+  border-bottom: 5px solid #ee4340;
+  color: #FFB74D;
   font-weight: 500;
   overflow: auto;
   position: relative; }
@@ -157,8 +157,8 @@ body {
     text-transform: uppercase;
     width: 75%; }
   .announcement button, .announcement-blue button {
-    background-color: #E65100;
-    color: #FFB74D;
+    background-color: #FFB74D;
+    color: #EF5350;
     border: 0;
     float: right;
     font-size: 1rem;
@@ -169,10 +169,10 @@ body {
     bottom: 25%;
     text-transform: uppercase; }
     .announcement button:hover, .announcement-blue button:hover {
-      background-color: #ff6b1a; }
+      background-color: #ffcc80; }
     .announcement button:active, .announcement-blue button:active {
-      background-color: #672400;
-      color: #cd7a00; }
+      background-color: #cd7a00;
+      color: #af1310; }
 
 .announcement-blue {
   background-color: #5BCCE6;

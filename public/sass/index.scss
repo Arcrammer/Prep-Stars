@@ -17,21 +17,21 @@ $dark-tiny-cta-placeholder-tint: darken($light-tiny-cta-tint, 25%) * 0.75;
 $powdery-tiny-cta-tint: #9F719E;
 
 // Our Programs Section Colors
-$our-programs-red: #EF5350;
+$red: #EF5350;
 $our-programs-green: #66BB6A;
 $our-programs-purple: $purple;
 $our-programs-orange: #FFB74D;
 $our-programs-grey: #E0E0E0;
 
 $blue-header-color: lighten($light-blue, 17.5%);
-$red-header-color: lighten($our-programs-red, 17.5%);
+$red-header-color: lighten($red, 17.5%);
 $green-header-color: lighten($our-programs-green, 17.5%);
 $purple-header-color: lighten($our-programs-purple, 17.5%);
 $orange-header-color: lighten($our-programs-orange, 17.5%);
 $grey-header-color: lighten($our-programs-grey, 17.5%);
 
 $blue-text-color: darken($light-blue, 32.5%);
-$red-text-color: darken($our-programs-red, 32.5%);
+$red-text-color: darken($red, 32.5%);
 $green-text-color: darken($our-programs-green, 32.5%);
 $purple-text-color: lighten($our-programs-purple, 27.5%);
 $orange-text-color: darken($our-programs-orange, 30%);
@@ -325,10 +325,10 @@ $grey-text-color: darken($our-programs-grey, 32.5%);
 
     // Red
     &:nth-of-type(2) {
-      background-color: $our-programs-red;
+      background-color: $red;
 
       h1 {
-        background-color: darken($our-programs-red, 20%);
+        background-color: darken($red, 20%);
         color: $red-header-color;
       }
 
