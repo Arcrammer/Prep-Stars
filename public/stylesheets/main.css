@@ -385,9 +385,18 @@ footer .end {
     margin: auto;
     max-width: 1440px; } }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 964px) {
   .site-nav ul {
     display: none; }
+  footer
+.latest-photos img {
+    margin: 1.44216%;
+    width: 22.11569%; }
+    footer
+.latest-photos img:nth-of-type(1n+17) {
+      display: none; } }
+
+@media only screen and (max-width: 600px) {
   .text-section h1 {
     font-size: 1.75rem;
     line-height: 135%;
@@ -429,8 +438,8 @@ footer .end {
     footer .contact-and-social img {
       width: 15%; }
   footer .latest-photos img {
-    margin: 10px;
-    width: 176.906px; }
+    margin: 2.53936%;
+    width: 44.9228%; }
     footer .latest-photos img:nth-of-type(1n+7) {
       display: none; }
   footer .end {

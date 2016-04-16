@@ -255,7 +255,15 @@
       text-align: center;
       width: 90%; }
     .tiny-ctas div input[type="email"] {
-      width: 95%; } }
+      width: 95%; }
+  .programs div {
+    clear: none;
+    margin: 1.92%;
+    width: 46.16%; }
+    .programs div:nth-of-type(4) {
+      clear: none; }
+    .programs div:nth-of-type(2) {
+      clear: none; } }
 
 @media only screen and (max-width: 600px) {
   .slick-slider {

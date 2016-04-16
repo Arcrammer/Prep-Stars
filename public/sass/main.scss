@@ -569,7 +569,7 @@ footer {
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 964px) {
   // Top Bar
   .site-nav ul {
     // TODO: Figure out what to do
@@ -578,6 +578,22 @@ footer {
     display: none;
   }
 
+  // Footer
+  footer
+  .latest-photos {
+    img {
+      margin: 10px / 693.406px * 100%;
+      width: 153.3515px / 693.406px * 100%;
+
+      // Only show six
+      &:nth-of-type(1n+17) {
+        display: none;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
   // Text Sections
   .text-section {
     h1 {
@@ -650,8 +666,8 @@ footer {
 
     .latest-photos {
       img {
-        margin: 10px;
-        width: 176.906px;
+        margin: 10px / 393.8px * 100%;
+        width: 176.906px / 393.8px * 100%;
 
         // Only show six
         &:nth-of-type(1n+7) {
