@@ -83,8 +83,8 @@ nav.site-nav {
 
   li:hover .drop {
     color: #5BCCE6;
-    padding: 15px 15px 15px 4px;
-    border-radius 5px;
+    padding: 15px 15px 15px 15px;
+    border-radius: 5px;
     border-bottom-left-radius: 0;
     -webkit-bottom-left-radius: 0; 
     -webkit-border-radius: 5px;
@@ -107,11 +107,14 @@ nav.site-nav {
     float: none;
     padding: 15px;
     position: absolute;
-    top: 3.6em;
+    top: 3.4em;
     text-align: left;
-    width: 400px;
+    min-width: 400px;
+    max-width: 500px;
+    min-height: 200px;
+    max-height: 400px;
     z-index: 1;
-    margin: 15px -75px;
+    margin: 15px -86px;
 
     a:link,
     a:visited {
@@ -124,6 +127,10 @@ nav.site-nav {
     a:hover {
       background-color: #246D90;
     }
+  }
+  
+  ul.dropdown-content li {
+    display: block;
   }
 
   ul.dropdown-content li p {
