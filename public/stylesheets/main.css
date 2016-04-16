@@ -123,7 +123,7 @@ body {
     text-decoration: none;
     text-transform: uppercase;
     transition: all 225ms; }
-  .site-nav a:hover {
+  .site-nav li:hover a {
     color: #c5ffff; }
   .site-nav a:active {
     color: black; }
@@ -374,7 +374,7 @@ footer .end {
     letter-spacing: 0.015rem;
     text-decoration: none;
     transition: all 125ms; }
-  footer .end a:hover {
+  footer .end:hover a {
     color: #c5ffff; }
   footer .end a:active {
     color: black; }
