@@ -247,6 +247,10 @@ body {
     bottom: 5px solid darken($light-blue, 3.5%);
   }
   color: darken($light-blue, 35%);
+  
+  .announcment-blue h1 {
+    color: #246D90;
+  }
 
   button {
     background-color: darken($light-blue, 35%);
