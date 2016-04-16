@@ -27,9 +27,15 @@
 
 .slick-prev {
   left: 0; }
+  .slick-prev::before {
+    border-top-right-radius: 0.35rem;
+    border-bottom-right-radius: 0.35rem; }
 
 .slick-next {
-  width: inherit; }
+  width: 50px; }
+  .slick-next::before {
+    border-top-left-radius: 0.35rem;
+    border-bottom-left-radius: 0.35rem; }
 
 .slick-slide img {
   width: 100%; }

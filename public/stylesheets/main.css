@@ -42,29 +42,19 @@ body {
 .normal-weight {
   font-weight: 500; }
 
-nav.site-nav {
+.site-nav {
   background-color: #5BCCE6;
-  height: 102px;
   overflow: auto; }
-  nav.site-nav nav.site-nav ul li {
+  .site-nav nav.site-nav ul li {
     display: block;
     float: left;
     list-style: none; }
-  nav.site-nav .escape-hatch {
-    display: block;
-    float: left;
-    padding: 12.5px;
-    text-align: center;
-    width: 7.32422%; }
-    nav.site-nav .escape-hatch img {
-      max-width: 75px;
-      max-height: 75px; }
-  nav.site-nav li > li:hover {
+  .site-nav li > li:hover {
     background: #246D90;
     border-radius: 5px;
     -webkit-border-radius: 5px;
     font-style: normal; }
-  nav.site-nav li:hover {
+  .site-nav li:hover {
     color: #5BCCE6;
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
@@ -73,7 +63,7 @@ nav.site-nav {
     -webkit-bottom-left-radius: 0;
     -webkit-border-radius: 5px;
     font-style: normal; }
-  nav.site-nav li.dropbtn ul.dropdown-content {
+  .site-nav li.dropbtn ul.dropdown-content {
     -moz-column-count: 2;
     -moz-column-gap: 10px;
     -webkit-column-count: 2;
@@ -93,53 +83,61 @@ nav.site-nav {
     width: 400px;
     z-index: 1;
     margin: 15px -75px; }
-    nav.site-nav li.dropbtn ul.dropdown-content a:link,
-    nav.site-nav li.dropbtn ul.dropdown-content a:visited {
+    .site-nav li.dropbtn ul.dropdown-content a:link,
+    .site-nav li.dropbtn ul.dropdown-content a:visited {
       color: #5BCCE6;
       display: block;
       padding: 12px 16px;
       text-decoration: none; }
-    nav.site-nav li.dropbtn ul.dropdown-content a:hover {
+    .site-nav li.dropbtn ul.dropdown-content a:hover {
       background-color: #246D90; }
-  nav.site-nav ul.dropdown-content li p {
+  .site-nav ul.dropdown-content li p {
     line-height: 1.2em;
     padding: 0;
     margin: 10px;
     font-weight: normal;
     font-size: .8em;
     color: #5BCCE6; }
-  nav.site-nav ul.dropdown-content h1 {
+  .site-nav ul.dropdown-content h1 {
     color: #5BCCE6;
     line-height: 1em;
     text-transform: capitalize;
     font-size: 1.4em; }
-  nav.site-nav li.dropbtn:hover ul.dropdown-content {
+  .site-nav li.dropbtn:hover ul.dropdown-content {
     background-color: #246D90;
     display: inline;
     float: left; }
-  nav.site-nav a:link,
-  nav.site-nav a:visited {
+  .site-nav a:link,
+  .site-nav a:visited {
     color: #246D90;
     text-decoration: none;
     text-transform: uppercase;
     transition: all 225ms; }
-  nav.site-nav a:hover {
+  .site-nav a:hover {
     color: #c5ffff; }
-  nav.site-nav a:active {
+  .site-nav a:active {
     color: black; }
-  nav.site-nav ul {
+  .site-nav .escape-hatch {
+    display: block;
+    float: left;
+    padding: 1.2207%;
+    text-align: center;
+    width: 7.32422%; }
+    .site-nav .escape-hatch img {
+      max-width: 75px;
+      max-height: 75px; }
+  .site-nav ul {
     float: right;
-    height: 102px;
     text-align: right;
     width: 90.23438%; }
-    nav.site-nav ul li {
+    .site-nav ul li {
       display: inline;
       line-height: 100px; }
-      nav.site-nav ul li:last-of-type {
+      .site-nav ul li:last-of-type {
         margin-right: 5%; }
-      nav.site-nav ul li a {
+      .site-nav ul li a {
         padding: 0 1.25%; }
-        nav.site-nav ul li a img {
+        .site-nav ul li a img {
           width: 25px;
           vertical-align: middle; }
 
@@ -368,6 +366,15 @@ footer .end {
     color: #c5ffff; }
   footer .end a:active {
     color: black; }
+
+@media only screen and (max-width: 1440px) {
+  .site-nav div {
+    margin: auto;
+    max-width: 1440px; } }
+
+@media only screen and (max-width: 964px) {
+  .site-nav ul {
+    display: none; } }
 
 @font-face {
   font-family: "Roboto";
