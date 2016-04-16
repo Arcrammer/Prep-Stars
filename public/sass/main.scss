@@ -84,7 +84,7 @@ nav.site-nav {
   li:hover .drop {
     color: #5BCCE6;
     padding: 15px 15px 15px 4px;
-    border-radius 5px;
+    border-radius: 5px;
     border-bottom-left-radius: 0;
     -webkit-bottom-left-radius: 0; 
     -webkit-border-radius: 5px;
@@ -143,7 +143,7 @@ nav.site-nav {
   }
 
   li.dropbtn:hover ul.dropdown-content {
-    background-color: #246D90;
+    background-color: mediumaquamarine;
     display: inline;
     float: left;
   }
