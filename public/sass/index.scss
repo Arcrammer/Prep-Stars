@@ -68,7 +68,7 @@ $grey-text-color: darken($our-programs-grey, 32.5%);
 }
 
 .slick-next {
-  width: 50px;
+  width: inherit;
 
   &::before {
     border: {

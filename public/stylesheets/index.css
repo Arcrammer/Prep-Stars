@@ -32,7 +32,7 @@
     border-bottom-right-radius: 0.35rem; }
 
 .slick-next {
-  width: 50px; }
+  width: inherit; }
   .slick-next::before {
     border-top-left-radius: 0.35rem;
     border-bottom-left-radius: 0.35rem; }
