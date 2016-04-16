@@ -64,7 +64,7 @@ nav.site-nav {
     border-radius: 5px;
     -webkit-border-radius: 5px;
     font-style: normal; }
-  nav.site-nav li:hover .drop {
+  nav.site-nav li:hover {
     color: #5BCCE6;
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
