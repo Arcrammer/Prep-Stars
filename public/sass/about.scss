@@ -26,20 +26,35 @@ $cta-tint: #ccedf6;
 }
 
 // Structure
+main, aside {
+  margin-top: 8.5rem;
+}
+
 main {
   float: left;
-  width: 80%;
+  width: 75%;
 }
 
 aside {
-  float: right;
+  float: left;
+  padding: 2.5%;
+  text-align: center;
   width: 20%;
 
   h1 {
     @include thin-title();
   }
 
+  p {
+    font-weight: 300;
+    line-height: 135%;
+    margin-bottom: 10%;
+    text-align: left;
+  }
+
   img {
+    border-radius: 0.25rem;
+    margin: 7.5% auto;
     width: 100%;
   }
 }
@@ -53,9 +68,7 @@ aside {
 
   nav {
     text-align: left;
-    position: relative;
-    left: 5%;
-    width: 75%;
+    width: 100%;
 
     li {
       display: inline-block;
@@ -139,6 +152,7 @@ aside {
   img {
     border-radius: 0.25rem;
     margin: 3.5% auto;
+    width: 100%;
   }
 
   p {
