@@ -10,12 +10,17 @@
  * Alexander Rhett Crammer
  * Wednesday, 13 April, 2016
  */
+main, aside {
+  margin-top: 8.5rem; }
+
 main {
   float: left;
-  width: 80%; }
+  width: 75%; }
 
 aside {
-  float: right;
+  float: left;
+  padding: 2.5%;
+  text-align: center;
   width: 20%; }
   aside h1 {
     font-size: 1.35rem;
@@ -23,7 +28,14 @@ aside {
     margin-bottom: 1.5%;
     letter-spacing: 0.065rem;
     text-transform: uppercase; }
+  aside p {
+    font-weight: 300;
+    line-height: 135%;
+    margin-bottom: 10%;
+    text-align: left; }
   aside img {
+    border-radius: 0.25rem;
+    margin: 7.5% auto;
     width: 100%; }
 
 .links-and-donation-button {
@@ -33,9 +45,7 @@ aside {
   text-align: right; }
   .links-and-donation-button nav {
     text-align: left;
-    position: relative;
-    left: 5%;
-    width: 75%; }
+    width: 100%; }
     .links-and-donation-button nav li {
       display: inline-block;
       margin: auto 0.5rem;
@@ -87,7 +97,8 @@ aside {
     text-transform: uppercase; }
   .site-description img {
     border-radius: 0.25rem;
-    margin: 3.5% auto; }
+    margin: 3.5% auto;
+    width: 100%; }
   .site-description p {
     font-weight: 300;
     line-height: 150%;
