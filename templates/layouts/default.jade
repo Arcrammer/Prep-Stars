@@ -17,20 +17,11 @@ html
     block extra_scripts
     
   body(ontouchstart)
-    ul(class="flexnav")
-      li Thing
-      li Thing
-      li Thing
-      li Thing
-      li Thing
-  
     nav(class="site-nav")
       div
         a(class="escape-hatch", href="/")
           img(src="/icons/ugly-logo.png")
-        label(for="mobile-icon",class="menu") Menu
-        input(type="button", id="mobile-icon") 
-        ul(data-breakpoint="800")
+        ul
           li
             a(href="/") Home
           li(class="dropbtn")
