@@ -15,9 +15,14 @@ main {
   width: 80%; }
 
 aside {
-  background-color: mediumvioletred;
   float: right;
   width: 20%; }
+  aside h1 {
+    font-size: 1.35rem;
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+    letter-spacing: 0.065rem;
+    text-transform: uppercase; }
   aside img {
     width: 100%; }
 
@@ -91,3 +96,33 @@ aside {
     border-style: solid;
     color: #5a5957;
     margin: 7.5% 1.5%; }
+
+.ctas {
+  clear: both;
+  margin-bottom: 5%;
+  overflow: auto; }
+  .ctas .cta {
+    background-color: #2196f3;
+    border-radius: 0.35rem;
+    color: #ccedf6;
+    float: left;
+    margin: 2.44141%;
+    padding: 1.95312%;
+    text-align: center;
+    width: 24.54427%; }
+    .ctas .cta h1 {
+      font-size: 1.35rem;
+      margin-top: 1.5%;
+      margin-bottom: 1.5%;
+      letter-spacing: 0.065rem;
+      text-transform: uppercase;
+      margin-bottom: 5%; }
+    .ctas .cta p {
+      font-size: 0.9rem;
+      font-weight: 300;
+      letter-spacing: 0.05rem;
+      line-height: 135%;
+      text-align: left; }
+    .ctas .cta img {
+      margin: 7.5% auto 2.5%;
+      width: 40%; }

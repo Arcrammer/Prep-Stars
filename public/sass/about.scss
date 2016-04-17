@@ -6,11 +6,24 @@
  */
 @import "settings.scss";
 
-// Top Bar Colors
+// Colors
 $donate-bar-color: #ccedf6;
 $donate-button-color: $purple;
 $page-title-background-color: #246d90;
 $secondary-nav-height: 45px;
+$cta-background-color: #2196f3;
+$cta-tint: #ccedf6;
+
+// Mixins
+@mixin thin-title() {
+  font-size: 1.35rem;
+  margin: {
+    top: 1.5%;
+    bottom: 1.5%;
+  }
+  letter-spacing: 0.065rem;
+  text-transform: uppercase;
+}
 
 // Structure
 main {
@@ -19,9 +32,12 @@ main {
 }
 
 aside {
-  background-color: mediumvioletred;
   float: right;
   width: 20%;
+
+  h1 {
+    @include thin-title();
+  }
 
   img {
     width: 100%;
@@ -135,5 +151,43 @@ aside {
     border-style: solid;
     color: rgb(90, 89, 87);
     margin: 7.5% 1.5%;
+  }
+}
+
+// CTAs
+.ctas {
+  clear: both;
+  margin-bottom: 5%;
+  overflow: auto;
+
+  .cta {
+    background-color: $cta-background-color;
+    border-radius: 0.35rem;
+    color: $cta-tint;
+    float: left;
+    margin: 25px / 1024px * 100%;
+    padding: 20px / 1024px * 100%;
+    text-align: center;
+    width: 251.33333333px / 1024px * 100%;
+
+    h1 {
+      @include thin-title();
+      margin-bottom: 5%;
+    }
+
+    p {
+      font: {
+        size: 0.9rem;
+        weight: 300;
+      }
+      letter-spacing: 0.05rem;
+      line-height: 135%;
+      text-align: left;
+    }
+
+    img {
+      margin: 7.5% auto 2.5%;
+      width: 40%;
+    }
   }
 }
