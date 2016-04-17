@@ -315,6 +315,8 @@ input[type="submit"] {
 
 // Footer
 footer {
+  clear: both;
+
   .contact-and-social {
     background-color: $purple;
     border: {

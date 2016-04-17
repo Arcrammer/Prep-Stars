@@ -223,165 +223,165 @@ input[type="submit"] {
   cursor: pointer;
   transition: all 225ms; }
 
-footer .contact-and-social {
-  background-color: #873780;
-  border-top: 5px solid #7a3274;
-  border-bottom: 5px solid #7a3274;
-  overflow: auto;
-  padding: 1.75rem 3rem; }
-  footer .contact-and-social img {
-    max-width: 65px;
-    width: 12.5%; }
-  footer .contact-and-social .left, footer .contact-and-social .right {
-    float: left;
-    position: relative;
-    width: 49.80469%; }
-  footer .contact-and-social .left {
-    border-right: 1px solid #51214c; }
-    footer .contact-and-social .left img {
-      margin-left: 2.5%; }
-    footer .contact-and-social .left input {
-      background-color: #63285e;
-      border: 0;
-      color: #d69ad1;
-      font-family: "Roboto", sans-serif;
-      font-size: 0.85rem;
-      letter-spacing: 0.025rem;
-      margin-left: 7.5%;
-      position: absolute;
-      text-align: center;
-      top: 10%;
-      right: 10%;
-      bottom: 10%;
-      width: 65%; }
-      footer .contact-and-social .left input::-webkit-input-placeholder {
-        color: #873780; }
-      footer .contact-and-social .left input:-moz-placeholder {
-        color: #873780; }
-      footer .contact-and-social .left input::-moz-placeholder {
-        color: #873780; }
-      footer .contact-and-social .left input::-ms-input-placeholder {
-        color: #873780; }
-  footer .contact-and-social .right {
-    border-left: 1px solid #51214c;
-    text-align: center; }
-    footer .contact-and-social .right a {
-      margin: 0 3.5%; }
-
-footer .latest-photos {
-  margin: 0 2.44141%;
-  margin-bottom: 2.5%; }
-  footer .latest-photos a {
-    display: block; }
-  footer .latest-photos img {
-    border-radius: 0.225rem;
-    margin: 0.97656%;
-    width: 14.71354%; }
-
-footer .end {
-  background-color: #5BCCE6;
-  border-top: 0.35rem solid #2fbedf;
-  overflow: auto;
-  padding: 2.5rem 3.5rem;
-  padding-bottom: 0; }
-  footer .end div {
-    float: left;
-    padding: 0.48828%;
-    margin: 0.48828%;
-    width: 23.04688%; }
-  footer .end form {
-    width: 159.8px; }
-    footer .end form input,
-    footer .end form textarea {
-      background-color: #246d90;
-      border: 0;
-      border-radius: 0.15rem;
-      color: #caeef7;
-      font-family: "Roboto", sans-serif;
-      font-size: 0.85rem;
+footer {
+  clear: both; }
+  footer .contact-and-social {
+    background-color: #873780;
+    border-top: 5px solid #7a3274;
+    border-bottom: 5px solid #7a3274;
+    overflow: auto;
+    padding: 1.75rem 3rem; }
+    footer .contact-and-social img {
+      max-width: 65px;
+      width: 12.5%; }
+    footer .contact-and-social .left, footer .contact-and-social .right {
+      float: left;
+      position: relative;
+      width: 49.80469%; }
+    footer .contact-and-social .left {
+      border-right: 1px solid #51214c; }
+      footer .contact-and-social .left img {
+        margin-left: 2.5%; }
+      footer .contact-and-social .left input {
+        background-color: #63285e;
+        border: 0;
+        color: #d69ad1;
+        font-family: "Roboto", sans-serif;
+        font-size: 0.85rem;
+        letter-spacing: 0.025rem;
+        margin-left: 7.5%;
+        position: absolute;
+        text-align: center;
+        top: 10%;
+        right: 10%;
+        bottom: 10%;
+        width: 65%; }
+        footer .contact-and-social .left input::-webkit-input-placeholder {
+          color: #873780; }
+        footer .contact-and-social .left input:-moz-placeholder {
+          color: #873780; }
+        footer .contact-and-social .left input::-moz-placeholder {
+          color: #873780; }
+        footer .contact-and-social .left input::-ms-input-placeholder {
+          color: #873780; }
+    footer .contact-and-social .right {
+      border-left: 1px solid #51214c;
+      text-align: center; }
+      footer .contact-and-social .right a {
+        margin: 0 3.5%; }
+  footer .latest-photos {
+    margin: 0 2.44141%;
+    margin-bottom: 2.5%; }
+    footer .latest-photos a {
+      display: block; }
+    footer .latest-photos img {
+      border-radius: 0.225rem;
+      margin: 0.97656%;
+      width: 14.71354%; }
+  footer .end {
+    background-color: #5BCCE6;
+    border-top: 0.35rem solid #2fbedf;
+    overflow: auto;
+    padding: 2.5rem 3.5rem;
+    padding-bottom: 0; }
+    footer .end div {
+      float: left;
+      padding: 0.48828%;
+      margin: 0.48828%;
+      width: 23.04688%; }
+    footer .end form {
+      width: 159.8px; }
+      footer .end form input,
+      footer .end form textarea {
+        background-color: #246d90;
+        border: 0;
+        border-radius: 0.15rem;
+        color: #caeef7;
+        font-family: "Roboto", sans-serif;
+        font-size: 0.85rem;
+        font-weight: 300;
+        margin: 2.5% auto;
+        padding: 15px;
+        resize: none;
+        width: 129.8px; }
+        footer .end form input::-webkit-input-placeholder,
+        footer .end form textarea::-webkit-input-placeholder {
+          color: #5BCCE6;
+          letter-spacing: 0.035rem;
+          text-transform: uppercase; }
+        footer .end form input:-moz-placeholder,
+        footer .end form textarea:-moz-placeholder {
+          color: #5BCCE6;
+          letter-spacing: 0.035rem;
+          text-transform: uppercase; }
+        footer .end form input::-moz-placeholder,
+        footer .end form textarea::-moz-placeholder {
+          color: #5BCCE6;
+          letter-spacing: 0.035rem;
+          text-transform: uppercase; }
+        footer .end form input::-ms-input-placeholder,
+        footer .end form textarea::-ms-input-placeholder {
+          color: #5BCCE6;
+          letter-spacing: 0.035rem;
+          text-transform: uppercase; }
+      footer .end form input[type="submit"] {
+        color: #5BCCE6;
+        letter-spacing: 0.075rem;
+        padding: 6.5%;
+        text-transform: uppercase;
+        text-indent: 0;
+        width: 100%; }
+        footer .end form input[type="submit"]:hover {
+          background-color: #d5f2f9; }
+        footer .end form input[type="submit"]:active {
+          background-color: #093039;
+          color: #13687c; }
+    footer .end .contact-information {
+      color: #13687c;
       font-weight: 300;
-      margin: 2.5% auto;
-      padding: 15px;
-      resize: none;
-      width: 129.8px; }
-      footer .end form input::-webkit-input-placeholder,
-      footer .end form textarea::-webkit-input-placeholder {
-        color: #5BCCE6;
-        letter-spacing: 0.035rem;
-        text-transform: uppercase; }
-      footer .end form input:-moz-placeholder,
-      footer .end form textarea:-moz-placeholder {
-        color: #5BCCE6;
-        letter-spacing: 0.035rem;
-        text-transform: uppercase; }
-      footer .end form input::-moz-placeholder,
-      footer .end form textarea::-moz-placeholder {
-        color: #5BCCE6;
-        letter-spacing: 0.035rem;
-        text-transform: uppercase; }
-      footer .end form input::-ms-input-placeholder,
-      footer .end form textarea::-ms-input-placeholder {
-        color: #5BCCE6;
-        letter-spacing: 0.035rem;
-        text-transform: uppercase; }
-    footer .end form input[type="submit"] {
-      color: #5BCCE6;
-      letter-spacing: 0.075rem;
-      padding: 6.5%;
-      text-transform: uppercase;
-      text-indent: 0;
-      width: 100%; }
-      footer .end form input[type="submit"]:hover {
-        background-color: #d5f2f9; }
-      footer .end form input[type="submit"]:active {
-        background-color: #093039;
-        color: #13687c; }
-  footer .end .contact-information {
-    color: #13687c;
-    font-weight: 300;
-    text-transform: uppercase; }
-    footer .end .contact-information h1 {
-      font-weight: 700;
-      margin-bottom: 2.5%; }
-    footer .end .contact-information address, footer .end .contact-information p {
-      line-height: 175%; }
-    footer .end .contact-information .medium {
-      padding: 0;
-      width: 100%; }
-      footer .end .contact-information .medium p {
-        font-size: 0.75rem; }
-      footer .end .contact-information .medium img {
-        float: left;
-        margin: 1.5%;
-        width: 5%; }
-  footer .end .copyright {
-    color: #13687c;
-    clear: both;
-    font-size: 0.85rem;
-    font-weight: 300;
-    padding: 7.5% 0 2.5%;
-    text-align: center;
-    text-transform: uppercase; }
-  footer .end h1 {
-    color: #13687c;
-    text-transform: uppercase; }
-  footer .end ul {
-    margin-top: 7.5%; }
-    footer .end ul li {
-      font-weight: 300;
-      line-height: 125%;
-      margin: 5% auto;
       text-transform: uppercase; }
-  footer .end a:link,
-  footer .end a:visited {
-    color: #13687c;
-    letter-spacing: 0.015rem;
-    text-decoration: none;
-    transition: all 125ms; }
-  footer .end a:hover {
-    color: #c5ffff; }
-  footer .end a:active {
-    color: black; }
+      footer .end .contact-information h1 {
+        font-weight: 700;
+        margin-bottom: 2.5%; }
+      footer .end .contact-information address, footer .end .contact-information p {
+        line-height: 175%; }
+      footer .end .contact-information .medium {
+        padding: 0;
+        width: 100%; }
+        footer .end .contact-information .medium p {
+          font-size: 0.75rem; }
+        footer .end .contact-information .medium img {
+          float: left;
+          margin: 1.5%;
+          width: 5%; }
+    footer .end .copyright {
+      color: #13687c;
+      clear: both;
+      font-size: 0.85rem;
+      font-weight: 300;
+      padding: 7.5% 0 2.5%;
+      text-align: center;
+      text-transform: uppercase; }
+    footer .end h1 {
+      color: #13687c;
+      text-transform: uppercase; }
+    footer .end ul {
+      margin-top: 7.5%; }
+      footer .end ul li {
+        font-weight: 300;
+        line-height: 125%;
+        margin: 5% auto;
+        text-transform: uppercase; }
+    footer .end a:link,
+    footer .end a:visited {
+      color: #13687c;
+      letter-spacing: 0.015rem;
+      text-decoration: none;
+      transition: all 125ms; }
+    footer .end a:hover {
+      color: #c5ffff; }
+    footer .end a:active {
+      color: black; }
 
 @media only screen and (max-width: 1440px) {
   .site-nav div {
