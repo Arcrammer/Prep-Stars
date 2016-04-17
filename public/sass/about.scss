@@ -6,6 +6,12 @@
  */
 @import "settings.scss";
 
+// Top Bar Colors
+$donate-bar-color: #ccedf6;
+$donate-button-color: $purple;
+$page-title-background-color: #246d90;
+$secondary-nav-height: 45px;
+
 // Structure
 main {
   float: left;
@@ -22,41 +28,77 @@ aside {
   }
 }
 
-// Donate bar
-.donate {
-  background-color: lighten($purple, 30%);
+// Navigation bar
+.links-and-donation-button {
+  background-color: $donate-bar-color;
+  height: $secondary-nav-height;
   overflow: visible;
-  height: 30px;
   text-align: right;
+
+  nav {
+    text-align: left;
+    position: relative;
+    left: 5%;
+    width: 75%;
+
+    li {
+      display: inline-block;
+      margin: auto 0.5rem;
+      line-height: $secondary-nav-height;
+    }
+  }
+
+  // Secondary Navigation Links
+  a:link,
+  a:visited {
+    color: $page-title-background-color;
+    text-decoration: none;
+    transition: all 175ms;
+  }
+
+  a:hover {
+    color: lighten($page-title-background-color, 25%);
+  }
+
+  a:active {
+    color: darken($page-title-background-color, 25%);
+  }
 }
 
 // Donate Button
 .donate-button {
-  background-color: darken($yellow, 7.5%);
+  background-color: $donate-button-color;
   border: {
     top-left-radius: 0;
     top-right-radius: 0;
+    right: solid 0.2rem darken($donate-button-color, 7.5%);
+    bottom: solid 0.2rem darken($donate-button-color, 7.5%);
+    left: solid 0.2rem darken($donate-button-color, 7.5%);
   }
-  color: lighten($orange, 50%);
+  color: lighten($light-blue, 50%);
   float: right;
   margin-right: 5%;
 
   &:hover {
-    background-color: $yellow;
+    background-color: lighten($donate-button-color, 25%);
   }
 
   &:active {
-    background-color: darken($yellow, 42.5%);
+    background-color: darken($donate-button-color, 20%);
     color: darken($white, 45%);
   }
 }
 
 // Title
 .title {
-  background-color: $purple;
+  background-color: $page-title-background-color;
+  border: {
+    top: 0.25rem solid darken($page-title-background-color, 7.5%);
+    bottom: 0.25rem solid darken($page-title-background-color, 7.5%);
+  }
 
   h1 {
-    color: lighten($purple, 47.5%);
+    color: lighten($page-title-background-color, 55%);
     font-size: 4rem;
     padding: 2rem 5rem;
     text-transform: uppercase;
@@ -65,12 +107,33 @@ aside {
 
 // Site Description
 .site-description {
-  margin: 2.5% auto;
+  margin: 5% auto;
   width: 80%;
-}
 
-// Blue bar
-.blue-bottom-decoration {
-  background-color: $light-blue;
-  height: 200px;
+  h1 {
+    color: $black;
+    font: {
+      size: 1.75rem;
+      weight: 300;
+    }
+    margin: 2.5% auto;
+    text-transform: uppercase;
+  }
+
+  img {
+    border-radius: 0.25rem;
+    margin: 3.5% auto;
+  }
+
+  p {
+    font-weight: 300;
+    line-height: 150%;
+    margin: 3.5% auto;
+  }
+
+  hr {
+    border-style: solid;
+    color: rgb(90, 89, 87);
+    margin: 7.5% 1.5%;
+  }
 }

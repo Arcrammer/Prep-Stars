@@ -44,6 +44,7 @@ body {
 
 .site-nav {
   background-color: #5BCCE6;
+  border-bottom: 0.25rem solid #20b3d4;
   overflow: auto; }
   .site-nav nav.site-nav ul li {
     display: block;

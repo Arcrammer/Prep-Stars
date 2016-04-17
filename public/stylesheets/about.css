@@ -21,37 +21,73 @@ aside {
   aside img {
     width: 100%; }
 
-.donate {
-  background-color: #cf88c9;
+.links-and-donation-button {
+  background-color: #ccedf6;
+  height: 45px;
   overflow: visible;
-  height: 30px;
   text-align: right; }
+  .links-and-donation-button nav {
+    text-align: left;
+    position: relative;
+    left: 5%;
+    width: 75%; }
+    .links-and-donation-button nav li {
+      display: inline-block;
+      margin: auto 0.5rem;
+      line-height: 45px; }
+  .links-and-donation-button a:link,
+  .links-and-donation-button a:visited {
+    color: #246d90;
+    text-decoration: none;
+    transition: all 175ms; }
+  .links-and-donation-button a:hover {
+    color: #5dafd7; }
+  .links-and-donation-button a:active {
+    color: #0b202a; }
 
 .donate-button {
-  background-color: #ffa827;
+  background-color: #873780;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
-  color: #ffefe6;
+  border-right: solid 0.2rem #6c2c66;
+  border-bottom: solid 0.2rem #6c2c66;
+  border-left: solid 0.2rem #6c2c66;
+  color: white;
   float: right;
   margin-right: 5%; }
   .donate-button:hover {
-    background-color: #FFB74D; }
+    background-color: #c776c0; }
   .donate-button:active {
-    background-color: #734500;
+    background-color: #3f193b;
     color: #818181; }
 
 .title {
-  background-color: #873780; }
+  background-color: #246d90;
+  border-top: 0.25rem solid #1c5671;
+  border-bottom: 0.25rem solid #1c5671; }
   .title h1 {
-    color: #e8c8e6;
+    color: #d7ebf5;
     font-size: 4rem;
     padding: 2rem 5rem;
     text-transform: uppercase; }
 
 .site-description {
-  margin: 2.5% auto;
+  margin: 5% auto;
   width: 80%; }
-
-.blue-bottom-decoration {
-  background-color: #5BCCE6;
-  height: 200px; }
+  .site-description h1 {
+    color: #2f2f2f;
+    font-size: 1.75rem;
+    font-weight: 300;
+    margin: 2.5% auto;
+    text-transform: uppercase; }
+  .site-description img {
+    border-radius: 0.25rem;
+    margin: 3.5% auto; }
+  .site-description p {
+    font-weight: 300;
+    line-height: 150%;
+    margin: 3.5% auto; }
+  .site-description hr {
+    border-style: solid;
+    color: #5a5957;
+    margin: 7.5% 1.5%; }
