@@ -9,19 +9,28 @@ html
     //- Links
     link(rel='stylesheet', href='/stylesheets/reset.css')
     link(rel='stylesheet', href='/stylesheets/main.css')
+    link(rel="stylesheet", href="/vendor/flexnav/css/flexnav.css")
     block extra_styles
     
     //- Scripts
     script(src="/vendor/jquery/dist/jquery.min.js")
-    script(type="text/javascript", src="/vendor/flexnav/js/jquery.flexnav.min.js")
     block extra_scripts
     
   body(ontouchstart)
+    ul(class="flexnav")
+      li Thing
+      li Thing
+      li Thing
+      li Thing
+      li Thing
+  
     nav(class="site-nav")
       div
         a(class="escape-hatch", href="/")
           img(src="/icons/ugly-logo.png")
-        ul
+        label(for="mobile-icon",class="menu") Menu
+        input(type="button", id="mobile-icon") 
+        ul(data-breakpoint="800")
           li
             a(href="/") Home
           li(class="dropbtn")
@@ -51,7 +60,6 @@ html
           //-   a
           //-     img(src="/icons/magnifying-glass.png", width="100")
     block content
-    block last_scripts
 
   footer
     - console.log(section)
@@ -126,3 +134,5 @@ html
           img(src="/icons/paper-plane.png", alt="Fax Icon")
           p +1 (212) 555 - 5556
       p(class="copyright") &copy 2016 Prep Stars of America | All Rights Reserved | Privacy Policy | Terms of Use
+
+  block last_scripts
