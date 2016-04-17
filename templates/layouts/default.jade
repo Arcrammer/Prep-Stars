@@ -53,23 +53,25 @@ html
     block last_scripts
 
   footer
-    section(class="contact-and-social")
-      div(class="left")
-        img(src="/icons/mail.png", alt="Mail Icon")
-        form(action="/api/enable-newsletter/", method="POST")
-          input(type="email", placeholder="Get Email Updates")
-      div(class="right")
-        a(href="#")
-          img(src="/icons/twitter.png", alt="Twitter Icon")
-        a(href="#")
-          img(src="/icons/facebook.png", alt="Facebook Icon")
-        a(href="#")
-          img(src="/icons/instagram.png", alt="Instagram Icon")
-    section(class="latest-photos text-section")
-      h1 Latest Photos
-      - for (var i=0; i<18; i++){
-        img(src="http://lorempixel.com/g/500/500/sports")
-      - }
+    - console.log(section)
+    unless section == "about"
+      section(class="contact-and-social")
+        div(class="left")
+          img(src="/icons/mail.png", alt="Mail Icon")
+          form(action="/api/enable-newsletter/", method="POST")
+            input(type="email", placeholder="Get Email Updates")
+        div(class="right")
+          a(href="#")
+            img(src="/icons/twitter.png", alt="Twitter Icon")
+          a(href="#")
+            img(src="/icons/facebook.png", alt="Facebook Icon")
+          a(href="#")
+            img(src="/icons/instagram.png", alt="Instagram Icon")
+      section(class="latest-photos text-section")
+        h1 Latest Photos
+        - for (var i=0; i<18; i++){
+          img(src="http://lorempixel.com/g/500/500/sports")
+        - }
     section(class="end")
       div
         h1 About Us
