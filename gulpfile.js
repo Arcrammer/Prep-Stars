@@ -56,3 +56,8 @@ gulp.task('default', [
   'runKeystone',
   'runBrowserSync'
 ]);
+
+gulp.task('serve', [
+  'runMongo',
+  'runKeystone',
+]);
