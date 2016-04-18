@@ -50,6 +50,8 @@ aside {
       display: inline-block;
       margin: auto 0.5rem;
       line-height: 45px; }
+      .links-and-donation-button nav li:first-of-type {
+        margin-left: 5%; }
   .links-and-donation-button a:link,
   .links-and-donation-button a:visited {
     color: #246d90;
@@ -112,28 +114,91 @@ aside {
   clear: both;
   margin-bottom: 5%;
   overflow: auto; }
-  .ctas .cta {
-    background-color: #2196f3;
-    border-radius: 0.35rem;
-    color: #ccedf6;
-    float: left;
-    margin: 2.44141%;
-    padding: 1.95312%;
-    text-align: center;
-    width: 24.54427%; }
-    .ctas .cta h1 {
-      font-size: 1.35rem;
-      margin-top: 1.5%;
-      margin-bottom: 1.5%;
-      letter-spacing: 0.065rem;
-      text-transform: uppercase;
+
+.cta {
+  background-color: #2196f3;
+  border-radius: 0.35rem;
+  color: #ccedf6;
+  float: left;
+  margin: 2.44141%;
+  padding: 1.95312%;
+  text-align: center;
+  width: 24.54427%; }
+  .cta h1 {
+    font-size: 1.35rem;
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+    letter-spacing: 0.065rem;
+    text-transform: uppercase;
+    margin-bottom: 5%; }
+  .cta p {
+    font-size: 0.9rem;
+    font-weight: 300;
+    letter-spacing: 0.05rem;
+    line-height: 135%;
+    text-align: left; }
+  .cta img {
+    margin: 7.5% auto 2.5%;
+    width: 40%; }
+
+@media only screen and (max-width: 964px) {
+  aside {
+    padding: 0;
+    width: 21.5%; }
+  .site-description {
+    width: 90%; }
+    .site-description h1 {
       margin-bottom: 5%; }
-    .ctas .cta p {
-      font-size: 0.9rem;
-      font-weight: 300;
-      letter-spacing: 0.05rem;
-      line-height: 135%;
-      text-align: left; }
-    .ctas .cta img {
-      margin: 7.5% auto 2.5%;
-      width: 40%; }
+    .site-description p {
+      text-align: justify; }
+    .site-description hr {
+      margin-left: 0;
+      margin-right: 0;
+      width: 100%; }
+  .ctas {
+    margin: 2.5% auto;
+    width: 97.2067%; }
+  .cta {
+    margin: 0.71839%;
+    padding: 2.87356%;
+    width: 26.14943%; }
+    .cta p {
+      text-align: justify; } }
+
+@media only screen and (max-width: 600px) {
+  main {
+    margin-top: 6.25rem;
+    width: 100%; }
+  aside {
+    margin: 0;
+    width: 100%; }
+  .links-and-donation-button button {
+    height: 2rem;
+    line-height: 0.5rem; }
+  .title {
+    text-align: center; }
+  .site-description h1, .site-description img, .site-description p {
+    margin: 0; }
+  .site-description h1 {
+    margin: 5% 0; }
+  .site-description img {
+    margin-bottom: 3.5%; }
+  .cta {
+    margin: 1.29534% 2.59067%;
+    padding: 3.45423%;
+    width: 87.91019%; }
+    .cta:last-of-type {
+      margin-bottom: 3.5%; }
+    .cta h1 {
+      text-align: left;
+      width: 75%; }
+    .cta p {
+      float: left;
+      text-align: left;
+      width: 75%; }
+    .cta img {
+      float: right;
+      margin: 0;
+      position: relative;
+      right: 2.5%;
+      width: 17.5%; } }

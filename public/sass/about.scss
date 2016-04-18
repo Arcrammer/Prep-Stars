@@ -1,3 +1,4 @@
+
 /**
  * about.scss
  *
@@ -74,6 +75,10 @@ aside {
       display: inline-block;
       margin: auto 0.5rem;
       line-height: $secondary-nav-height;
+
+      &:first-of-type {
+        margin-left: 5%;
+      }
     }
   }
 
@@ -173,35 +178,150 @@ aside {
   clear: both;
   margin-bottom: 5%;
   overflow: auto;
+}
 
-  .cta {
-    background-color: $cta-background-color;
-    border-radius: 0.35rem;
-    color: $cta-tint;
-    float: left;
-    margin: 25px / 1024px * 100%;
-    padding: 20px / 1024px * 100%;
-    text-align: center;
-    width: 251.33333333px / 1024px * 100%;
+.cta {
+  background-color: $cta-background-color;
+  border-radius: 0.35rem;
+  color: $cta-tint;
+  float: left;
+  margin: 25px / 1024px * 100%;
+  padding: 20px / 1024px * 100%;
+  text-align: center;
+  width: 251.33333333px / 1024px * 100%;
+
+  h1 {
+    @include thin-title();
+    margin-bottom: 5%;
+  }
+
+  p {
+    font: {
+      size: 0.9rem;
+      weight: 300;
+    }
+    letter-spacing: 0.05rem;
+    line-height: 135%;
+    text-align: left;
+  }
+
+  img {
+    margin: 7.5% auto 2.5%;
+    width: 40%;
+  }
+}
+
+// Responsiveness
+@media only screen and (max-width: 964px) {
+  // Structure
+  aside {
+    padding: 0;
+    width: 21.5%;
+  }
+
+  // Site Description
+  .site-description {
+    width: 90%;
 
     h1 {
-      @include thin-title();
       margin-bottom: 5%;
     }
 
     p {
-      font: {
-        size: 0.9rem;
-        weight: 300;
+      text-align: justify;
+    }
+
+    hr {
+      margin: {
+        left: 0;
+        right: 0;
       }
-      letter-spacing: 0.05rem;
-      line-height: 135%;
-      text-align: left;
+      width: 100%;
+    }
+  }
+
+  // CTAs
+  .ctas {
+    margin: 2.5% auto;
+    width: 696px / 716px * 100%;
+  }
+
+  .cta {
+    margin: 5px / 696px * 100%;
+    padding: 20px / 696px * 100%;
+    width: 182px / 696px * 100%;
+
+    p {
+      text-align: justify;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  // Structure
+  main {
+    margin-top: 6.25rem;
+    width: 100%;
+  }
+
+  aside {
+    margin: 0;
+    width: 100%;
+  }
+
+  // Navigation Bar
+  .links-and-donation-button button {
+    height: 2rem;
+    line-height: 0.5rem;
+  }
+
+  // Title
+  .title {
+    text-align: center;
+  }
+
+  // Site Description
+  .site-description {
+    h1, img, p {
+      margin: 0;
+    }
+
+    h1 {
+      margin: 5% 0;
     }
 
     img {
-      margin: 7.5% auto 2.5%;
-      width: 40%;
+      margin-bottom: 3.5%;
+    }
+  }
+
+  // CTAs
+  .cta {
+    margin: (7.5px / 579px * 100%) (15px / 579px * 100%);
+    padding: 20px / 579px * 100%;
+    width: 509px / 579px * 100%;
+
+    &:last-of-type {
+      margin-bottom: 3.5%;
+    }
+
+    h1 {
+      text-align: left;
+      width: 75%;
+    }
+
+    p {
+      float: left;
+      text-align: left;
+      width: 75%;
+    }
+
+    img {
+      float: right;
+      margin: 0;
+      position: relative;
+      right: 2.5%;
+      width: 17.5%;
     }
   }
 }
