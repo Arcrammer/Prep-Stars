@@ -40,7 +40,7 @@ gulp.task('sass', function(){
 		.pipe(gulp.dest(paths.style.output));
 });
 
-gulp.task('runKeystone', shell.task('node keystone.js'));
+gulp.task('runKeystone', shell.task('nodemon keystone.js'));
 gulp.task('watch', [
   'watch:sass',
   'watch:lint'
