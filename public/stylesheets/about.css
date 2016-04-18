@@ -167,11 +167,19 @@ aside {
 
 @media only screen and (max-width: 600px) {
   main {
-    margin-top: 6.25rem;
+    float: none;
+    margin-top: 10.25rem;
     width: 100%; }
   aside {
-    margin: 0;
-    width: 100%; }
+    float: none;
+    margin: 0 auto;
+    width: 90%; }
+    aside h1 {
+      font-size: 1.75rem; }
+    aside img {
+      margin: 2.5% 0; }
+    aside p {
+      margin-bottom: 5%; }
   .links-and-donation-button button {
     height: 2rem;
     line-height: 0.5rem; }
@@ -183,6 +191,9 @@ aside {
     margin: 5% 0; }
   .site-description img {
     margin-bottom: 3.5%; }
+  .site-description hr {
+    margin-top: 5%;
+    margin-bottom: 2.5%; }
   .cta {
     margin: 1.29534% 2.59067%;
     padding: 3.45423%;

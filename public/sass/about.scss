@@ -260,13 +260,27 @@ aside {
 @media only screen and (max-width: 600px) {
   // Structure
   main {
-    margin-top: 6.25rem;
+    float: none;
+    margin-top: 10.25rem;
     width: 100%;
   }
 
   aside {
-    margin: 0;
-    width: 100%;
+    float: none;
+    margin: 0 auto;
+    width: 90%;
+
+    h1 {
+      font-size: 1.75rem;
+    }
+
+    img {
+      margin: 2.5% 0;
+    }
+
+    p {
+      margin-bottom: 5%;
+    }
   }
 
   // Navigation Bar
@@ -292,6 +306,13 @@ aside {
 
     img {
       margin-bottom: 3.5%;
+    }
+
+    hr {
+      margin: {
+        top: 5%;
+        bottom: 2.5%;
+      }
     }
   }
 
