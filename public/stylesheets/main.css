@@ -50,6 +50,8 @@ body {
     display: block;
     float: left;
     list-style: none; }
+  .site-nav nav.site-nav a {
+    color: #5BCCE6; }
   .site-nav li > li:hover {
     font-style: normal; }
   .site-nav li:hover {
