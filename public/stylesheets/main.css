@@ -43,31 +43,19 @@ body {
   font-weight: 500; }
 
 .site-nav {
-  background-color: #00316C;
+  background-color: #5BCCE6;
   border-bottom: 0.25rem solid #20b3d4;
   overflow: auto; }
   .site-nav nav.site-nav ul li {
     display: block;
     float: left;
     list-style: none; }
-  .site-nav nav.site-nav a {
-    color: #5BCCE6; }
   .site-nav li > li:hover {
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
     font-style: normal; }
   .site-nav li:hover {
-    color: #5BCCE6;
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
-    color: #5BCCE6;
-    border-radius: 5px;
-    border-bottom-left-radius: 0;
-    -webkit-bottom-left-radius: 0;
-    -webkit-border-radius: 5px;
     font-style: normal; }
-  .site-nav li:hover a {
-    color: #5BCCE6; }
   .site-nav li.dropbtn ul.dropdown-content {
     -moz-column-count: 2;
     -moz-column-gap: 10px;

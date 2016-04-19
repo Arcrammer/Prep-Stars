@@ -51,7 +51,7 @@ body {
 
 // Top Bar
 .site-nav {
-  background-color: #00316C;
+  background-color: $light-blue;
   border-bottom: 0.25rem solid darken($light-blue, 15%);
   overflow: auto;
 
@@ -60,34 +60,21 @@ body {
     float: left;
     list-style: none;
   }
-  
-  nav.site-nav a {
-    color: #5BCCE6;
-  }
 
   // Dropdown Menu
   li > li:hover {
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
     font-style: normal;
   }
 
   li:hover {
-    color: #5BCCE6;
     padding: {
       top: 0.75rem;
       bottom: 0.75rem;
     }
-    color: #5BCCE6;
-    border-radius: 5px;
-    border-bottom-left-radius: 0;
-    -webkit-bottom-left-radius: 0;
-    -webkit-border-radius: 5px;
     font-style: normal;
   }
 
   li:hover a {
-    color: #5BCCE6;
   }
 
   li.dropbtn ul.dropdown-content {
