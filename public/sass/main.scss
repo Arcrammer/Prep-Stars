@@ -51,7 +51,7 @@ body {
 
 // Top Bar
 .site-nav {
-  background-color: #00316C;
+  background-color: $light-blue;
   border-bottom: 0.25rem solid darken($light-blue, 15%);
   overflow: auto;
 
@@ -60,7 +60,7 @@ body {
     float: left;
     list-style: none;
   }
-  
+
   nav.site-nav a {
     color: #5BCCE6;
   }
