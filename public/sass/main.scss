@@ -105,7 +105,7 @@ body {
       -webkit-border-radius: 5px;
       display: none;
       float: none;
-      padding: 1.5rem;
+      padding: 1.25rem 0.75rem;
       position: absolute;
       top: 5rem;
       right: 5rem;
@@ -129,6 +129,7 @@ body {
       li {
         display: block;
         float: left;
+        min-height: 75px;
 
         h1 {
           color: #5BCCE6;
@@ -141,8 +142,8 @@ body {
           color: #5BCCE6;
           font-weight: normal;
           font-size: 0.8em;
-          line-height: 1.2em;
-          margin: 10px;
+          line-height: 1.15rem;
+          margin-top: 0.5rem;
           padding: 0;
         }
       }
