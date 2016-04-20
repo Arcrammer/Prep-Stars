@@ -52,11 +52,11 @@ body {
     list-style: none; }
   .site-nav nav.site-nav a {
     color: #5BCCE6; }
+  .site-nav li {
+    cursor: pointer; }
   .site-nav li > li:hover {
     font-style: normal; }
   .site-nav li:hover {
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem;
     font-style: normal; }
   .site-nav li.dropbtn ul.dropdown-content {
     -moz-column-count: 2;
@@ -77,8 +77,6 @@ body {
     text-align: left;
     min-width: 400px;
     max-width: 500px;
-    min-height: 200px;
-    max-height: 400px;
     z-index: 1;
     margin: 15px -86px; }
     .site-nav li.dropbtn ul.dropdown-content a:link,
@@ -110,6 +108,16 @@ body {
   .site-nav li.dropbtn:hover ul.dropdown-content {
     display: inline;
     float: left; }
+  .site-nav .active {
+    background-color: #1a8da8;
+    border-radius: 100rem;
+    padding: 0.5rem;
+    transition: background-color 175ms; }
+    .site-nav .active:hover {
+      background-color: #2fbedf; }
+    .site-nav .active a:link,
+    .site-nav .active a:visited {
+      color: #e2e2e2; }
   .site-nav a:link,
   .site-nav a:visited {
     color: #246D90;

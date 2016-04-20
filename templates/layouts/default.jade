@@ -21,9 +21,9 @@ html
         a(class="escape-hatch", href="/")
           img(src="/icons/ugly-logo.png")
         ul
-          li
+          li(class=(section == 'home') ? 'active' : '')
             a(href="/") Home
-          li(class="dropbtn")
+          li(class="dropbtn", class=(section == 'about') ? 'active' : '')
             a(href="/about", class="drop") About
             ul(class="dropdown-content")
              li

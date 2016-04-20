@@ -66,19 +66,16 @@ body {
   }
 
   // Dropdown Menu
+  li {
+    cursor: pointer;
+  }
+
   li > li:hover {
     font-style: normal;
   }
 
   li:hover {
-    padding: {
-      top: 0.75rem;
-      bottom: 0.75rem;
-    }
     font-style: normal;
-  }
-
-  li:hover a {
   }
 
   li.dropbtn ul.dropdown-content {
@@ -100,8 +97,6 @@ body {
     text-align: left;
     min-width: 400px;
     max-width: 500px;
-    min-height: 200px;
-    max-height: 400px;
     z-index: 1;
     margin: 15px -86px;
 
@@ -152,6 +147,22 @@ body {
   }
 
   // Links
+  .active {
+    background-color: darken($light-blue, 25%);
+    border-radius: 100rem;
+    padding: 0.5rem;
+    transition: background-color 175ms;
+
+    &:hover {
+      background-color: darken($light-blue, 10%);
+    }
+
+    a:link,
+    a:visited {
+      color: $white * 0.925;
+    }
+  }
+
   a:link,
   a:visited {
     color: $nav-link-color;
