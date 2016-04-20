@@ -129,13 +129,12 @@ body {
       li {
         display: block;
         float: left;
-        min-height: 75px;
+        min-height: 85px;
 
         h1 {
           color: #5BCCE6;
           font-size: 1.4rem;
           line-height: 1.25rem;
-          text-transform: capitalize;
         }
 
         p {
@@ -145,6 +144,12 @@ body {
           line-height: 1.15rem;
           margin-top: 0.5rem;
           padding: 0;
+        }
+
+        &:hover {
+          h1, p {
+            color: lighten(#5bcce6, 30%);
+          }
         }
       }
     }
