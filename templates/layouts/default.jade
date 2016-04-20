@@ -22,11 +22,9 @@ html
           img(src="/icons/ugly-logo.png")
         ul
           li
-            a(href="/", class=(section == 'home') ? 'active' : ''
-  class=(section == 'about') ? 'active' : '') Home
+            a(href="/", class=(section == 'home') ? 'active' : '') Home
           li(class="dropbtn")
-            a(href="/about", class="drop", class=(section == 'about') ? 'active' : ''
-  class=(section == 'about') ? 'active' : '') About
+            a(href="/about", class="drop", class=(section == 'about') ? 'active' : '') About
             ul(class="dropdown-content")
              li
                h1 Testimonials
@@ -54,7 +52,6 @@ html
     block content
 
   footer
-    - console.log(section)
     unless section == "about"
       section(class="contact-and-social")
         div(class="left")
@@ -75,8 +72,12 @@ html
         - }
     section(class="end")
       div
-        h1 About Us
+        h1 Site Map
         ul
+          li
+            a(href="/") Home
+          li
+            a(href="/about") About
           li
             a(href="#") Mission & Vision
           li
