@@ -46,14 +46,27 @@ body {
   background-color: #5BCCE6;
   border-bottom: 0.25rem solid #20b3d4;
   overflow: auto; }
-  .site-nav nav.site-nav ul li {
-    display: block;
-    float: left;
-    list-style: none; }
-  .site-nav nav.site-nav a {
-    color: #5BCCE6; }
+  .site-nav ul {
+    float: right;
+    text-align: right;
+    width: 90.23438%; }
+    .site-nav ul li {
+      line-height: 100px; }
+      .site-nav ul li:last-of-type {
+        margin-right: 5%; }
+      .site-nav ul li a {
+        color: #5BCCE6;
+        padding: 0 1.25%; }
+        .site-nav ul li a img {
+          width: 25px;
+          vertical-align: middle; }
   .site-nav li {
-    cursor: pointer; }
+    cursor: pointer;
+    display: inline-block;
+    height: 100%;
+    padding: 0 0.35rem; }
+    .site-nav li:hover a {
+      color: #c5ffff; }
     .site-nav li.dropbtn ul {
       background-color: #246D90;
       border-radius: 5px;
@@ -98,15 +111,11 @@ body {
           line-height: 1.2em;
           margin: 10px;
           padding: 0; }
-    .site-nav li:hover {
-      font-style: normal; }
-      .site-nav li:hover ul {
-        display: inline;
-        float: left; }
   .site-nav .active {
     background-color: #1a8da8;
     border-radius: 100rem;
-    padding: 0.5rem;
+    color: #b6ffff !important;
+    padding: 0.65rem 1.5rem;
     transition: background-color 175ms; }
     .site-nav .active:hover {
       background-color: #2fbedf; }
@@ -116,6 +125,7 @@ body {
   .site-nav a:link,
   .site-nav a:visited {
     color: #246D90;
+    letter-spacing: 0.025rem;
     text-decoration: none;
     text-transform: uppercase;
     transition: all 225ms; }
@@ -132,20 +142,6 @@ body {
     .site-nav .escape-hatch img {
       max-width: 75px;
       max-height: 75px; }
-  .site-nav ul {
-    float: right;
-    text-align: right;
-    width: 90.23438%; }
-    .site-nav ul li {
-      display: inline;
-      line-height: 100px; }
-      .site-nav ul li:last-of-type {
-        margin-right: 5%; }
-      .site-nav ul li a {
-        padding: 0 1.25%; }
-        .site-nav ul li a img {
-          width: 25px;
-          vertical-align: middle; }
 
 .announcement, .announcement-blue {
   background-color: #EF5350;

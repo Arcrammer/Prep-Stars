@@ -55,19 +55,41 @@ body {
   border-bottom: 0.25rem solid darken($light-blue, 15%);
   overflow: auto;
 
-  nav.site-nav ul li {
-    display: block;
-    float: left;
-    list-style: none;
-  }
+  // Link List
+  ul {
+    float: right;
+    text-align: right;
+    width: 924px / 1024px * 100%;
 
-  nav.site-nav a {
-    color: #5BCCE6;
+    li {
+      line-height: 100px;
+
+      &:last-of-type {
+        margin-right: 5%;
+      }
+
+      a {
+        color: #5BCCE6;
+        padding: 0 1.25%;
+
+        img {
+          width: 25px;
+          vertical-align: middle;
+        }
+      }
+    }
   }
 
   // Dropdown Menu
   li {
     cursor: pointer;
+    display: inline-block;
+    height: 100%;
+    padding: 0 0.35rem;
+
+    &:hover a {
+      color: lighten($light-blue, 15%) * 1.25;
+    }
 
     // Dropdown Menu
     &.dropbtn ul {
@@ -125,22 +147,14 @@ body {
         }
       }
     }
-
-    &:hover {
-      font-style: normal;
-
-      ul {
-        display: inline;
-        float: left;
-      }
-    }
   }
 
   // Links
   .active {
     background-color: darken($light-blue, 25%);
     border-radius: 100rem;
-    padding: 0.5rem;
+    color: $light-blue * 2 !important;
+    padding: 0.65rem 1.5rem;
     transition: background-color 175ms;
 
     &:hover {
@@ -156,6 +170,7 @@ body {
   a:link,
   a:visited {
     color: $nav-link-color;
+    letter-spacing: 0.025rem;
     text-decoration: none;
     text-transform: uppercase;
     transition: all 225ms;
@@ -180,31 +195,6 @@ body {
     img {
       max-width: 75px;
       max-height: 75px;
-    }
-  }
-
-  // Link List
-  ul {
-    float: right;
-    text-align: right;
-    width: 924px / 1024px * 100%;
-
-    li {
-      display: inline;
-      line-height: 100px;
-
-      &:last-of-type {
-        margin-right: 5%;
-      }
-
-      a {
-        padding: 0 1.25%;
-
-        img {
-          width: 25px;
-          vertical-align: middle;
-        }
-      }
     }
   }
 }
