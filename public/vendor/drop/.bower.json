@@ -1,0 +1,15 @@
+{
+  "name": "drop",
+  "homepage": "https://github.com/cferdinandi/drop",
+  "version": "11.1.0",
+  "_release": "11.1.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "v11.1.0",
+    "commit": "313be7747f8420e73b9539bb74a8cd679738ca7b"
+  },
+  "_source": "https://github.com/cferdinandi/drop.git",
+  "_target": "^11.1.0",
+  "_originalSource": "https://github.com/cferdinandi/drop.git",
+  "_direct": true
+}
