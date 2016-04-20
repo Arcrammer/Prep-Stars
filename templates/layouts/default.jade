@@ -14,20 +14,9 @@ html
     
     //- Scripts
     script(src="/vendor/jquery/dist/jquery.min.js")
-    script(src="/vendor/doubletaptogo/jquery.doubletaptogo.js")
     block extra_scripts
     
   body(ontouchstart)
-    nav(id="nav")
-      ul
-        li
-          a(href="#") Goes Nowhere
-        li
-          a(href="#") Goes Nowhere
-        li
-          a(href="#") Goes Nowhere
-        li
-          a(href="#") Goes Nowhere
     nav(class="site-nav")
       div
         a(class="escape-hatch", href="/")
@@ -142,6 +131,3 @@ html
       p(class="copyright") &copy 2016 Prep Stars of America | All Rights Reserved | Privacy Policy | Terms of Use
 
   block last_scripts
-  
-  script
-      $('#nav').doubleTapToGo();
