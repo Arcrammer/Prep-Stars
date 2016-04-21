@@ -4,6 +4,7 @@ var jshintReporter = require('jshint-stylish');
 var watch = require('gulp-watch');
 var shell = require('gulp-shell')
 var sass = require('gulp-sass');
+var sourcemaps = require('gulp-sourcemaps');
 
 var paths = {
 	'src':[
@@ -36,7 +37,9 @@ gulp.task('watch:sass', function () {
 
 gulp.task('sass', function(){
 	gulp.src(paths.style.all)
+    .pipe(sourcemaps.init())
 		.pipe(sass().on('error', sass.logError))
+    .pipe(sourcemaps.write())
 		.pipe(gulp.dest(paths.style.output));
 });
 
