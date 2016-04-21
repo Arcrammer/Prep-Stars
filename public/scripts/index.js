@@ -6,9 +6,11 @@ $(document).ready(function () {
   });
 
   // Dropdown Menu
-  $('.dropbtn, .dropdown-content').hover(function () {
+  $('.dropbtn, .dropbtn a, .dropdown-content').hover(function () {
+    $('.dropbtn').addClass('is-showing');
     $('.dropdown-content').css('display', 'inline');
   }, function () {
+    $('.dropbtn').removeClass('is-showing');
     $('.dropdown-content').css('display', 'none');
   });
 });
