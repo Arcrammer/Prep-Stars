@@ -89,14 +89,9 @@ keystone.set('email tests', require('./routes/emails'));
 // Configure the navigation bar in Keystone's Admin UI
 
 keystone.set('nav', {
-<<<<<<< HEAD
 	// 'galleries': 'galleries',
 	// 'enquiries': 'enquiries',
   'videos': 'videos',
-=======
-	'galleries': 'galleries',
-	'enquiries': 'enquiries',
->>>>>>> parent of 94e0c4a... Move Welcome Message Up
 	'users': 'users'
 });
 
