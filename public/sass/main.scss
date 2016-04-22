@@ -50,7 +50,7 @@ body {
 }
 
 // Top Bar
-nav {
+.site-nav {
   background-color: $light-blue;
   border-bottom: 0.25rem solid darken($light-blue, 15%);
   position: relative;
@@ -642,7 +642,7 @@ footer {
 // Responsiveness
 @media only screen and (max-width: 1440px) {
   // Top Bar
-  nav div {
+  .site-nav div {
     margin: auto;
     max-width: 1440px;
   }
@@ -650,7 +650,7 @@ footer {
 
 @media only screen and (max-width: 964px) {
   // Top Bar
-  nav ul {
+  .site-nav ul {
     // TODO: Figure out what to do
     // with this navigation list
     // for thin layouts
