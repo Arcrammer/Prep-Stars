@@ -12,6 +12,7 @@ body {
   color: #5A5957;
   font-family: "Roboto";
   font-weight: 700;
+  -webkit-tap-highlight-color: transparent; // iOS tap overlay thing
 }
 
 // Text Sections

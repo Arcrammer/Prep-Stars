@@ -8,7 +8,7 @@ $(document).ready(function () {
   // and prevent body scrolling
   pancakeButton.click(function () {
     navMenu.show();
-    $('body').css('position', 'fixed');
+    $('body').css('overflow', 'hidden');
   });
 
   // Hide the navigation list
@@ -21,7 +21,7 @@ $(document).ready(function () {
         // rather than a child
         navMenu.hide();
 
-        $('body').css('position', 'static');
+        $('body').css('overflow', 'hidden');
       }
     });
   }
