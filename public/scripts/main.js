@@ -11,7 +11,9 @@ $(document).ready(function () {
 
   // Hide the navigation list
   // when it's tapped
-  navMenu.click(function () {
-    navMenu.hide();
-  });
+  if ($(window).width() <= 964) {
+    navMenu.click(function () {
+      navMenu.hide();
+    });
+  }
 });
