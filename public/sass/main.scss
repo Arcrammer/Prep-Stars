@@ -50,6 +50,15 @@ body {
 }
 
 // Top Bar
+.pancake-menu {
+  background-color: transparent;
+
+  span {
+    background: black;
+    height: 5px;
+  }
+}
+
 .site-nav {
   background-color: $light-blue;
   border-bottom: 0.25rem solid darken($light-blue, 15%);
@@ -57,7 +66,6 @@ body {
 
   // Escape Hatch
   .escape-hatch {
-    background: oral;
     background: {
       image: url('/icons/ugly-logo.png');
       position: center center;
@@ -75,6 +83,11 @@ body {
     left: 2.5%;
     text-align: center;
     width: 5%;
+  }
+
+  // Pancake Button
+  .pancake-button {
+    display: none;
   }
 
   // Dropdown clearfix
@@ -110,7 +123,6 @@ body {
   li {
     cursor: pointer;
     display: inline-block;
-    height: 100%;
     padding: 0 0.35rem;
 
     &:hover a {
@@ -650,9 +662,71 @@ footer {
 
 @media only screen and (max-width: 964px) {
   // Top Bar
-  .site-nav ul {
-    // background: mediumspringgreen;
-    // float: left;
+  .site-nav {
+    padding: 3rem 0;
+
+    // Escape Hatch
+    .escape-hatch:link,
+    .escape-hatch:visited {
+      padding: 0.75rem 1.5rem;
+    }
+
+    // Pancake Button
+    .pancake-button {
+      background: transparent;
+      display: block;
+      padding: 0 5px / 964px * 100%;
+      position: absolute;
+      top: 5%;
+      right: 5%;
+      bottom: 5%;
+      width: 65px / 964px * 100%;
+
+      span {
+        background-color: darken($light-blue, 25%);
+        border-radius: 1rem;
+        clear: both;
+        display: block;
+        float: left;
+        height: 5px;
+        margin: 10% 0;
+        width: 100%;
+      }
+    }
+
+    ul {
+      background: $light-blue;
+      display: none;
+      margin: 0;
+      padding-top: 15%;
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      z-index: 2;
+
+      li {
+        padding: 0;
+        text-align: center;
+        width: 100%;
+
+        a:link, a:visited {
+          display: block;
+          line-height: 0;
+          padding: 0;
+          margin: 10% 0;
+          width: 100%;
+
+          &.active {
+            padding: 6.5% 0;
+            margin: auto;
+            width: 45%;
+          }
+        }
+      }
+    }
   }
 
   // Footer
@@ -671,6 +745,12 @@ footer {
 }
 
 @media only screen and (max-width: 600px) {
+  // Top Bar
+  .site-nav .pancake-button {
+    padding: 0 5px / 600px * 100%;
+    width: 65px / 600px * 100%;
+  }
+
   // Text Sections
   .text-section {
     h1 {

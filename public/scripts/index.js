@@ -13,4 +13,4 @@ $(document).ready(function () {
     $('.dropbtn').removeClass('is-showing');
     $('.dropdown-content').css('display', 'none');
   });
-});
+}
