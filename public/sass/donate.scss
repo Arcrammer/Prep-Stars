@@ -13,12 +13,12 @@
     border-radius: 0.25rem;
     float: left;
     margin: 12px / 916px * 100%;
+    padding-bottom: 2.5%;
     text-align: center;
     width: 281.33333333px / 916px * 100%;
 
     &:nth-of-type(4) {
       clear: both;
-      margin-bottom: 3.5%;
       width: 97.5%;
 
       p {
@@ -32,6 +32,7 @@
         right-radius: 0.25rem;
       };
       margin: 0;
+      margin-bottom: 5%;
       padding: 5% 0;
     }
 
@@ -100,6 +101,48 @@
       p {
         color: darken(#FFB74D, 35%);
       }
+    }
+  }
+}
+
+// Responsiveness
+@media only screen and (max-width: 1440px) {
+  // Demographics
+  .demographics div:nth-of-type(4) h1 {
+    margin-bottom: 2.5%;
+    padding: 2.5% 0;
+  }
+}
+
+@media only screen and (max-width: 964px) {
+  // Demographics
+  .demographics div {
+    margin: 20px / 964px * 100%;
+    width: 442px / 964px * 100%;
+
+    &:nth-of-type(4) {
+      clear: none;
+      width: 442px / 964px * 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  // Demographics
+  .demographics div {
+    width: 576px / 600px * 100%;
+
+    &:nth-of-type(4) {
+      clear: none;
+      width: 576px / 600px * 100%;
+    }
+
+    &:last-of-type {
+      margin-bottom: 5%;
+    }
+
+    h1 {
+      width: 100%;
     }
   }
 }
