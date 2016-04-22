@@ -1,0 +1,105 @@
+/**
+ * donate.scss
+ *
+ * Alexander Rhett Crammer
+ * Friday, 22 April, 2016
+ */
+@import "settings.scss";
+
+// Demographics
+.demographics {
+  div {
+    background-color: lighten(mediumvioletred, 27.5%);
+    border-radius: 0.25rem;
+    float: left;
+    margin: 12px / 916px * 100%;
+    text-align: center;
+    width: 281.33333333px / 916px * 100%;
+
+    &:nth-of-type(4) {
+      clear: both;
+      margin-bottom: 3.5%;
+      width: 97.5%;
+
+      p {
+        min-width: 90%;
+      }
+    }
+
+    h1 {
+      border-top: {
+        left-radius: 0.25rem;
+        right-radius: 0.25rem;
+      };
+      margin: 0;
+      padding: 5% 0;
+    }
+
+    p {
+      text-align: left;
+    }
+
+    img {
+      margin: {
+        top: 2.5%;
+        bottom: 5%;
+      };
+    }
+
+    // Colors
+    // Purple
+    &:nth-of-type(1) {
+      background-color: $purple;
+
+      h1 {
+        background-color: darken($purple, 12.5%);
+        color: lighten($purple, 25%);
+      }
+
+      p {
+        color: lighten($purple, 25%);
+      }
+    }
+
+    // Red
+    &:nth-of-type(2) {
+      background-color: $red;
+
+      h1 {
+        background-color: darken($red, 20%);
+        color: lighten($red, 15%);
+      }
+
+      p {
+        color: darken($red, 30%);
+      }
+    }
+
+    // Blue
+    &:nth-of-type(3) {
+      background-color: $light-blue;
+
+      h1 {
+        background-color: darken($light-blue, 20%);
+        color: lighten($light-blue, 15%);
+      }
+
+      p {
+        color: darken($light-blue, 35%);
+      }
+    }
+
+    &:nth-of-type(4) {
+      background-color: #FFB74D;
+
+      h1 {
+        background-color: darken(#FFB74D, 20%);
+        color: lighten(#FFB74D, 15%);
+      }
+
+      p {
+        color: darken(#FFB74D, 35%);
+      }
+    }
+  }
+}
