@@ -6,11 +6,13 @@ $(document).ready(function () {
   });
 
   // Dropdown Menu
-  $('.dropbtn, .dropbtn a, .dropdown-content').hover(function () {
-    $('.dropbtn').addClass('is-showing');
-    $('.dropdown-content').css('display', 'inline');
-  }, function () {
-    $('.dropbtn').removeClass('is-showing');
-    $('.dropdown-content').css('display', 'none');
-  });
+  if ($(window).width() >= 964) {
+      $('.dropbtn, .dropbtn a, .dropdown-content').hover(function () {
+      $('.dropbtn').addClass('is-showing');
+      $('.dropdown-content').css('display', 'inline');
+    }, function () {
+      $('.dropbtn').removeClass('is-showing');
+      $('.dropdown-content').css('display', 'none');
+    });
+  }
 });
