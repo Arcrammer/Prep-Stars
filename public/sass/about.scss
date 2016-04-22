@@ -8,10 +8,6 @@
 @import "settings.scss";
 
 // Colors
-$donate-bar-color: #ccedf6;
-$donate-button-color: $purple;
-$page-title-background-color: #246d90;
-$secondary-nav-height: 45px;
 $cta-background-color: #2196f3;
 $cta-tint: #ccedf6;
 
@@ -60,45 +56,6 @@ aside {
   }
 }
 
-// Navigation bar
-.links-and-donation-button {
-  background-color: $donate-bar-color;
-  height: $secondary-nav-height;
-  overflow: visible;
-  text-align: right;
-
-  nav {
-    text-align: left;
-    width: 100%;
-
-    li {
-      display: inline-block;
-      margin: auto 0.5rem;
-      line-height: $secondary-nav-height;
-
-      &:first-of-type {
-        margin-left: 5%;
-      }
-    }
-  }
-
-  // Secondary Navigation Links
-  a:link,
-  a:visited {
-    color: $page-title-background-color;
-    text-decoration: none;
-    transition: all 175ms;
-  }
-
-  a:hover {
-    color: lighten($page-title-background-color, 25%);
-  }
-
-  a:active {
-    color: darken($page-title-background-color, 25%);
-  }
-}
-
 // Donate Button
 .donate-button {
   background-color: $donate-button-color;
@@ -127,22 +84,6 @@ aside {
 
   a:link, a:visited {
     color: darken($white, 7.5%);
-  }
-}
-
-// Title
-.title {
-  background-color: $page-title-background-color;
-  border: {
-    top: 0.25rem solid darken($page-title-background-color, 7.5%);
-    bottom: 0.25rem solid darken($page-title-background-color, 7.5%);
-  }
-
-  h1 {
-    color: lighten($page-title-background-color, 55%);
-    font-size: 4rem;
-    padding: 2rem 5rem;
-    text-transform: uppercase;
   }
 }
 
@@ -291,7 +232,7 @@ aside {
   }
 
   // Navigation Bar
-  .links-and-donation-button button {
+  .secondary-navigation-links button {
     height: 2rem;
     line-height: 0.5rem;
   }
