@@ -21,7 +21,7 @@ $(document).ready(function () {
         // rather than a child
         navMenu.hide();
 
-        $('body').css('overflow', 'hidden');
+        $('body').css('overflow', 'visible');
       }
     });
   }
