@@ -16,39 +16,38 @@ html
     block extra_scripts
     
   body(ontouchstart)
-    nav(class="site-nav")
-      div
-        a(class="escape-hatch", href="/")
-          img(src="/icons/ugly-logo.png")
-        ul
-          li
-            a(href="/", class=(section == 'home') ? 'active' : '') Home
-          li(class="dropbtn")
-            a(href="/about", class="drop", class=(section == 'about') ? 'active' : '') About
-            ul(class="dropdown-content")
-             li
-               h1 Testimonials
-               p What are people saying about us?
-             li
-               h1 Donate to Change
-               p Fund programs that help youth build a future.
-             li
-               h1 Become a Partner
-               p Help us make a difference in the lives of todays' youth
-             li
-               h1 Volunteer
-               p Lend them your time.
-          li
-            a(href="#") Programs
-          li
-            a(href="#") Health & Wellness
-          li
-            a(href="/donate", class=(section == 'donate') ? 'active' : '') Donations
-          li
-            a(href="#") Events
-          //- li
-          //-   a
-          //-     img(src="/icons/magnifying-glass.png", width="100")
+    nav
+      a(class="escape-hatch", href="/")
+        img(src="/icons/ugly-logo.png")
+      ul
+        li
+          a(href="/", class=(section == 'home') ? 'active' : '') Home
+        li(class="dropbtn")
+          a(href="/about", class="drop", class=(section == 'about') ? 'active' : '') About
+          ul(class="dropdown-content")
+           li
+             h1 Testimonials
+             p What are people saying about us?
+           li
+             h1 Donate to Change
+             p Fund programs that help youth build a future.
+           li
+             h1 Become a Partner
+             p Help us make a difference in the lives of todays' youth
+           li
+             h1 Volunteer
+             p Lend them your time.
+        li
+          a(href="#") Programs
+        li
+          a(href="#") Health & Wellness
+        li
+          a(href="/donate", class=(section == 'donate') ? 'active' : '') Donations
+        li
+          a(href="#") Events
+        //- li
+        //-   a
+        //-     img(src="/icons/magnifying-glass.png", width="100")
     block content
 
   footer
