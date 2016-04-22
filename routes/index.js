@@ -22,6 +22,8 @@ var keystone = require('keystone');
 var middleware = require('./middleware');
 var importRoutes = keystone.importer(__dirname);
 
+var fs = require('fs');
+
 // Common Middleware
 keystone.pre('routes', middleware.initLocals);
 keystone.pre('render', middleware.flashMessages);
@@ -31,11 +33,16 @@ var routes = {
 	views: importRoutes('./views')
 };
 
+// Global data
+sixteen_nine_filenames = fs.readdirSync(keystone.get('module root') + '/public/images/random_photos_from_social_sites/sixteen-nine/');
+one_one_filenames = fs.readdirSync(keystone.get('module root') + '/public/images/random_photos_from_social_sites/one-one/');
+
 // Setup Route Bindings
 exports = module.exports = function (app) {
 	// Views
 	app.get('/', routes.views.index);
   app.get('/about', routes.views.about);
+  app.get('/donate', routes.views.donate);
 
 	// NOTE: To protect a route so that only admins can see it, use the requireUser middleware:
 	// app.get('/protected', middleware.requireUser, routes.views.protected);

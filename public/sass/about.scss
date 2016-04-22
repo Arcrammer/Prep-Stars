@@ -114,12 +114,19 @@ aside {
   margin-right: 5%;
 
   &:hover {
-    background-color: lighten($donate-button-color, 25%);
+    background-color: lighten($donate-button-color, 15%);
   }
 
   &:active {
     background-color: darken($donate-button-color, 20%);
-    color: darken($white, 45%);
+
+    a:link, a:visited {
+      color: darken($white, 37.5%);
+    }
+  }
+
+  a:link, a:visited {
+    color: darken($white, 7.5%);
   }
 }
 
