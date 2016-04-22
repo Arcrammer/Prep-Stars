@@ -53,6 +53,29 @@ body {
 nav {
   background-color: $light-blue;
   border-bottom: 0.25rem solid darken($light-blue, 15%);
+  position: relative;
+
+  // Escape Hatch
+  .escape-hatch {
+    background: oral;
+    background: {
+      image: url('/icons/ugly-logo.png');
+      position: center center;
+      repeat: no-repeat;
+      size: contain;
+    }
+    display: block;
+    float: left;
+    margin: auto;
+    max-height: 50px;
+    padding: 12.5px / 1024px * 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 2.5%;
+    text-align: center;
+    width: 5%;
+  }
 
   // Dropdown clearfix
   &::after {
@@ -64,9 +87,9 @@ nav {
   // Link List
   ul {
     float: right;
-    margin-right: 5%;
+    margin-right: 2.5%;
     text-align: right;
-    width: 85%;
+    width: 82.5%;
 
     li {
       line-height: 100px;
@@ -203,20 +226,6 @@ nav {
 
   a:active {
     color: darken($nav-link-color, 50%);
-  }
-
-  // Escape Hatch
-  .escape-hatch {
-    display: block;
-    float: left;
-    padding: 12.5px / 1024px * 100%;
-    text-align: center;
-    width: 5%;
-
-    img {
-      max-width: 75px;
-      max-height: 75px;
-    }
   }
 }
 
