@@ -19,6 +19,7 @@ body {
 .text-section {
   font-weight: 500;
   margin: 3.5rem auto;
+  text-align: left;
 
   h1 {
     font-size: 2rem;
@@ -398,6 +399,7 @@ input[type="submit"] {
 // Footer
 footer {
   clear: both;
+  text-align: left;
 
   .contact-and-social {
     background-color: $purple;

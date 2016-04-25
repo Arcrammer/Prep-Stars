@@ -6,6 +6,16 @@
  */
 @import "settings.scss";
 
+// Structure
+body {
+  text-align: center;
+}
+
+// Featured Video
+iframe, #player {
+  margin-top: 5%;
+}
+
 // Demographics
 .demographics {
   div {
