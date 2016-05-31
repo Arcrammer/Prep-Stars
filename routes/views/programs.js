@@ -9,5 +9,6 @@ exports = module.exports = function (req, res) {
   locals.section = 'programs';
 
   // Render the view
-  view.render('programs');
+  // view.render('programs');
+  view.redirect(req.header('Referer') || '/');
 }
