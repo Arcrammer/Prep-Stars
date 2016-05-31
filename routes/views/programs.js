@@ -10,5 +10,5 @@ exports = module.exports = function (req, res) {
 
   // Render the view
   // view.render('programs');
-  view.redirect(req.header('Referer') || '/');
+  res.redirect(req.header('Referer') || '/');
 }
