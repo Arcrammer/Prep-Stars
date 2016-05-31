@@ -1,7 +1,8 @@
 var gulp = require('gulp');
 var jshint = require('gulp-jshint');
 var jshintReporter = require('jshint-stylish');
-var watch = require('gulp-watch');
+var nodemon = require('gulp-nodemon');
+var browserSync = require('browser-sync').create();
 var shell = require('gulp-shell')
 var sass = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
@@ -43,7 +44,8 @@ gulp.task('sass', function(){
 		.pipe(gulp.dest(paths.style.output));
 });
 
-gulp.task('runKeystone', shell.task('nodemon keystone.js'));
+gulp.task('runKeystone', nodemon());
+
 gulp.task('watch', [
   'watch:sass',
   'watch:lint'
@@ -51,7 +53,19 @@ gulp.task('watch', [
 
 gulp.task('runMongo', shell.task('mongod'));
 
-gulp.task('runBrowserSync', shell.task('browser-sync start --config="bs-config.js"'));
+gulp.task('runBrowserSync', function () {
+  // Run Browser-Sync
+  browserSync.init([
+    "views/***",
+    "public/stylesheets/***",
+    "public/scripts/***"
+  ], {
+    proxy: 'localhost:9000',
+    injectChanges: true,
+    open: true,
+    browser: "Google Chrome Canary"
+  });
+});
 
 gulp.task('default', [
   'watch',
