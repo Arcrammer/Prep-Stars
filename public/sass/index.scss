@@ -40,6 +40,14 @@ $grey-text-color: darken($our-programs-grey, 32.5%);
 // Slick Slider
 .slideshow {
   background-color: #333;
+
+  div {
+    background: {
+      repeat: no-repeat;
+      size: cover;
+    }
+    height: 375px;
+  }
 }
 
 .slick-prev,

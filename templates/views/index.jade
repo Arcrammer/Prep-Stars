@@ -11,8 +11,7 @@ block extra_scripts
 block content
   section(class="slideshow")
     - for (var i=0; i<4; i++){
-      div
-        img(src="/images/random_photos_from_social_sites/sixteen-nine/" + sixteen_nine_filenames[Math.floor(Math.random() * sixteen_nine_filenames.length)])
+      div(style="background-image: url(/images/random_photos_from_social_sites/sixteen-nine/" + sixteen_nine_filenames[Math.floor(Math.random() * sixteen_nine_filenames.length)] + ")")
     - }
   section(class="tiny-ctas")
     div
