@@ -1,0 +1,36 @@
+/**
+ * programs.scss
+ *
+ * Alexander Rhett Crammer
+ * Thurday, 2 June, 2015
+ */
+@import "settings.scss";
+
+// Structure
+main, aside {
+  margin-top: 2.5rem;
+}
+
+aside {
+  padding: 2.5%;
+  text-align: center;
+  width: 20%;
+
+  p {
+    font-weight: 300;
+    line-height: 135%;
+    margin-bottom: 10%;
+    text-align: left;
+  }
+
+  img {
+    border-radius: 0.25rem;
+    margin: 7.5% auto;
+    width: 100%;
+  }
+}
+
+// Responsiveness
+@media only screen and (max-width: 964px) {}
+
+@media only screen and (max-width: 600px) {}

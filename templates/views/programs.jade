@@ -1,4 +1,29 @@
-extends ../layouts/default.jade
+extends ../layouts/default
+
+block extra_styles
+  link(rel="stylesheet", href="/stylesheets/about.css")
+  link(rel="stylesheet", href="/stylesheets/programs.css")
 
 block content
-  h2 This is where you'll be able to see all of the programs.
+  main
+    section(class="site-description")
+      h1 Partnerships
+      p Our unique partnerships with the NBA/WNBA, and the Golden State Warriors allows inner city children to experience learning and playing basketball just like the Golden State Warriors! We give each participant 8 weeks of basketball, Warrior uniforms, head bands, training, and a certificate autographed by Steph Curry! We had 160 kids participate between age 5 and 18. Four school districts participated and we even provide Jr. Warrior Cheerleaders (just like the warriors) Putting the fun back into learning sports in a fun environment. All coaches are college & former professional athletes!
+      img(src="/images/random_photos_from_social_sites/sixteen-nine/11357040_588728397937150_7465375017467699852_o.jpg")
+  aside
+    section
+      h1 Join the Team
+      img(src="/images/james-jones-on-the-field.jpg")
+      p "I believe Prep Stars of America is one of the top youth sports programs addressing childhood obesity in a manner that will not only impact the child but the whole family."
+      p "By participating in the skill challenge events, children are able to get fit, get educated, and get skills necessary to be successful on and off the field. Join the team today! Let’s eradicate obesity in America!" - <b>James Jones NFL WR Greenbay Packers</b>
+  main.bottom-two
+    section
+      img(src="/images/random_photos_from_social_sites/one-one/10860876_559535524189771_8990772276712672260_o.jpg")
+      div.right
+        h1 Documented Success
+        p Our programs have documented success at teaching manageable behavior modification and anger management techniques, which reduce the stress associated with poor self esteem related to fitness and health.
+    section
+      img(src="/images/diversity.jpg")
+      div.right
+        h1 Diversity
+        p Our programs meet the Office of Juvenile Justice and Delinquency Prevention’s criteria for young people who face high probabilities of school or social failure, including criminal or delinquency involvement.
