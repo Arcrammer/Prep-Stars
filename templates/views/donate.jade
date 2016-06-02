@@ -2,6 +2,7 @@ extends ../layouts/default.jade
 
 block extra_styles
   link(rel="stylesheet", href="/stylesheets/donate.css")
+  link(rel="stylesheet", href="/stylesheets/font-awesome.min.css")
 
 block content
   div(class="secondary-navigation-links")
@@ -13,14 +14,11 @@ block content
           a(href="#") Parents
         li
           a(href="#") Educators
-        li
-          a(href="#") Community
   div(class="title")
     h1 Donate
   iframe(src='https://player.vimeo.com/video/164037840', width='640', height='360', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='')
   section(class="text-section")
-    p In aliquam leo in erat venenatis ornare. In vulputate eu leo sed mattis. Cras elit odio, porttitor euismod faucibus vitae, ultrices vitae ante. Vivamus ac diam tristique dui facilisis volutpat et at lacus. Morbi sodales erat ut quamhendrerit eleifend. In vestibulum ac odio at euismod. Mauris quis mi ut tellus vehicula vestibulum maximus vehicula odio. Integer non scelerisque elit. Nulla semper lorem sit amet augue pharetra facilisis. Donec vel vehicula dolor, non semper nunc. 
-    p In aliquam leo in erat venenatis ornare. In vulputate eu leo sed mattis. Cras elit odio, porttitor euismod faucibus vitae, ultrices vitae ante. Vivamus ac diam tristique dui facilisis volutpat et at lacus. Morbi sodales erat ut quamhendrerit eleifend. In vestibulum ac odio at euismod. Mauris quis mi ut tellus vehicula vestibulum maximus vehicula odio. Integer non scelerisque elit. Nulla semper lorem sit amet augue pharetra facilisis. Donec vel vehicula dolor, non semper nunc. 
+    h1 How can your donation support Prep Stars? 
   section(class="demographics text-section")
     div
       h1 Financial Donations
@@ -31,7 +29,17 @@ block content
     div
       h1 Get Involved
       p In aliquam leo in erat venenatis ornare. In vulputate eu leo sed mattis. Cras elit odio, porttitor euismod faucibus vitae, ultrices vitae ante. Vivamus ac diam tristique dui facilisis volutpat et at lacus. Morbi sodales erat ut quamhendrerit eleifend. In vestibulum ac odio at euismod. Mauris quis mi ut tellus vehicula vestibulum maximus vehicula odio. Integer non scelerisque elit. Nulla semper lorem sit amet augue pharetra facilisis. Donec vel vehicula dolor, non semper nunc.
-    div
-      h1 Community
-      each i in new Array(3)
-        p In aliquam leo in erat venenatis ornare. In vulputate eu leo sed mattis. Cras elit odio, porttitor euismod faucibus vitae, ultrices vitae ante. Vivamus ac diam tristique dui facilisis volutpat et at lacus. Morbi sodales erat ut quamhendrerit eleifend. In vestibulum ac odio at euismod. Mauris quis mi ut tellus vehicula vestibulum maximus vehicula odio. Integer non scelerisque elit. Nulla semper lorem sit amet augue pharetra facilisis. Donec vel vehicula dolor, non semper nunc.
+  div(class="ctas")
+    section(class="cta")
+      span(class="fa fa-futbol-o")
+      h4 &infin; Million
+      p Students who are more active
+    section(class="cta")
+      span(class="fa fa-cutlery")
+      h4 &infin; Million
+      p Students who are more active
+    section(class="cta")
+      span(class="fa fa- fa-heartbeat")
+      h4 &infin; Million
+      p Students who are more active
+      

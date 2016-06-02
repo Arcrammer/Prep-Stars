@@ -3,7 +3,8 @@ var jshint = require('gulp-jshint');
 var jshintReporter = require('jshint-stylish');
 var nodemon = require('gulp-nodemon');
 var browserSync = require('browser-sync').create();
-var shell = require('gulp-shell')
+var shell = require('gulp-shell');
+var exec = require('child_process').exec;
 var sass = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
 
@@ -51,7 +52,9 @@ gulp.task('watch', [
   'watch:lint'
 ]);
 
-gulp.task('runMongo', shell.task('mongod'));
+gulp.task('runMongo', () => {
+  exec('mongod')  
+});
 
 gulp.task('runBrowserSync', function () {
   // Run Browser-Sync

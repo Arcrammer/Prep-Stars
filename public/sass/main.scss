@@ -213,7 +213,12 @@ body {
     transition: background-color 175ms;
 
     &:hover {
-      background-color: darken($darker-blue, 10%);
+      background-color: lighten($darker-blue, 12.5%);
+    }
+
+    &:active {
+      background-color: darken($darker-blue, 12.5%);
+      border: 0.175rem solid darken($darker-blue, 2.5%);
     }
 
     a:link,

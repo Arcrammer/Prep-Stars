@@ -19,22 +19,12 @@ iframe, #player {
 // Demographics
 .demographics {
   div {
-    background-color: lighten(mediumvioletred, 27.5%);
     border-radius: 0.25rem;
     float: left;
     margin: 12px / 916px * 100%;
     padding-bottom: 2.5%;
     text-align: center;
     width: 281.33333333px / 916px * 100%;
-
-    &:nth-of-type(4) {
-      clear: both;
-      width: 97.5%;
-
-      p {
-        min-width: 90%;
-      }
-    }
 
     h1 {
       border-top: {
@@ -99,42 +89,44 @@ iframe, #player {
         color: darken($light-blue, 35%);
       }
     }
+  }
+}
 
-    &:nth-of-type(4) {
-      background-color: #FFB74D;
-      margin-bottom: 3.5%;
+// CTAs
+.ctas {
+  clear: both;
+  margin: auto;
+  margin-bottom: 7.5%;
+  overflow: auto;
+  width: 75%;
+}
 
-      h1 {
-        background-color: darken(#FFB74D, 20%);
-        color: lighten(#FFB74D, 15%);
-      }
+.cta {
+  float: left;
+  margin: 10px;
+  width: 236px;
 
-      p {
-        color: darken(#FFB74D, 35%);
-      }
-    }
+  span {
+    font-size: 2rem;
+    padding: 10%;
+  }
+
+  h4 {
+    font-size: 1.75rem;
+    margin-top: 1.5%;
+  }
+
+  p {
+    margin-top: 10%;
   }
 }
 
 // Responsiveness
-@media only screen and (max-width: 1440px) {
-  // Demographics
-  .demographics div:nth-of-type(4) h1 {
-    margin-bottom: 2.5%;
-    padding: 2.5% 0;
-  }
-}
-
 @media only screen and (max-width: 964px) {
   // Demographics
   .demographics div {
     margin: 20px / 964px * 100%;
     width: 442px / 964px * 100%;
-
-    &:nth-of-type(4) {
-      clear: none;
-      width: 442px / 964px * 100%;
-    }
   }
 }
 
@@ -142,11 +134,6 @@ iframe, #player {
   // Demographics
   .demographics div {
     width: 576px / 600px * 100%;
-
-    &:nth-of-type(4) {
-      clear: none;
-      width: 576px / 600px * 100%;
-    }
 
     &:last-of-type {
       margin-bottom: 5%;
