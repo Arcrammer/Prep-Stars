@@ -96,15 +96,17 @@ iframe, #player {
 .ctas {
   clear: both;
   margin: auto;
-  margin-bottom: 7.5%;
+  position: relative;
+  top: 15px;
+  margin: 7.5% auto;
   overflow: auto;
   width: 75%;
 }
 
 .cta {
   float: left;
-  margin: 10px;
-  width: 236px;
+  margin: 1.3020833333%;
+  width: 30.729166667%;
 
   span {
     font-size: 2rem;
