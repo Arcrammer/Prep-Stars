@@ -205,7 +205,8 @@ body {
 
   // Links
   .active {
-    background-color: darken($darker-blue, 25%);
+    background-color: lighten($darker-blue, 7.5%);
+    border: 0.175rem solid lighten($darker-blue, 2.5%);
     border-radius: 100rem;
     color: $white !important;
     padding: 0.65rem 1.5rem;
