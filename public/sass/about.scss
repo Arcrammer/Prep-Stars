@@ -113,12 +113,6 @@ aside {
     line-height: 150%;
     margin: 3.5% auto;
   }
-
-  hr {
-    border-style: solid;
-    color: rgb(90, 89, 87);
-    margin: 7.5% 1.5%;
-  }
 }
 
 // CTAs
@@ -156,6 +150,41 @@ aside {
   img {
     margin: 7.5% auto 2.5%;
     width: 40%;
+  }
+}
+
+// Bottom Two Sections
+.bottom-two {
+  margin-top: 0;
+  width: 100%;
+
+  section {
+    float: left;
+    padding: 2.5%;
+    width: 45%;
+
+    img {
+      border-radius: 0.35rem;
+      float: left;
+      margin-right: 5%;
+      width: 35%;
+    }
+
+    .right {
+      float: left;
+      font-weight: 500;
+      line-height: 135%;
+      width: 57.5%;
+
+      h1 {
+        @include thin-title();
+        font: {
+          size: 1.15rem;
+          weight: 600;
+        }
+        line-height: 125%;
+      }
+    }
   }
 }
 
