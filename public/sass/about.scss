@@ -97,8 +97,15 @@ aside {
       size: 1.75rem;
       weight: 300;
     }
-    margin: 2.5% auto;
+    margin: 5% auto;
     text-transform: uppercase;
+  }
+
+  h2 {
+    @extend h1;
+    font-size: 1.5rem;
+    line-height: 135%;
+    text-align: center;
   }
 
   img {
