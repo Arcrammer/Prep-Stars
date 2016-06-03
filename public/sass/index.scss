@@ -211,6 +211,13 @@ $grey-text-color: darken($our-programs-grey, 32.5%);
       text-transform: uppercase;
       width: 90%;
 
+      a {
+        color: inherit;
+        display: block;
+        text-decoration: none;
+        width: 100%;
+      }
+
       &:hover {
         background-color: lighten($light-tiny-cta-tint, 12.5%);
       }
