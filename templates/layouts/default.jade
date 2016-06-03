@@ -61,35 +61,35 @@ html
           form(action="/api/enable-newsletter/", method="POST")
             input(type="email", placeholder="Get Email Updates")
         div(class="right")
-          a(href="#")
-            img(src="/icons/twitter.png", alt="Twitter Icon")
-          a(href="#")
+          //- a(href="#")
+          //-   img(src="/icons/twitter.png", alt="Twitter Icon")
+          a(href="https://m.facebook.com/PrepStarsofAmerica/")
             img(src="/icons/facebook.png", alt="Facebook Icon")
-          a(href="#")
+          a(href="https://www.instagram.com/playjrnba/")
             img(src="/icons/instagram.png", alt="Instagram Icon")
       section(class="latest-photos text-section")
         h1 Latest Photos
-        - for (var i=0; i<18; i++){
+        - for (var i=0; i<18; i++) {
             img(src="/images/random_photos_from_social_sites/one-one/" + one_one_filenames[Math.floor(Math.random() * one_one_filenames.length)])
         - }
     section(class="end")
       div
         h1 About Us
         ul
+          //- li
+          //-   a(href="#") Mission & Vision
           li
-            a(href="#") Mission & Vision
-          li
-            a(href="#") Partners
-          li
-            a(href="#") Team
-          li
-            a(href="#") History
-          li
-            a(href="#") Impact
-          li
-            a(href="#") FAQs
+            a(href="/about") Partners
+          //- li
+          //-   a(href="#") Team
+          //- li
+          //-   a(href="#") History
+          //- li
+          //-   a(href="#") Impact
+          //- li
+          //-   a(href="#") FAQs
           li 
-            a(href="#") Testimonials
+            a(href="/testimonials") Testimonials
           li
             a(href="/about") About
           li 
@@ -97,27 +97,27 @@ html
       div
         h1 Our Work
         ul
+          //- li
+          //-   a(href="#") Where we Work
+          //- li
+          //-   a(href="#") Advocates for Change
           li
-            a(href="#") Where we Work
-          li
-            a(href="#") Advocates for Change
-          li
-            a(href="#") Testimonials
+            a(href="/testimonials") Testimonials
           li
             a(href="/programs") Programs
-          li
-            a(href="#") Health & Wellness
+          //- li
+          //-   a(href="#") Health & Wellness
       div
         h1 How You Can Help
         ul
           li
-            a(href="#") Volunteer
+            a(href="#") Volunteer (Coming Soon)
           li
-            a(href="#") Donate
+            a(href="/donate") Donate
+          //- li
+          //-   a(href="#") Ways to Give
           li
-            a(href="#") Ways to Give
-          li
-            a(href="#") Become a Partner
+            a(href="/programs") Become a Partner
       div(class="contact-information")
         h1 Contact Us
         address Prep Stars of America

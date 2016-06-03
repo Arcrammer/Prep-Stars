@@ -10,7 +10,6 @@ var keystone = require('keystone');
 // and documentation.
 
 keystone.init({
-
 	'name': 'Prep Stars',
 	'brand': 'Prep Stars',
 
@@ -27,7 +26,6 @@ keystone.init({
 	'session': true,
 	'auth': true,
 	'user model': 'User'
-
 });
 
 // Load your project's Models

@@ -44,6 +44,10 @@ exports = module.exports = function (app) {
   app.get('/about', routes.views.about);
   app.get('/donate', routes.views.donate);
   app.get('/programs', routes.views.programs);
+  app.post('/newsletter/subscribe', function (req, res, next) {
+    fs.appendFile('subscriber_email_addresses.txt', req.body.email_address + '\r\n');
+    res.redirect(req.header('Referer') || '/');
+  });
 
 	// NOTE: To protect a route so that only admins can see it, use the requireUser middleware:
 	// app.get('/protected', middleware.requireUser, routes.views.protected);
