@@ -46,7 +46,7 @@ module.exports = {
     "logSnippet": true,
     "rewriteRules": false,
     "open": true,
-    "browser": "Google Chrome Canary",
+    "browser": "Google Chrome",
     "xip": false,
     "hostnameSuffix": false,
     "reloadOnRestart": false,
