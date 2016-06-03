@@ -39,6 +39,11 @@ block content
 
       h1 Partnerships
       p Our unique partnerships with the NBA/WNBA, and the Golden State Warriors allows inner city children to experience learning and playing basketball just like the Golden State Warriors! We give each participant 8 weeks of basketball, Warrior uniforms, head bands, training, and a certificate autographed by Steph Curry! We had 160 kids participate between age 5 and 18. Four school districts participated and we even provide Jr. Warrior Cheerleaders (just like the warriors) Putting the fun back into learning sports in a fun environment. All coaches are college & former professional athletes!
+      
+      - var partner_logo_i = 0
+      while partner_logo_i <= 10
+        img(class="partner-image" src="/images/partner-logos/image#{partner_logo_i}.png", alt="Partner logo")
+        - partner_logo_i++
   aside
     section
       h1 Join the Team
