@@ -6,21 +6,15 @@ var sass = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
 
 gulp.task('watch:sass', function () {
-	gulp.watch({
-		all: './public/sass/***',
-		output: './public/stylesheets/'
-	}, ['sass']);
+	gulp.watch(['./public/sass/***'], ['sass']);
 });
 
 gulp.task('sass', function(){
-	gulp.src({
-		all: './public/sass/***',
-		output: './public/stylesheets/'
-	})
+	gulp.src('./public/sass/***')
     .pipe(sourcemaps.init())
 		.pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
     .pipe(sourcemaps.write())
-		.pipe(gulp.dest(paths.style.output));
+		.pipe(gulp.dest('./public/stylesheets/'));
 });
 
 gulp.task('runKeystone', nodemon());
@@ -34,7 +28,7 @@ gulp.task('runMongo', () => {
 gulp.task('runBrowserSync', function () {
   // Run Browser-Sync
   browserSync.init([
-    'views/***',
+    'templates/***',
     'public/stylesheets/***',
     'public/scripts/***'
   ], {

@@ -97,6 +97,7 @@ aside {
       size: 1.75rem;
       weight: 300;
     }
+    line-height: 135%;
     margin: 5% auto;
     text-transform: uppercase;
   }
@@ -120,10 +121,20 @@ aside {
     vertical-align: middle;
   }
 
-  p {
+  p, li {
     font-weight: 300;
     line-height: 150%;
     margin: 3.5% auto;
+  }
+
+  strong {
+    font-weight: 600;
+  }
+
+  li {
+    list-style-type: none;
+    margin: 1% auto;
+    text-indent: 1.5rem;
   }
 }
 
