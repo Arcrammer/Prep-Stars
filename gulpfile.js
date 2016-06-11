@@ -35,7 +35,7 @@ gulp.task('runBrowserSync', function () {
     proxy: 'localhost:9000',
     injectChanges: true,
     open: true,
-    browser: 'Google Chrome Canary'
+    browser: 'Google Chrome'
   });
 });
 
