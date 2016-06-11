@@ -289,7 +289,6 @@ body {
 .title {
   background-color: $page-title-background-color;
   border: {
-    top: 0.25rem solid darken($page-title-background-color, 7.5%);
     bottom: 0.25rem solid darken($page-title-background-color, 7.5%);
   }
 
@@ -408,10 +407,10 @@ footer {
   text-align: left;
 
   .contact-and-social {
-    background-color: $purple;
+    background-color: #D32F2F;
     border: {
-      top: 5px solid darken($purple, 3.5%);
-      bottom: 5px solid darken($purple, 3.5%);
+      top: 5px solid darken(#D32F2F, 3.5%);
+      bottom: 5px solid darken(#D32F2F, 3.5%);
     }
     overflow: auto;
     padding: 1.75rem 3rem;
@@ -428,16 +427,16 @@ footer {
     }
 
     .left {
-      border-right: 1px solid darken($purple, 15%);
+      border-right: 1px solid darken(#D32F2F, 15%);
 
       img {
         margin-left: 2.5%;
       }
 
       input {
-        background-color: darken($purple, 10%);
+        background-color: darken(#D32F2F, 10%);
         border: 0;
-        color: lighten($purple, 35%);
+        color: lighten(#D32F2F, 35%);
         font: {
           family: "Roboto", sans-serif;
           size: 0.85rem;
@@ -452,27 +451,27 @@ footer {
         width: 65%;
 
         &::-webkit-input-placeholder {
-          color: $purple;
+          color: #D32F2F;
         }
 
         &:-moz-placeholder {
           // Firefox 18-
-          color: $purple;
+          color: #D32F2F;
         }
 
         &::-moz-placeholder {
           // Firefox 19+
-          color: $purple;
+          color: #D32F2F;
         }
 
         &::-ms-input-placeholder {
-          color: $purple;
+          color: #D32F2F;
         }
       }
     }
 
     .right {
-      border-left: 1px solid darken($purple, 15%);
+      border-left: 1px solid darken(#D32F2F, 15%);
       text-align: center;
 
       a {
