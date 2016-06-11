@@ -69,11 +69,12 @@ html
             img(src="/icons/facebook.png", alt="Facebook Icon")
           a(href="https://www.instagram.com/playjrnba/")
             img(src="/icons/instagram.png", alt="Instagram Icon")
-      section(class="latest-photos text-section")
-        h1 Latest Photos
-        - for (var i=0; i<18; i++) {
-            img(src="/images/random_photos_from_social_sites/one-one/" + one_one_filenames[Math.floor(Math.random() * one_one_filenames.length)])
-        - }
+      if section == 'home'
+        section(class="latest-photos text-section")
+          h1 Latest Photos
+          - for (var i=0; i<18; i++) {
+              img(src="/images/random_photos_from_social_sites/one-one/" + one_one_filenames[Math.floor(Math.random() * one_one_filenames.length)])
+          - }
     section(class="end")
       div
         h1 About Us
@@ -135,7 +136,6 @@ html
           img(src="/icons/paper-plane.png", alt="Fax Icon")
           p +1 (424) 292 - 1782
       p(class="copyright") &copy 2016 Prep Stars of America | All Rights Reserved | Privacy Policy | Terms of Use
-
   
 //- Scripts
 block last_scripts
