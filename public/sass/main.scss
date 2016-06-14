@@ -16,6 +16,11 @@ body {
 }
 
 // Text Sections
+
+span {
+  font-style: italic;
+}
+
 .text-section {
   font-weight: 500;
   margin: 3.5rem auto;
@@ -28,6 +33,7 @@ body {
     text-align: center;
     text-transform: uppercase;
   }
+  
 
   p,
   blockquote,
@@ -287,13 +293,14 @@ body {
 
 // Title
 .title {
-  background-color: $page-title-background-color;
+  background-color: #D32F2F;
   border: {
-    bottom: 0.25rem solid darken($page-title-background-color, 7.5%);
+    bottom: 0.25rem solid #c62a2a;
+    top: 0.25rem solid #c62a2a;
   }
 
   h1 {
-    color: #e8e8e8;
+    color: #992222;
     font-size: 4rem;
     padding: 2rem 5rem;
     text: {
