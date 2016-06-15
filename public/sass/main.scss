@@ -21,6 +21,10 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+    font-style: italic;
+}
+
 span {
   font-style: italic;
 }
@@ -41,9 +45,15 @@ b {
   h1 {
     font-size: 1.35rem;
     letter-spacing: 0.025rem;
+    font-size: 1.800em;
     margin: 3.5% 0 2.5%;
     text-align: center;
     text-transform: uppercase;
+  }
+  
+  h2 {
+    text-align: center; 
+    font-size: 1.500em;
   }
   
 
