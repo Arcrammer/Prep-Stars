@@ -45,6 +45,7 @@ exports = module.exports = function (app) {
   app.get('/donate', routes.views.donate);
   app.get('/programs', routes.views.programs);
   app.get('/testimonials', routes.views.testimonials);
+  app.get('/success', routes.views.success);
   app.post('/newsletter/subscribe', function (req, res, next) {
     // Save email addresses to a text file
     fs.appendFile('subscriber_email_addresses.txt', req.body.email_address + '\r\n');
