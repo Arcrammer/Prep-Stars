@@ -633,6 +633,8 @@ footer {
 
       address, p {
         line-height: 175%;
+        width: auto;
+        max-width: auto;
       }
 
       .medium {
@@ -641,6 +643,11 @@ footer {
 
         p {
           font-size: 0.75rem;
+          width: auto;
+          padding: 0px;
+          margin: 0px;
+          float: left;
+          text-align: left;
         }
 
         img {
