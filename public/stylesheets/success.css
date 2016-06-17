@@ -1,3 +1,42 @@
 p{font-size:1.5rem;font-weight:500;padding:7.5% 2.5%;text-align:center}
 
 /*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoic3VjY2Vzcy5jc3MiLCJzb3VyY2VzIjpbInN1Y2Nlc3Muc2NzcyJdLCJzb3VyY2VzQ29udGVudCI6WyIvKipcbiAqIHN1Y2Nlc3Muc2Nzc1xuICpcbiAqIEFsZXhhbmRlciBSaGV0dCBDcmFtbWVyXG4gKiBXZWRuZXNkYXksIDE1IEp1bmUsIDIwMTZcbiAqL1xuXG5wIHtcbiAgZm9udDoge1xuICAgIHNpemU6IDEuNXJlbTtcbiAgICB3ZWlnaHQ6IDUwMDtcbiAgfVxuICBwYWRkaW5nOiA3LjUlIDIuNSU7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbn1cbiJdLCJtYXBwaW5ncyI6IkFBT0EsQUFBQSxDQUFDLEFBQUMsQ0FDQSxJQUFJLEFBQUMsQ0FBQyxBQUNKLElBQUksQ0FBRSxNQUFPLENBRGYsSUFBSSxBQUFDLENBQUMsQUFFSixNQUFNLENBQUUsR0FBSSxDQUVkLE9BQU8sQ0FBRSxTQUFVLENBQ25CLFVBQVUsQ0FBRSxNQUFPLENBQ3BCIiwibmFtZXMiOltdfQ== */
+.success {
+  width: 80%; 
+  margin: 0px auto;
+}
+
+.success .youtube-video {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  clear: both;
+}
+
+.success p {
+  font-size: 1.000em;
+  font-family: inherit;
+  text-align: left;
+  margin: 0px;
+
+  padding: 20px;
+}
+
+.success h2 {
+  margin: 10px;
+  font-size: 1.500em;
+  font-weight: 100;
+  text-align: center;
+}
+
+.story {
+  width: 70%; 
+  height: auto;
+  margin: 5px auto;
+  clear: both;
+}
+
+.story p {
+  padding: 0px;
+  margin: 0px;
+  margin-bottom: 15px;
+}
