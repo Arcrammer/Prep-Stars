@@ -40,3 +40,16 @@ p{font-size:1.5rem;font-weight:500;padding:7.5% 2.5%;text-align:center}
   margin: 0px;
   margin-bottom: 15px;
 }
+
+.special {
+    width: 50%; 
+  margin: 0px auto;
+}
+
+.clear {
+  width: 90%; 
+  height: 40px;
+  background: inherit;
+  clear: both;
+  margin: 0px auto;
+}

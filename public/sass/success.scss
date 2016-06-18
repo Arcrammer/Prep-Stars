@@ -13,3 +13,44 @@ p {
   padding: 7.5% 2.5%;
   text-align: center;
 }
+
+.success {
+  width: 80%; 
+  margin: 0px auto;
+
+    .youtube-video {
+      margin-top: 15px;
+      margin-bottom: 15px;
+      clear: both;
+    }
+
+    p {
+      font-size: 1.000em;
+      font-family: inherit;
+      text-align: left;
+      margin: 0px;
+      padding: 20px;
+  }
+  
+    h2 {
+      margin: 10px;
+      font-size: 1.500em;
+      font-weight: 100;
+      text-align: center;
+    }
+  
+}
+
+.story {
+  width: 70%; 
+  height: auto;
+  margin: 5px auto;
+  clear: both;
+
+    p {
+      padding: 0px;
+      margin: 0px;
+      margin-bottom: 15px;
+    }
+  
+}
