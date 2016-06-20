@@ -16,13 +16,22 @@ body {
 }
 
 // Text Sections
-
 a {
   text-decoration: none;
+  transition: color 175ms;
 }
 
-a:hover {
-    font-style: italic;
+a:link, a:visited {
+  color: $darker-blue;
+}
+
+a:hover, a:focus {
+  color: darken($light-blue, 15%);
+  font-style: italic;
+}
+
+a:active {
+  color: darken($darker-blue, 15%);
 }
 
 span {
@@ -56,6 +65,9 @@ b {
     font-size: 1.500em;
   }
 
+  img {
+    margin: 25%;
+  }
 
   p,
   blockquote,
@@ -253,7 +265,7 @@ b {
     a:visited {
       color: $white * 0.925;
     }
-  } 
+  }
 
   a:link,
   a:visited {

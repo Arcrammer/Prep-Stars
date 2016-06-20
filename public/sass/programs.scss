@@ -30,23 +30,6 @@ aside {
   }
 }
 
-a {
-  text-decoration: none;
-  transition: color 175ms;
-}
-
-a:link, a:visited {
-  color: $darker-blue;
-}
-
-a:hover, a:focus {
-  color: darken($light-blue, 15%);
-}
-
-a:active {
-  color: darken($darker-blue, 15%);
-}
-
 // Responsiveness
 @media only screen and (max-width: 964px) {}
 

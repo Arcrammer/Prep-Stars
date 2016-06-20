@@ -18,11 +18,13 @@ block content
       h1 Testimonials
       blockquote “This is an incredible program and your students are so respectful”
       cite Golden State Warrior Staff
-      button: a(href="/testimonials") Learn More
+      div
+        button: a(href="/testimonials") Learn More
     div
       h1 Our Programs
       p Prep Stars of America provides therapeutic sports programs for Pre K to High school age youth. Since expanding, our program has offered much more to youth and their families!
-      button: a(href="/programs") Read More
+      div
+        button: a(href="/programs") Read More
     div
       h1 Events
       ul(class="events")
@@ -31,8 +33,9 @@ block content
       h1 Get Updates
       p Receive PSA Updates via Email
       form(id="newsletter-form", action="/newsletter/subscribe", method="POST")
-      input(type="email", form="newsletter-form", name="email_address", placeholder="Email Address")
-      input(type="submit", form="newsletter-form", value="Submit")
+      div
+        input(type="email", form="newsletter-form", name="email_address", placeholder="Email Address")
+        input(type="submit", form="newsletter-form", value="Submit")
   section(class="welcome-message text-section")
     img(class="video", src="/images/random_photos_from_social_sites/sixteen-nine/" + sixteen_nine_filenames[Math.floor(Math.random() * sixteen_nine_filenames.length)])
     h1 Welcome to Prep Stars of America
@@ -48,67 +51,65 @@ block content
     p Our programs are #[i Get Fit Recess Fitness Program], #[i High School Health & Wellness Program], #[i Play Jr.NBA] and (#[b NEW!]) #[i Digital Sports Media Program for Middle & High School Students].
     p Our (#[b NEW!]) Prep Stars Sports League has a variety of sports! Our students have an opportunity to participate in sports like basketball, soccer, golf, tennis, lacrosse and NFL flag football!
     
-    div(style="min-height: 43.750em; max-height: 70em;")
+    div(style="min-height: 43.750em")
       h1 Basketball
-      p(style="width: 95%; display: inline-block; clear: both;") #[a(href="http://www.playjr-nba.com/" target="_blank" style="color: inherit; text-decoration: underline;") We have a Jr.NBA/WNBA Godlen State Warrior Youth Basketball] program! We're partnered with the Golden State Warriors to provide great, life changing opportunities for the 5 school districts in the East Bay: Oakland, Hayward, San Leandro, Berkeley, and Alameda.
-      p(style="width: 95%; display: inline-block; clear: both;") #[b Steph Curry has agreed to sign certificates for all of our students that sign up to play Jr.NBA!] (#[a(href="http://www.playjr-nba.com/" target="_blank" style="color: inherit; text-decoration: underline;") Visit the Play Jr. NBA site!])
+      p(style="width: 85%; display: inline-block; clear: both;") #[a(href="http://www.playjr-nba.com/" target="_blank" style="color: inherit; text-decoration: underline;") We have a Jr.NBA/WNBA Godlen State Warrior Youth Basketball] program! We're partnered with the Golden State Warriors to provide great, life changing opportunities for the 5 school districts in the East Bay: Oakland, Hayward, San Leandro, Berkeley, and Alameda.
+      p(style="width: 85%; display: inline-block; clear: both;") #[b Steph Curry has agreed to sign certificates for all of our students that sign up to play Jr.NBA!] (#[a(href="http://www.playjr-nba.com/" target="_blank" style="color: inherit; text-decoration: underline;") Visit the Play Jr. NBA site!])
       img(src="/images/player-basketball.png")
       
-    div(style="min-height: 43.750em; max-height: 70em;")
+    div(style="min-height: 43.750em")
       h1 Lacrosse
-      p(style="width: 95%; display: inline-block; clear: both;") We're teaching students team building skills, responsibility, leadership skills, self control and more. By playing team sports, we give them an opportunity to practice these skills in a real world situation.
-      p(style="width: 95%; display: inline-block; clear: both;") Lacrosse is a contact sport played between 2 teams using a small rubber ball and a long-handled stick called a crosse or lacrosse stick. The head of a lacrosse stick is strung with loose mesh designed to chate and hold a lacrosse ball.
+      p(style="width: 85%; display: inline-block; clear: both;") We're teaching students team building skills, responsibility, leadership skills, self control and more. By playing team sports, we give them an opportunity to practice these skills in a real world situation.
+      p(style="width: 85%; display: inline-block; clear: both;") Lacrosse is a contact sport played between 2 teams using a small rubber ball and a long-handled stick called a crosse or lacrosse stick. The head of a lacrosse stick is strung with loose mesh designed to chate and hold a lacrosse ball.
       img(src="/images/player-lacrosse.png" )
       
     div(style="min-height: 43.750em; max-height: 50em;")
       h1 Football
-      p(style="width: 95%; display: inline-block; clear: both;") Football helps youth learn to acheive a goal through cooperation, careful planning and team effort. We're partnered with the NFL, NFL Flag Football and USA Football.
-      p(style="width: 95%; display: inline-block; clear: both;") Football (or #[i American Football]) is a 2 team (11 players) sport that's played with an oval ball on a rectangular grass field. There are two goal posts situated at each (far) end of the field, and the objective is to score a goal without allowing your opponent to score a goal in turn. 
+      p(style="width: 85%; display: inline-block; clear: both;") Football helps youth learn to acheive a goal through cooperation, careful planning and team effort. We're partnered with the NFL, NFL Flag Football and USA Football.
+      p(style="width: 85%; display: inline-block; clear: both;") Football (or #[i American Football]) is a 2 team (11 players) sport that's played with an oval ball on a rectangular grass field. There are two goal posts situated at each (far) end of the field, and the objective is to score a goal without allowing your opponent to score a goal in turn. 
       img(src="/images/player-football.png")
       
     div(style="min-height: 43.750em; max-height: 50em;")
       h1 Tennis
-      p(style="width: 95%; display: inline-block; clear: both;") We're partners with the United States Tennis Association (USTA) to help facilitate a love of tennis in young athelets. Tennis improves self-esteem, vigor and optimism. It helps improve fine motor skills, strength, eye-hand cordination and flexibility. 
-      p(style="width: 95%; display: inline-block; clear: both;") Tennis is a 2 or 4 player game played on a court with a net stretched across it. The objective is to strike a ball with a racket over the net. 
+      p(style="width: 85%; display: inline-block; clear: both;") We're partners with the United States Tennis Association (USTA) to help facilitate a love of tennis in young athelets. Tennis improves self-esteem, vigor and optimism. It helps improve fine motor skills, strength, eye-hand cordination and flexibility. 
+      p(style="width: 85%; display: inline-block; clear: both;") Tennis is a 2 or 4 player game played on a court with a net stretched across it. The objective is to strike a ball with a racket over the net. 
       img(src="/images/player-tennis.png")
       
     div(style="min-height: 43.750em; max-height: 50em;")
       h1 Soccer
-      p(style="width: 95%; display: inline-block; clear: both;") We're members of the U.S Soccer Development Academy! Through soccer, we help youth sharpen their mind, develop endurance and strength, socialize with other youths and reduce their anxiety.
-      p(style="width: 95%; display: inline-block; clear: both;") Soccer is a game played by 2 teams of eleven players. It's played with round, patterned ball called a "soccer ball." Except for the goalkeeper, no players are allowed to touch the ball with their hands or arms. The objective is to score goals by kicking or head-butting the ball into the opponents' goal.
+      p(style="width: 85%; display: inline-block; clear: both;") We're members of the U.S Soccer Development Academy! Through soccer, we help youth sharpen their mind, develop endurance and strength, socialize with other youths and reduce their anxiety.
+      p(style="width: 85%; display: inline-block; clear: both;") Soccer is a game played by 2 teams of eleven players. It's played with round, patterned ball called a "soccer ball." Except for the goalkeeper, no players are allowed to touch the ball with their hands or arms. The objective is to score goals by kicking or head-butting the ball into the opponents' goal.
       img(src="/images/player-soccer.png")
       
     div(style="min-height: 43.750em; max-height: 50em;")
       h1 Golf
-      p(style="width: 95%; display: inline-block; clear: both;") We're partners with PGA JR. League Golf. Through golf, we're helping youth improve heart health and vision, strength and endurance. It can reduce stress, shed excess weight and build confidence.
-      p(style="width: 95%; display: inline-block; clear: both;") Golf is a game played on a large, open-air course with a small hard ball that is struck with a club into a series of small holes in the ground. The object is to strike the ball into the most holes with the least amount of swings. 
+      p(style="width: 85%; display: inline-block; clear: both;") We're partners with PGA JR. League Golf. Through golf, we're helping youth improve heart health and vision, strength and endurance. It can reduce stress, shed excess weight and build confidence.
+      p(style="width: 85%; display: inline-block; clear: both;") Golf is a game played on a large, open-air course with a small hard ball that is struck with a club into a series of small holes in the ground. The object is to strike the ball into the most holes with the least amount of swings. 
       img(src="/images/player-golf.png")
-      
-    div.clear  
-    div(style="clear: both; width: 100%; height: 50px; background: inherit;")
-    h2(style="clear: both;") #[a(href="/#") Prep Stars Performance Academy] 
+  section(class="text-section")
+    h2: a(href="/#") Prep Stars Performance Academy
     p We host regional and national events for athletes looking to break out and gain exposure needed for colelge scholarships and pro contracts. Even more importantly, pro teams and NCAA are using our data for "#[i Benchmarking]" (a way to develope baselines scores to improve and compare against other top athletes for training).
-    p Everyone will have an opportunity to compare their #[a(href="http://www.bamtesting.net/" target="_blank") #[b BAM]] score against the best athletes from around the country. Your scores will be available in 48 hours! The #[ top 50] athletes in each group will be automatically ranked and invited to regionals in december!
+    p Everyone will have an opportunity to compare their #[a(href="http://www.bamtesting.net/" target="_blank") BAM] score against the best athletes from around the country. Your scores will be available in 48 hours! The #[ top 50] athletes in each group will be automatically ranked and invited to regionals in december!
     p Don't miss an opportunity to be tested using the same technology the NBA, Adidas Nations, NBA Europe, D-League and every foreign professional team, scouts, coaches and general managers use to validate and select their players!
   section(class="announcement-blue")
      h1 CURIOUS ABOUT BAM Testing? TAKE A GLIMPSE!
      button #[a(href="https://youtu.be/GHD74cGRjpY" target="_blank" style="color: inherit;") Watch Video]    
   section(class="success-stories text-section")
-    h1 Our #[a(href="/testimonials") Success] Stories
+    h1: a(href="/testimonials") Our Success Stories
     p Our programs help students achieve their goals and set new heights everyday. Our success stories are many, but is a spotlight on a few teens that made it with the help of Prep Stars of America: 
-    div(style="width: 70%; margin: 0px auto;")
-      div(style="margin: 5px; padding: 5px; clear: both; width: 100%;")
-        h2(style="text-align: center; font-size: 1.500em; line-height: 1.500em;") Dante Exum
-        img(src="/images/im.png", alt="Success Story", style="margin: 5px; float: left; display: block; height: 300px; width: auto;") 
-        p Testing early not only helps to establish a Benchmark for athletes to see where they're at, but it's also used to compare them against other top pro athletes from our database of 6 years of NBA testing.
-        p Dante Exum was a talented 17yr old teenager from Australia looking to go to college. His parents were looking into colleges when he tested at one of our BAM Europe events for Adidas. His BAM test scores were so high that NBA general managers were startled and his stock rose! 
-        p Forget college, Dante! You're headed to the NBA! He was drafted the #5 Pick in the 2014 NBA Draft.
-      
-    blockquote #[i This exciting new project will provide invaluable recreational and educational opportunities for Californian youth. By offering young people the change to enjoy non-traditional sports, build confidence, sportsmanship, and meet higher academic challenges it will enhance many lives.]
-    cite &mdash; Former Governor Gray Davis
-    - for (var i=0; i<4; i++) {
-      img(src="/images/random_photos_from_social_sites/one-one/" + one_one_filenames[Math.floor(Math.random() * one_one_filenames.length)])
-    - }
+    div(style="margin: 5px; padding: 5px; clear: both; width: 100%;")
+      h2(style="text-align: center; font-size: 1.500em; line-height: 1.500em;") Dante Exum
+      img(src="/images/im.png", alt="Success Story", style="float: left; display: block; height: 300px; width: auto;") 
+      p Testing early not only helps to establish a Benchmark for athletes to see where they're at, but it's also used to compare them against other top pro athletes from our database of 6 years of NBA testing.
+      p Dante Exum is a talented 17 year old teenager from Australia looking to go to college. His parents were looking into colleges when he tested at one of our BAM Europe events for Adidas. His BAM test scores were so high that NBA general managers were startled and his stock rose! 
+      p Forget college, Dante! You're headed to the NBA! He was drafted the #5 Pick in the 2014 NBA Draft.
+
+    section(class="text-section")
+      blockquote #[i This exciting new project will provide invaluable recreational and educational opportunities for Californian youth. By offering young people the change to enjoy non-traditional sports, build confidence, sportsmanship, and meet higher academic challenges it will enhance many lives.]
+      cite &mdash; Former Governor Gray Davis
+      - for (var i=0; i<4; i++) {
+        img(src="/images/random_photos_from_social_sites/one-one/" + one_one_filenames[Math.floor(Math.random() * one_one_filenames.length)])
+      - }
   
 //- Scripts
 block last_scripts
