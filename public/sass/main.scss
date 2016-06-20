@@ -55,9 +55,10 @@ b {
     font-size: 1.800em;
     letter-spacing: 0.025rem;
     line-height: 135%;
-    margin: 3.5% 0 2.5%;
+    margin: 3.5% auto 2.5%;
     text-align: center;
     text-transform: uppercase;
+    width: 80%;
   }
 
   h2 {
@@ -727,6 +728,15 @@ footer {
     margin: auto;
     max-width: 1440px;
   }
+
+  // Text Sections
+  .text-section {
+    p,
+    blockquote,
+    cite {
+      width: 85%;
+    }
+  }
 }
 
 @media only screen and (max-width: 964px) {
@@ -752,7 +762,7 @@ footer {
       width: 65px / 964px * 100%;
 
       span {
-        background-color: darken($light-blue, 25%);
+        background-color: darken($darker-blue, 15%);
         border-radius: 1rem;
         clear: both;
         display: block;
@@ -764,7 +774,7 @@ footer {
     }
 
     ul {
-      background: $light-blue;
+      background: darken($darker-blue, 10%);
       display: none;
       margin: 0;
       overflow: scroll;

@@ -27,6 +27,27 @@ aside {
 }
 
 // Responsiveness
-@media only screen and (max-width: 964px) {}
+@media only screen and (max-width: 964px) {
+  // Structure
+  main {
+    width: 61.803357314%;
+  }
+
+  aside {
+    width: 32.196642686%;
+  }
+
+  // Text Section
+  .site-description {
+    h2 {
+      margin-bottom: 0;
+      text-align: left;
+    }
+
+    p {
+      margin-top: 2.5%;
+    }
+  }
+}
 
 @media only screen and (max-width: 600px) {}

@@ -289,6 +289,7 @@ $grey-text-color: darken($our-programs-grey, 32.5%);
         right-radius: 0.25rem;
       };
       padding-bottom: 5%;
+      width: 100%;
     }
 
     p {
@@ -443,6 +444,11 @@ $grey-text-color: darken($our-programs-grey, 32.5%);
       width: 292.5px / 1370px * 100%;
     }
   }
+
+  // Our Programs
+  .programs div p {
+    margin: 1.25% 5%;
+  }
 }
 
 @media only screen and (max-width: 964px) {
@@ -463,8 +469,13 @@ $grey-text-color: darken($our-programs-grey, 32.5%);
         width: 90%;
       }
 
+      cite {
+        display: block;
+        width: 92.5%;
+      }
+
       input[type="email"] {
-        width: 95%;
+        width: 90%;
       }
     }
   }
