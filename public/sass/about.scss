@@ -33,6 +33,10 @@ aside {
   text-align: center;
   width: 20%;
 
+  section {
+    margin: 12.5% auto;
+  }
+
   h1 {
     @include thin-title();
   }
@@ -48,6 +52,21 @@ aside {
     border-radius: 0.25rem;
     margin: 7.5% auto;
     width: 100%;
+  }
+}
+
+// Aside Sections
+.quick-links {
+  h1 {
+    margin-bottom: 5%;
+  }
+
+  a {
+    display: block;
+    text-align: left;
+    line-height: 165%;
+    margin: auto;
+    width: 85%;
   }
 }
 
@@ -94,7 +113,7 @@ aside {
       weight: 300;
     }
     line-height: 135%;
-    margin: 5% auto;
+    margin: 7.5% auto 1.5%;
     text-transform: uppercase;
   }
 
@@ -111,6 +130,11 @@ aside {
     width: 100%;
   }
 
+  figcaption {
+    font-size: 0.9rem;
+    line-height: 150%;
+  }
+
   .partner-image {
     margin: 2.5%;
     width: 15%;
@@ -123,14 +147,14 @@ aside {
     margin: 3.5% auto;
   }
 
-  strong {
-    font-weight: 600;
-  }
-
   li {
     list-style-type: none;
     margin: 1% auto;
     text-indent: 1.5rem;
+  }
+
+  strong {
+    font-weight: 600;
   }
 }
 
